@@ -1,0 +1,534 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:a6e7d992-ee17-4894-bc21-04dfb36c4a56",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a6e7d992-ee17-4894-bc21-04dfb36c4a56",
+        "name": [
+          {
+            "family": "V.",
+            "given": [
+              "Tomas"
+            ]
+          }
+        ],
+        "gender": "male",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:97817006-373e-4f11-adae-c484fd1e54e1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "97817006-373e-4f11-adae-c484fd1e54e1",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Tomas V._20251017122211"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56",
+          "display": "Tomas V."
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "episodic burning pain in hands and feet"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:77cfd338-ab32-496c-9478-581d31772b36",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "77cfd338-ab32-496c-9478-581d31772b36",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62807-3",
+              "display": "PhenX - serum creatinine assay for kidney function protocol 141401"
+            }
+          ],
+          "text": "Serum creatinine"
+        },
+        "subject": {
+          "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+        },
+        "encounter": {
+          "reference": "Encounter/97817006-373e-4f11-adae-c484fd1e54e1"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:12.065214Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/62807-3/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4e4b51e3-c3ef-4dcf-80f0-05cc8188151d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4e4b51e3-c3ef-4dcf-80f0-05cc8188151d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18729-4",
+              "display": "Urinalysis studies"
+            }
+          ],
+          "text": "Urinalysis"
+        },
+        "subject": {
+          "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+        },
+        "encounter": {
+          "reference": "Encounter/97817006-373e-4f11-adae-c484fd1e54e1"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:12.270282Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/18729-4/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b0b5f8cb-e46a-4e95-86fe-24a4b7a8d6e6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b0b5f8cb-e46a-4e95-86fe-24a4b7a8d6e6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "unknown",
+              "display": "α-Galactosidase A activity"
+            }
+          ],
+          "text": "α-Galactosidase A activity"
+        },
+        "subject": {
+          "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+        },
+        "encounter": {
+          "reference": "Encounter/97817006-373e-4f11-adae-c484fd1e54e1"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:12.475257Z",
+        "valueQuantity": {
+          "value": 20.0,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f911f64f-ce24-4ff0-abf1-0303cd962aaa",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f911f64f-ce24-4ff0-abf1-0303cd962aaa",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "71575-5",
+              "display": "ECG NEMSIS"
+            }
+          ],
+          "text": "ECG"
+        },
+        "subject": {
+          "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+        },
+        "encounter": {
+          "reference": "Encounter/97817006-373e-4f11-adae-c484fd1e54e1"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:12.679390Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/71575-5/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d8b5f7ba-18ae-4545-9c4a-cab5b5e68ce2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d8b5f7ba-18ae-4545-9c4a-cab5b5e68ce2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36031001",
+              "display": "Burning feet"
+            }
+          ],
+          "text": "Burning pain in hands and feet"
+        },
+        "subject": {
+          "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+        },
+        "encounter": {
+          "reference": "Encounter/97817006-373e-4f11-adae-c484fd1e54e1"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:22:14.528503Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/36031001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:08295651-c3f5-4ca3-800e-c2eadbd9ba63",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "08295651-c3f5-4ca3-800e-c2eadbd9ba63",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "43364001",
+              "display": "Abdominal discomfort"
+            }
+          ],
+          "text": "Abdominal discomfort"
+        },
+        "subject": {
+          "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+        },
+        "encounter": {
+          "reference": "Encounter/97817006-373e-4f11-adae-c484fd1e54e1"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:22:16.364646Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/43364001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a0da45b0-a94f-4e41-acd0-edd5b06b3cfb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a0da45b0-a94f-4e41-acd0-edd5b06b3cfb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "62315008",
+              "display": "Diarrhea"
+            }
+          ],
+          "text": "Diarrhea"
+        },
+        "subject": {
+          "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+        },
+        "encounter": {
+          "reference": "Encounter/97817006-373e-4f11-adae-c484fd1e54e1"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:22:18.511076Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/62315008"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7af606e2-68b7-4677-8e4d-9d7cb3bdd2c0",
+      "resource": {
+        "resourceType": "List",
+        "id": "7af606e2-68b7-4677-8e4d-9d7cb3bdd2c0",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "442031000124102",
+                  "display": "Maternal uncle"
+                }
+              ]
+            },
+            "deceasedBoolean": true,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "301814009",
+                      "display": "Post-renal renal failure"
+                    }
+                  ]
+                },
+                "outcome": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "876883006",
+                      "display": "Died during operation"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/a6e7d992-ee17-4894-bc21-04dfb36c4a56"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}

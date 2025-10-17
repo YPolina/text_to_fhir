@@ -1,0 +1,668 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:de51e270-e250-4062-aefe-b1165942324b",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "de51e270-e250-4062-aefe-b1165942324b",
+        "name": [
+          {
+            "family": "Ivanov",
+            "given": [
+              "Andrei"
+            ]
+          }
+        ],
+        "gender": "male",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7d816f21-8b18-4817-b405-0e81a770d12c",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "7d816f21-8b18-4817-b405-0e81a770d12c",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Andrei Ivanov_20251017122050"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b",
+          "display": "Andrei Ivanov"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "persistent fatigue and occasional mild abdominal discomfort"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:13afc0c0-3273-4607-9976-7aa5daff4f24",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "13afc0c0-3273-4607-9976-7aa5daff4f24",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69478-6",
+              "display": "AGXT gene Del+Dup Bld/T MLPA"
+            }
+          ],
+          "text": "Alanine Aminotransferase"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectiveDateTime": "2025-10-17T10:20:50.660537Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/69478-6/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d848e57c-a3fe-429e-9318-448365837981",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d848e57c-a3fe-429e-9318-448365837981",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1917-4",
+              "display": "AST Amn-cCnc"
+            }
+          ],
+          "text": "Aspartate Aminotransferase"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectiveDateTime": "2025-10-17T10:20:50.839926Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/1917-4/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e576733e-7724-41a6-b92e-5cc436a63e92",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e576733e-7724-41a6-b92e-5cc436a63e92",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34543-9",
+              "display": "Bilirubin direct & total panel"
+            }
+          ],
+          "text": "Total Bilirubin"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectiveDateTime": "2025-10-17T10:20:51.046171Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/34543-9/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:09de6451-21d0-4307-ab7d-f2adbe59ff85",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "09de6451-21d0-4307-ab7d-f2adbe59ff85",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2064-4",
+              "display": "Ceruloplasmin SerPl-mCnc"
+            }
+          ],
+          "text": "Serum Ceruloplasmin"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectiveDateTime": "2025-10-17T10:20:51.250492Z",
+        "valueQuantity": {
+          "value": 12.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/2064-4/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:03f4fd70-1f86-4b6b-8e67-5eed881ddb33",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "03f4fd70-1f86-4b6b-8e67-5eed881ddb33",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "unknown",
+              "display": "24-hour Urinary Copper Excretion"
+            }
+          ],
+          "text": "24-hour Urinary Copper Excretion"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectiveDateTime": "2025-10-17T10:20:51.454570Z",
+        "valueQuantity": {
+          "value": 150.0,
+          "unit": "µg/24h",
+          "system": "http://unitsofmeasure.org",
+          "code": "µg/24h"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a4e3c6b3-01e5-45ae-b71d-6366483b9c03",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a4e3c6b3-01e5-45ae-b71d-6366483b9c03",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "Fatigue"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:53.115661Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/84229001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ef4ca074-f7e8-48c4-8577-5273c464b8f9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ef4ca074-f7e8-48c4-8577-5273c464b8f9",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "43364001",
+              "display": "Abdominal discomfort"
+            }
+          ],
+          "text": "Abdominal Discomfort"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:54.633923Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/43364001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4d108707-3c81-4858-8aa3-9598f5805c8a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4d108707-3c81-4858-8aa3-9598f5805c8a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "246975001",
+              "display": "Scleral icterus"
+            }
+          ],
+          "text": "Scleral Icterus"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:56.109980Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/246975001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f1bb328f-dcb1-4e93-bdee-c2fdc1cb3ebc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f1bb328f-dcb1-4e93-bdee-c2fdc1cb3ebc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "90446007",
+              "display": "Pruritus ani"
+            }
+          ],
+          "text": "Pruritus"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:57.705581Z"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/90446007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:50d69fc0-ec0a-4b66-b70c-43d5525e7cfd",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "50d69fc0-ec0a-4b66-b70c-43d5525e7cfd",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39575007",
+              "display": "Urine looks dark"
+            }
+          ],
+          "text": "Dark Urine"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:21:00.266226Z"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/39575007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:20e02628-379d-42fb-bf8f-3b4ec9f6eaba",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "20e02628-379d-42fb-bf8f-3b4ec9f6eaba",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "35064005",
+              "display": "Dark stools"
+            }
+          ],
+          "text": "Pale Stools"
+        },
+        "subject": {
+          "reference": "Patient/de51e270-e250-4062-aefe-b1165942324b"
+        },
+        "encounter": {
+          "reference": "Encounter/7d816f21-8b18-4817-b405-0e81a770d12c"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:21:01.883664Z"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/35064005"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

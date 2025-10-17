@@ -1,0 +1,12 @@
+{
+  "first_name": "John",
+  "second_name": "Doe",
+  "gender": "male",
+  "birthDate": "1980-05-12",
+  "address": {
+    "text": "123 Main Street, Springfield, IL, USA",
+    "city": "Springfield",
+    "state": "IL",
+    "country": "USA"
+  }
+}

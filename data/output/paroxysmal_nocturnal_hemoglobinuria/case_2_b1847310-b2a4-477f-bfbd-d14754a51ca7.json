@@ -1,0 +1,489 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:b1847310-b2a4-477f-bfbd-d14754a51ca7",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "b1847310-b2a4-477f-bfbd-d14754a51ca7",
+        "name": [
+          {
+            "family": "K.",
+            "given": [
+              "Dmitri"
+            ]
+          }
+        ],
+        "gender": "male",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Dmitri K._20251017122346"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/b1847310-b2a4-477f-bfbd-d14754a51ca7",
+          "display": "Dmitri K."
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "morning dark urine and mild fatigue for three months"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f6c56250-1a17-44c8-acbb-99ccb377b4e5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f6c56250-1a17-44c8-acbb-99ccb377b4e5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62854-5",
+              "display": "PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901"
+            }
+          ],
+          "text": "Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/b1847310-b2a4-477f-bfbd-d14754a51ca7"
+        },
+        "encounter": {
+          "reference": "Encounter/78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd"
+        },
+        "effectiveDateTime": "2025-10-17T10:23:47.092268Z",
+        "valueQuantity": {
+          "value": 11.2,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/62854-5/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d9091ecb-d59e-4b22-aae1-12e0ce5c5d6b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d9091ecb-d59e-4b22-aae1-12e0ce5c5d6b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "50262-5",
+              "display": "Reticulocytes panel"
+            }
+          ],
+          "text": "Reticulocytes"
+        },
+        "subject": {
+          "reference": "Patient/b1847310-b2a4-477f-bfbd-d14754a51ca7"
+        },
+        "encounter": {
+          "reference": "Encounter/78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd"
+        },
+        "effectiveDateTime": "2025-10-17T10:23:47.297021Z",
+        "valueQuantity": {
+          "value": 4.0,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/50262-5/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f70f41e0-4cc6-4b98-8732-8b15920804fc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f70f41e0-4cc6-4b98-8732-8b15920804fc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2546-0",
+              "display": "LDH4 SerPl-cCnc"
+            }
+          ],
+          "text": "LDH"
+        },
+        "subject": {
+          "reference": "Patient/b1847310-b2a4-477f-bfbd-d14754a51ca7"
+        },
+        "encounter": {
+          "reference": "Encounter/78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd"
+        },
+        "effectiveDateTime": "2025-10-17T10:23:47.502057Z",
+        "valueQuantity": {
+          "value": 900.0,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/2546-0/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:429feaee-8a61-4e65-906f-c8b76c095f2b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "429feaee-8a61-4e65-906f-c8b76c095f2b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "110648-3",
+              "display": "Haptoglob Msmt SerPl"
+            }
+          ],
+          "text": "Haptoglobin"
+        },
+        "subject": {
+          "reference": "Patient/b1847310-b2a4-477f-bfbd-d14754a51ca7"
+        },
+        "encounter": {
+          "reference": "Encounter/78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd"
+        },
+        "effectiveDateTime": "2025-10-17T10:23:47.628871Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/110648-3/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d37107a0-b95a-4779-a3c6-44baa60185a1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d37107a0-b95a-4779-a3c6-44baa60185a1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "78442-1",
+              "display": "Bilirub Indirect Prt-sCnc"
+            }
+          ],
+          "text": "Bilirubin"
+        },
+        "subject": {
+          "reference": "Patient/b1847310-b2a4-477f-bfbd-d14754a51ca7"
+        },
+        "encounter": {
+          "reference": "Encounter/78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd"
+        },
+        "effectiveDateTime": "2025-10-17T10:23:47.810377Z",
+        "valueQuantity": {
+          "value": 2.2,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/78442-1/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a9c0cdd-cdf7-4dc5-95e8-896300e38e30",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3a9c0cdd-cdf7-4dc5-95e8-896300e38e30",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39575007",
+              "display": "Urine looks dark"
+            }
+          ],
+          "text": "Dark urine"
+        },
+        "subject": {
+          "reference": "Patient/b1847310-b2a4-477f-bfbd-d14754a51ca7"
+        },
+        "encounter": {
+          "reference": "Encounter/78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:23:49.554673Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/39575007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1b4f45e1-baac-44cb-82ce-109a6093726a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1b4f45e1-baac-44cb-82ce-109a6093726a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "Fatigue"
+        },
+        "subject": {
+          "reference": "Patient/b1847310-b2a4-477f-bfbd-d14754a51ca7"
+        },
+        "encounter": {
+          "reference": "Encounter/78416fd5-59f0-4f66-9ef1-bbc9b1ecb9cd"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:23:51.296105Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/84229001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:831330f3-6c40-42d9-86f3-3d705076fad0",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "831330f3-6c40-42d9-86f3-3d705076fad0",
+        "name": [
+          {
+            "family": "Kroks",
+            "given": [
+              "Lomard"
+            ]
+          }
+        ],
+        "gender": "male",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b341c445-4e25-4bf6-b79c-ca05c443bccf",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "b341c445-4e25-4bf6-b79c-ca05c443bccf",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Lomard Kroks_20251017122353"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/831330f3-6c40-42d9-86f3-3d705076fad0",
+          "display": "Lomard Kroks"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "delayed motor milestones and persistent hypotonia"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d0b9cff9-5126-41ee-a1f8-5d88a0656f73",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d0b9cff9-5126-41ee-a1f8-5d88a0656f73",
+        "status": "registered",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "unknown",
+              "display": "Genetic testing for chromosome 15q11–q13 deletion"
+            }
+          ],
+          "text": "Genetic testing for chromosome 15q11–q13 deletion"
+        },
+        "subject": {
+          "reference": "Patient/831330f3-6c40-42d9-86f3-3d705076fad0"
+        },
+        "encounter": {
+          "reference": "Encounter/b341c445-4e25-4bf6-b79c-ca05c443bccf"
+        },
+        "effectiveDateTime": "2025-10-17T10:23:53.544371Z"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:69494dc3-3abf-4226-913a-e9f9a1eedacf",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "69494dc3-3abf-4226-913a-e9f9a1eedacf",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266955002",
+              "display": "Employment milestones"
+            }
+          ],
+          "text": "Delayed motor milestones"
+        },
+        "subject": {
+          "reference": "Patient/831330f3-6c40-42d9-86f3-3d705076fad0"
+        },
+        "encounter": {
+          "reference": "Encounter/b341c445-4e25-4bf6-b79c-ca05c443bccf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:23:55.392488Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/266955002"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0dc56458-9ed9-40ba-b614-28d341b193de",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0dc56458-9ed9-40ba-b614-28d341b193de",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "704200007",
+              "display": "Acquired hypotonia"
+            }
+          ],
+          "text": "Persistent hypotonia"
+        },
+        "subject": {
+          "reference": "Patient/831330f3-6c40-42d9-86f3-3d705076fad0"
+        },
+        "encounter": {
+          "reference": "Encounter/b341c445-4e25-4bf6-b79c-ca05c443bccf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:23:56.981122Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/704200007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e6226671-d202-4dc9-ac7b-5788766076bc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e6226671-d202-4dc9-ac7b-5788766076bc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "398152000",
+              "display": "Poor muscle tone"
+            }
+          ],
+          "text": "Poor muscle tone"
+        },
+        "subject": {
+          "reference": "Patient/831330f3-6c40-42d9-86f3-3d705076fad0"
+        },
+        "encounter": {
+          "reference": "Encounter/b341c445-4e25-4bf6-b79c-ca05c443bccf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:23:58.987509Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/398152000"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:45bd8547-9730-4cd4-b16b-43a7491801cb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "45bd8547-9730-4cd4-b16b-43a7491801cb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "72405004",
+              "display": "Increased appetite"
+            }
+          ],
+          "text": "Increased appetite"
+        },
+        "subject": {
+          "reference": "Patient/831330f3-6c40-42d9-86f3-3d705076fad0"
+        },
+        "encounter": {
+          "reference": "Encounter/b341c445-4e25-4bf6-b79c-ca05c443bccf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:24:00.512892Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/72405004"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7a32bfef-4ae8-4dfe-a6f3-7ce7118f275b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7a32bfef-4ae8-4dfe-a6f3-7ce7118f275b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "816159004",
+              "display": "Weight gain"
+            }
+          ],
+          "text": "Weight gain"
+        },
+        "subject": {
+          "reference": "Patient/831330f3-6c40-42d9-86f3-3d705076fad0"
+        },
+        "encounter": {
+          "reference": "Encounter/b341c445-4e25-4bf6-b79c-ca05c443bccf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:24:02.353409Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/816159004"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

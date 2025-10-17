@@ -1,0 +1,19 @@
+{
+  "members": [
+    {
+      "relationship": "Mother",
+      "deceased": false,
+      "conditions": [
+        {"condition_name": "Diaphragmatic hernia", "outcome": null}
+      ]
+    },
+    {
+      "relationship": "Uncle",
+      "deceased": true,
+      "conditions": [
+        {"condition_name": "Atopy", "outcome": "Died"}
+      ]
+    }
+  ],
+  "note": "Both parents, both brothers and both children (twin) are still alive."
+}

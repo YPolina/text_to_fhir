@@ -1,0 +1,2 @@
+cases_file: "cases.yaml"
+output_dir: "data/output"

@@ -1,0 +1,22 @@
+{
+  "laboratory": {
+    "test_name": "Glucose",
+    "value": 5.2,
+    "unit": "mmol/L",
+    "interpretation": "normal",
+    "status": "final"
+  },
+  "symptom": {
+    "symptom_name": "Abdominal tenderness",
+    "present": "True",
+    "interpretation": "abnormal",
+    "status": "final"
+  },
+"vital_sign": {
+    "vital_type": "temperature",
+    "value": 39.0,
+    "unit": "degrees C",
+    "interpretation": "high",
+    "status": "entered-in-error"
+}
+}

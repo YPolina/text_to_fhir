@@ -1,0 +1,82 @@
+{
+  "patient": {
+    "first_name": "John",
+    "second_name": "Doe",
+    "gender": "male",
+    "birthDate": "1980-05-12",
+    "address": {
+      "text": "123 Main Street, Springfield, IL, USA",
+      "city": "Springfield",
+      "state": "IL",
+      "country": "USA"
+    }
+  },
+  "encounter": {
+    "reason": "The patient had fever peaks over the last couple of days. He is worried about these peaks."
+  },
+  "observation": {
+    "laboratory": [
+      {
+        "test_name": "Glucose",
+        "value": 5.2,
+        "unit": "mmol/L",
+        "interpretation": "normal",
+        "status": "final"
+      }
+    ],
+    "symptom": [
+      {
+        "symptom_name": "Abdominal tenderness",
+        "present": "True",
+        "interpretation": "abnormal",
+        "status": "final"
+      }
+    ],
+    "vital_sign": [
+      {
+        "vital_type": "temperature",
+        "value": 39.0,
+        "unit": "degrees C",
+        "interpretation": "high",
+        "status": "entered-in-error"
+      }
+    ]
+  },
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Mother",
+        "deceased": False,
+        "conditions": [
+          {
+            "condition_name": "Diaphragmatic hernia",
+            "outcome": None
+          }
+        ]
+      },
+      {
+        "relationship": "Uncle",
+        "deceased": True,
+        "conditions": [
+          {
+            "condition_name": "Atopy",
+            "outcome": "Died"
+          }
+        ]
+      }
+    ],
+    "note": "Both parents, both brothers and both children (twin) are still alive."
+  },
+  "medication": [
+    {
+      "name": "Amoxicillin",
+      "note": "Patient indicates they miss the occasional dose",
+      "dosage_text": "one capsule three times daily",
+      "frequency": 3,
+      "period": 1,
+      "period_unit": "d",
+      "adherence": "not-taking",
+      "reason": "Drugs not taken/completed"
+    }
+  ]
+}

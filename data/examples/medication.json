@@ -1,0 +1,10 @@
+{
+    "name": "Amoxicillin",
+    "note": "Patient indicates they miss the occasional dose",
+    "dosage_text": "one capsule three times daily",
+    "frequency": 3,
+    "period": 1,
+    "period_unit": "d",
+    "adherence": "not-taking",
+    "reason": "Drugs not taken/completed"
+  }

@@ -1,0 +1,760 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:e49cc550-2872-4303-8606-ebd2d58987aa",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "e49cc550-2872-4303-8606-ebd2d58987aa",
+        "name": [
+          {
+            "family": "S.",
+            "given": [
+              "Anton"
+            ]
+          }
+        ],
+        "gender": "male",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:34830aea-d476-4159-a87c-2ad0c65eff6e",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "34830aea-d476-4159-a87c-2ad0c65eff6e",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Anton S._20251017122234"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa",
+          "display": "Anton S."
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "persistent fever for 10 days"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:17868004-5139-4cf0-a876-6b1de39c2d80",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "17868004-5139-4cf0-a876-6b1de39c2d80",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62854-5",
+              "display": "PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901"
+            }
+          ],
+          "text": "Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:34.687190Z",
+        "valueQuantity": {
+          "value": 9.8,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/62854-5/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f40ccb91-fc86-4219-a0e3-883317cf18a7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f40ccb91-fc86-4219-a0e3-883317cf18a7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "26464-8",
+              "display": "WBC # Bld"
+            }
+          ],
+          "text": "White Blood Cell Count"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:34.892142Z",
+        "valueQuantity": {
+          "value": 2.8,
+          "unit": "× 10⁹/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "× 10⁹/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/26464-8/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fa36f955-91e5-4a29-b91e-859a0af7f395",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fa36f955-91e5-4a29-b91e-859a0af7f395",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "74775-8",
+              "display": "Platelet # PRP Auto"
+            }
+          ],
+          "text": "Platelet Count"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:35.096683Z",
+        "valueQuantity": {
+          "value": 90.0,
+          "unit": "× 10⁹/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "× 10⁹/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/74775-8/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:11c4374e-0aba-47b4-9076-065084cbb8dc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "11c4374e-0aba-47b4-9076-065084cbb8dc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "53048-5",
+              "display": "Ferritin Fld-mCnc"
+            }
+          ],
+          "text": "Ferritin"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:35.302167Z",
+        "valueQuantity": {
+          "value": 2100.0,
+          "unit": "ng/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "ng/mL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/53048-5/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fcbe50bf-f8f8-4ca5-86b9-34287fdb1275",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fcbe50bf-f8f8-4ca5-86b9-34287fdb1275",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "105518-5",
+              "display": "Triglycerides from lipid profile"
+            }
+          ],
+          "text": "Triglycerides"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:35.507460Z",
+        "valueQuantity": {
+          "value": 320.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/105518-5/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cbba7b44-7928-431d-92bd-43dbbbee674a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cbba7b44-7928-431d-92bd-43dbbbee674a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76039-7",
+              "display": "Sol Il2 Recep SerPl-mCnc"
+            }
+          ],
+          "text": "Soluble IL-2 receptor"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:35.711631Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/76039-7/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c1a8dad8-eb4f-4aad-ae9b-75182031deca",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c1a8dad8-eb4f-4aad-ae9b-75182031deca",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "386661006",
+              "display": "Fever"
+            }
+          ],
+          "text": "Fever"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:22:37.457334Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/386661006"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:222e5da5-69cc-4481-a156-fa6ab5899836",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "222e5da5-69cc-4481-a156-fa6ab5899836",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36760000",
+              "display": "Hepatosplenomegaly"
+            }
+          ],
+          "text": "Hepatosplenomegaly"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:22:39.092890Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/36760000"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6cdd1d24-830a-4a65-9841-52f6dc2956b5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6cdd1d24-830a-4a65-9841-52f6dc2956b5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "214264003",
+              "display": "Lethargy"
+            }
+          ],
+          "text": "Lethargy"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:22:40.527410Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/214264003"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:da92416d-c223-4e25-87c6-b8c090b0ea54",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "da92416d-c223-4e25-87c6-b8c090b0ea54",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ],
+          "text": "temperature"
+        },
+        "subject": {
+          "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+        },
+        "encounter": {
+          "reference": "Encounter/34830aea-d476-4159-a87c-2ad0c65eff6e"
+        },
+        "effectiveDateTime": "2025-10-17T10:22:40.729321Z",
+        "valueQuantity": {
+          "value": 38.9,
+          "unit": "°C",
+          "system": "http://unitsofmeasure.org",
+          "code": "°C"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:375af536-9b3b-4de3-b8ce-e63f052cd05c",
+      "resource": {
+        "resourceType": "List",
+        "id": "375af536-9b3b-4de3-b8ce-e63f052cd05c",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "375005",
+                  "display": "Sibling"
+                }
+              ]
+            },
+            "deceasedBoolean": true,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "707224005",
+                      "display": "Severe acute respiratory infection"
+                    }
+                  ]
+                },
+                "outcome": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "876883006",
+                      "display": "Died during operation"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/e49cc550-2872-4303-8606-ebd2d58987aa"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}

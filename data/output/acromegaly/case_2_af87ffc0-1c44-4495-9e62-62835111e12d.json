@@ -1,0 +1,441 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:af87ffc0-1c44-4495-9e62-62835111e12d",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "af87ffc0-1c44-4495-9e62-62835111e12d",
+        "name": [
+          {
+            "family": "Ivanova",
+            "given": [
+              "Sofia"
+            ]
+          }
+        ],
+        "gender": "female",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:10f3d339-97e6-4006-99cf-aeb2818af437",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10f3d339-97e6-4006-99cf-aeb2818af437",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Sofia Ivanova_20251017122039"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/af87ffc0-1c44-4495-9e62-62835111e12d",
+          "display": "Sofia Ivanova"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "subtle facial puffiness and mild fatigue"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:28ee827f-f133-4aea-8c7b-d57e0e6d20a9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "28ee827f-f133-4aea-8c7b-d57e0e6d20a9",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "42788-0",
+              "display": "IGF-IR Ag Tiss Ql ImStn"
+            }
+          ],
+          "text": "IGF-1"
+        },
+        "subject": {
+          "reference": "Patient/af87ffc0-1c44-4495-9e62-62835111e12d"
+        },
+        "encounter": {
+          "reference": "Encounter/10f3d339-97e6-4006-99cf-aeb2818af437"
+        },
+        "effectiveDateTime": "2025-10-17T10:20:39.779321Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/42788-0/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:54c0c20e-d59e-437b-b156-1cd10171685b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "54c0c20e-d59e-437b-b156-1cd10171685b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62856-0",
+              "display": "PhenX - oral glucose tolerance test protocol 141001"
+            }
+          ],
+          "text": "Oral Glucose Tolerance Test"
+        },
+        "subject": {
+          "reference": "Patient/af87ffc0-1c44-4495-9e62-62835111e12d"
+        },
+        "encounter": {
+          "reference": "Encounter/10f3d339-97e6-4006-99cf-aeb2818af437"
+        },
+        "effectiveDateTime": "2025-10-17T10:20:39.984473Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/62856-0/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d732987b-0d8d-414a-9fde-c159b17b6512",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d732987b-0d8d-414a-9fde-c159b17b6512",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "71718006",
+              "display": "Puffiness of skin"
+            }
+          ],
+          "text": "Facial puffiness"
+        },
+        "subject": {
+          "reference": "Patient/af87ffc0-1c44-4495-9e62-62835111e12d"
+        },
+        "encounter": {
+          "reference": "Encounter/10f3d339-97e6-4006-99cf-aeb2818af437"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:41.422720Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/71718006"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9a4d39b0-1715-4920-ba1f-6c74cbd128c7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9a4d39b0-1715-4920-ba1f-6c74cbd128c7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "Fatigue"
+        },
+        "subject": {
+          "reference": "Patient/af87ffc0-1c44-4495-9e62-62835111e12d"
+        },
+        "encounter": {
+          "reference": "Encounter/10f3d339-97e6-4006-99cf-aeb2818af437"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:42.856727Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/84229001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e856b51e-33a0-4b53-b66f-a1dfbe9a21bf",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e856b51e-33a0-4b53-b66f-a1dfbe9a21bf",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260240005",
+              "display": "Interdental"
+            }
+          ],
+          "text": "Increased interdental spacing"
+        },
+        "subject": {
+          "reference": "Patient/af87ffc0-1c44-4495-9e62-62835111e12d"
+        },
+        "encounter": {
+          "reference": "Encounter/10f3d339-97e6-4006-99cf-aeb2818af437"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:44.597616Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/260240005"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:df60232b-855f-4052-89f8-97f060b3ec0f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "df60232b-855f-4052-89f8-97f060b3ec0f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "263899003",
+              "display": "Thickened"
+            }
+          ],
+          "text": "Thickened skin"
+        },
+        "subject": {
+          "reference": "Patient/af87ffc0-1c44-4495-9e62-62835111e12d"
+        },
+        "encounter": {
+          "reference": "Encounter/10f3d339-97e6-4006-99cf-aeb2818af437"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:46.134532Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/263899003"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f5a9faf7-0a56-4546-abcd-92244a729b4a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f5a9faf7-0a56-4546-abcd-92244a729b4a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "90145001",
+              "display": "Frontal bossing"
+            }
+          ],
+          "text": "Frontal bossing"
+        },
+        "subject": {
+          "reference": "Patient/af87ffc0-1c44-4495-9e62-62835111e12d"
+        },
+        "encounter": {
+          "reference": "Encounter/10f3d339-97e6-4006-99cf-aeb2818af437"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:20:47.785854Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/90145001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

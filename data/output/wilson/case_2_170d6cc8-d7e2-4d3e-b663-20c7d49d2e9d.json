@@ -1,0 +1,403 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d",
+        "name": [
+          {
+            "family": "N.",
+            "given": [
+              "Rajesh"
+            ]
+          }
+        ],
+        "gender": "male",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:07a5c062-f067-4a01-8552-22527bdeb695",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "07a5c062-f067-4a01-8552-22527bdeb695",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Rajesh N._20251017122103"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d",
+          "display": "Rajesh N."
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "persistent fatigue and mild hand tremors"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:85b97116-0e16-4149-b6e7-41793881b71f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "85b97116-0e16-4149-b6e7-41793881b71f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69478-6",
+              "display": "AGXT gene Del+Dup Bld/T MLPA"
+            }
+          ],
+          "text": "Alanine Aminotransferase"
+        },
+        "subject": {
+          "reference": "Patient/170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d"
+        },
+        "encounter": {
+          "reference": "Encounter/07a5c062-f067-4a01-8552-22527bdeb695"
+        },
+        "effectiveDateTime": "2025-10-17T10:21:04.063636Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/69478-6/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5a5b46e2-ad12-4138-a9d8-e190cf2ed80d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5a5b46e2-ad12-4138-a9d8-e190cf2ed80d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1917-4",
+              "display": "AST Amn-cCnc"
+            }
+          ],
+          "text": "Aspartate Aminotransferase"
+        },
+        "subject": {
+          "reference": "Patient/170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d"
+        },
+        "encounter": {
+          "reference": "Encounter/07a5c062-f067-4a01-8552-22527bdeb695"
+        },
+        "effectiveDateTime": "2025-10-17T10:21:04.266788Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/1917-4/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:48642df7-e8fa-4cc7-ac99-cdaf457c7b59",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "48642df7-e8fa-4cc7-ac99-cdaf457c7b59",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "102090-8",
+              "display": "Ceruloplasmin 24h Ur-mCnc"
+            }
+          ],
+          "text": "Ceruloplasmin"
+        },
+        "subject": {
+          "reference": "Patient/170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d"
+        },
+        "encounter": {
+          "reference": "Encounter/07a5c062-f067-4a01-8552-22527bdeb695"
+        },
+        "effectiveDateTime": "2025-10-17T10:21:04.472110Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/102090-8/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c60c21eb-83fa-4f09-9467-20b5dc77fd87",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c60c21eb-83fa-4f09-9467-20b5dc77fd87",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "unknown",
+              "display": "24-hour Urinary Copper Excretion"
+            }
+          ],
+          "text": "24-hour Urinary Copper Excretion"
+        },
+        "subject": {
+          "reference": "Patient/170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d"
+        },
+        "encounter": {
+          "reference": "Encounter/07a5c062-f067-4a01-8552-22527bdeb695"
+        },
+        "effectiveDateTime": "2025-10-17T10:21:04.678090Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:369ea8fd-df49-4fe1-8fc3-fc9c7447c131",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "369ea8fd-df49-4fe1-8fc3-fc9c7447c131",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "Fatigue"
+        },
+        "subject": {
+          "reference": "Patient/170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d"
+        },
+        "encounter": {
+          "reference": "Encounter/07a5c062-f067-4a01-8552-22527bdeb695"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:21:06.206436Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/84229001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ca2a1082-7ca6-4b02-ae02-b5a898452529",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ca2a1082-7ca6-4b02-ae02-b5a898452529",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26079004",
+              "display": "Tremor"
+            }
+          ],
+          "text": "Hand Tremor"
+        },
+        "subject": {
+          "reference": "Patient/170d6cc8-d7e2-4d3e-b663-20c7d49d2e9d"
+        },
+        "encounter": {
+          "reference": "Encounter/07a5c062-f067-4a01-8552-22527bdeb695"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:21:07.743331Z"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/26079004"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

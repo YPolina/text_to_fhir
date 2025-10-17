@@ -1,0 +1,542 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:daf1b755-531d-437b-9007-113a1d71902e",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "daf1b755-531d-437b-9007-113a1d71902e",
+        "name": [
+          {
+            "family": "L.",
+            "given": [
+              "Maksim"
+            ]
+          }
+        ],
+        "gender": "male",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Maksim L._20251017122404"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e",
+          "display": "Maksim L."
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "hypotonia and developmental delay"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5c9f8f44-157c-4cc1-89be-9426051cf736",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5c9f8f44-157c-4cc1-89be-9426051cf736",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "80109-2",
+              "display": "Fet Preg risk fact prenat genetic test"
+            }
+          ],
+          "text": "Genetic testing"
+        },
+        "subject": {
+          "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+        },
+        "encounter": {
+          "reference": "Encounter/4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4"
+        },
+        "effectiveDateTime": "2025-10-17T10:24:04.974013Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/80109-2/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5d2d8cd5-20bb-4cad-9bd1-c9f5440e0f2b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5d2d8cd5-20bb-4cad-9bd1-c9f5440e0f2b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "398152000",
+              "display": "Poor muscle tone"
+            }
+          ],
+          "text": "hypotonia"
+        },
+        "subject": {
+          "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+        },
+        "encounter": {
+          "reference": "Encounter/4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:24:06.553549Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/398152000"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ec55767-316c-43e2-99db-e2774866a761",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5ec55767-316c-43e2-99db-e2774866a761",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "248290002",
+              "display": "Developmental delay"
+            }
+          ],
+          "text": "developmental delay"
+        },
+        "subject": {
+          "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+        },
+        "encounter": {
+          "reference": "Encounter/4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:24:08.500913Z"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/248290002"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8c372b6c-f499-4e27-8237-1a633b65ece8",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8c372b6c-f499-4e27-8237-1a633b65ece8",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "764498003",
+              "display": "Suck"
+            }
+          ],
+          "text": "poor suck"
+        },
+        "subject": {
+          "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+        },
+        "encounter": {
+          "reference": "Encounter/4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-17T10:24:10.139355Z"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/764498003"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:566bb8ee-6c25-410a-8114-60c1f38c6fba",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "566bb8ee-6c25-410a-8114-60c1f38c6fba",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92998-4",
+              "display": "Lower segment"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+        },
+        "encounter": {
+          "reference": "Encounter/4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4"
+        },
+        "effectiveDateTime": "2025-10-17T10:24:10.338908Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ],
+            "text": "Low"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e8072149-43b3-4f50-b361-94b215f4b59c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e8072149-43b3-4f50-b361-94b215f4b59c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11753-1",
+              "display": "EFW from AC+HC"
+            }
+          ],
+          "text": "head circumference"
+        },
+        "subject": {
+          "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+        },
+        "encounter": {
+          "reference": "Encounter/4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4"
+        },
+        "effectiveDateTime": "2025-10-17T10:24:10.544340Z",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ],
+            "text": "Low"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1f2f472a-bf76-4be9-90c9-6e50206b879d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1f2f472a-bf76-4be9-90c9-6e50206b879d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "107102-6",
+              "display": "BMI formula"
+            }
+          ],
+          "text": "BMI"
+        },
+        "subject": {
+          "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+        },
+        "encounter": {
+          "reference": "Encounter/4d40e3a0-b7c7-4d0d-915c-a434a86b4fc4"
+        },
+        "effectiveDateTime": "2025-10-17T10:24:10.748584Z",
+        "valueQuantity": {
+          "value": 18.9,
+          "unit": "kg/m²",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m²"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0dd99c72-db57-4aa9-9366-e2ccfbb1a8d2",
+      "resource": {
+        "resourceType": "List",
+        "id": "0dd99c72-db57-4aa9-9366-e2ccfbb1a8d2",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "66839005",
+                  "display": "Father"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "702357000",
+                      "display": "Chromosome 2q37 deletion syndrome"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/daf1b755-531d-437b-9007-113a1d71902e"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}
