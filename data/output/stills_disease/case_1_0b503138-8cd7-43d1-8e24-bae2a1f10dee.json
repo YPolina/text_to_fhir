@@ -3,15 +3,15 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "urn:uuid:7f885d99-5470-493e-818a-18ae67546439",
+      "fullUrl": "urn:uuid:0b503138-8cd7-43d1-8e24-bae2a1f10dee",
       "resource": {
         "resourceType": "Patient",
-        "id": "7f885d99-5470-493e-818a-18ae67546439",
+        "id": "0b503138-8cd7-43d1-8e24-bae2a1f10dee",
         "name": [
           {
-            "family": "N.",
+            "family": "Tarasova",
             "given": [
-              "Irina"
+              "Yulia"
             ]
           }
         ],
@@ -26,14 +26,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:d7310eda-ab63-497b-94af-bb9ae97da1b6",
+      "fullUrl": "urn:uuid:c889ec03-27cc-4883-a8f5-82384074a48e",
       "resource": {
         "resourceType": "Encounter",
-        "id": "d7310eda-ab63-497b-94af-bb9ae97da1b6",
+        "id": "c889ec03-27cc-4883-a8f5-82384074a48e",
         "identifier": [
           {
             "use": "temp",
-            "value": "Encounter_Irina N._20251017122422"
+            "value": "Encounter_Yulia Tarasova_20251017182617"
           }
         ],
         "status": "completed",
@@ -58,15 +58,15 @@
           }
         ],
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439",
-          "display": "Irina N."
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee",
+          "display": "Yulia Tarasova"
         },
         "reason": [
           {
             "value": [
               {
                 "concept": {
-                  "text": "persistent fatigue and mild pruritus over 6 months"
+                  "text": "intermittent high fevers, sore throat, and muscle aches"
                 }
               }
             ]
@@ -79,10 +79,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:b88cc19b-de68-415d-b1c0-0eb633dfb6d9",
+      "fullUrl": "urn:uuid:3e0d0dd3-3b66-4d39-8970-09f7ef7c787d",
       "resource": {
         "resourceType": "Observation",
-        "id": "b88cc19b-de68-415d-b1c0-0eb633dfb6d9",
+        "id": "3e0d0dd3-3b66-4d39-8970-09f7ef7c787d",
         "status": "final",
         "category": [
           {
@@ -100,39 +100,28 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "62898-2",
-              "display": "PhenX - alkaline phosphatase protocol 170101"
+              "code": "unknown",
+              "display": "Leukocytosis"
             }
           ],
-          "text": "Alkaline Phosphatase"
+          "text": "Leukocytosis"
         },
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
         },
         "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
         },
-        "effectiveDateTime": "2025-10-17T10:24:23.038491Z",
-        "valueQuantity": {
-          "value": 280.0,
-          "unit": "U/L",
-          "system": "http://unitsofmeasure.org",
-          "code": "U/L"
-        },
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "H",
-                "display": "High"
+                "code": "A",
+                "display": "Abnormal"
               }
             ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/62898-2/"
           }
         ]
       },
@@ -142,10 +131,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:c0a6619d-41e5-4ff8-9d95-42b0d6ede4e9",
+      "fullUrl": "urn:uuid:11db1fde-d82f-46c4-b00a-578f359098a3",
       "resource": {
         "resourceType": "Observation",
-        "id": "c0a6619d-41e5-4ff8-9d95-42b0d6ede4e9",
+        "id": "11db1fde-d82f-46c4-b00a-578f359098a3",
         "status": "final",
         "category": [
           {
@@ -163,39 +152,33 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "109056-2",
-              "display": "tTG IgG Msmt Ser"
+              "code": "93005-7",
+              "display": "Rapid alt hand move - L+R mean Score"
             }
           ],
-          "text": "Gamma-Glutamyltransferase"
+          "text": "ALT"
         },
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
         },
         "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
         },
-        "effectiveDateTime": "2025-10-17T10:24:23.243505Z",
-        "valueQuantity": {
-          "value": 110.0,
-          "unit": "U/L",
-          "system": "http://unitsofmeasure.org",
-          "code": "U/L"
-        },
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "H",
-                "display": "High"
+                "code": "A",
+                "display": "Abnormal"
               }
             ]
           }
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/109056-2/"
+            "text": "Definition: https://loinc.org/93005-7/"
           }
         ]
       },
@@ -205,10 +188,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:622fd884-c099-409a-a880-366ef4e27d4b",
+      "fullUrl": "urn:uuid:2c9b4f88-0b95-48ff-8907-152d4281e626",
       "resource": {
         "resourceType": "Observation",
-        "id": "622fd884-c099-409a-a880-366ef4e27d4b",
+        "id": "2c9b4f88-0b95-48ff-8907-152d4281e626",
         "status": "final",
         "category": [
           {
@@ -230,15 +213,15 @@
               "display": "AST Amn-cCnc"
             }
           ],
-          "text": "Aspartate Aminotransferase"
+          "text": "AST"
         },
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
         },
         "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
         },
-        "effectiveDateTime": "2025-10-17T10:24:23.447751Z",
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
@@ -262,10 +245,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:7738948c-11d7-4d78-9ed4-cf3515db7418",
+      "fullUrl": "urn:uuid:9725357f-6fe1-4551-969e-d6a978bca59f",
       "resource": {
         "resourceType": "Observation",
-        "id": "7738948c-11d7-4d78-9ed4-cf3515db7418",
+        "id": "9725357f-6fe1-4551-969e-d6a978bca59f",
         "status": "final",
         "category": [
           {
@@ -283,19 +266,25 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "69478-6",
-              "display": "AGXT gene Del+Dup Bld/T MLPA"
+              "code": "102116-1",
+              "display": "ESR1 gene mutation panel"
             }
           ],
-          "text": "Alanine Aminotransferase"
+          "text": "ESR"
         },
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
         },
         "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
         },
-        "effectiveDateTime": "2025-10-17T10:24:23.652574Z",
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 90.0,
+          "unit": "mm/hr",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm/hr"
+        },
         "interpretation": [
           {
             "coding": [
@@ -309,7 +298,7 @@
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/69478-6/"
+            "text": "Definition: https://loinc.org/102116-1/"
           }
         ]
       },
@@ -319,10 +308,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:7ad34001-14c8-4a0c-8038-41bc1f1ae30d",
+      "fullUrl": "urn:uuid:72860a97-7acd-4d6d-85db-c07d7bda6f26",
       "resource": {
         "resourceType": "Observation",
-        "id": "7ad34001-14c8-4a0c-8038-41bc1f1ae30d",
+        "id": "72860a97-7acd-4d6d-85db-c07d7bda6f26",
         "status": "final",
         "category": [
           {
@@ -340,76 +329,25 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "78442-1",
-              "display": "Bilirub Indirect Prt-sCnc"
+              "code": "53048-5",
+              "display": "Ferritin Fld-mCnc"
             }
           ],
-          "text": "Bilirubin"
+          "text": "Ferritin"
         },
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
         },
         "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
         },
-        "effectiveDateTime": "2025-10-17T10:24:23.857647Z",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "N",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/78442-1/"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:340a3dc6-22fc-414d-ad64-538a79350494",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "340a3dc6-22fc-414d-ad64-538a79350494",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "111378-6",
-              "display": "Mitochondria Ab Msmt Ser"
-            }
-          ],
-          "text": "Antimitochondrial Antibody"
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 3000.0,
+          "unit": "ng/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "ng/mL"
         },
-        "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
-        },
-        "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
-        },
-        "effectiveDateTime": "2025-10-17T10:24:23.997577Z",
         "interpretation": [
           {
             "coding": [
@@ -423,7 +361,7 @@
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/111378-6/"
+            "text": "Definition: https://loinc.org/53048-5/"
           }
         ]
       },
@@ -433,67 +371,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:20adef16-b8cb-4167-83bc-c9af262b4fa5",
+      "fullUrl": "urn:uuid:6a8f5749-dfed-4d03-baba-94647d53c6b2",
       "resource": {
         "resourceType": "Observation",
-        "id": "20adef16-b8cb-4167-83bc-c9af262b4fa5",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55849-4",
-              "display": "Cryoglob IgM moncl Ser Ql"
-            }
-          ],
-          "text": "IgM"
-        },
-        "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
-        },
-        "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
-        },
-        "effectiveDateTime": "2025-10-17T10:24:24.133570Z",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "H",
-                "display": "High"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/55849-4/"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:17875748-db31-4542-be66-0a81855ed43d",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "17875748-db31-4542-be66-0a81855ed43d",
+        "id": "6a8f5749-dfed-4d03-baba-94647d53c6b2",
         "status": "final",
         "category": [
           {
@@ -511,25 +392,37 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "84229001",
-              "display": "Fatigue"
+              "code": "386661006",
+              "display": "Fever"
             }
           ],
-          "text": "Fatigue"
+          "text": "Fever"
         },
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
         },
         "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:24:25.808477Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/84229001"
+            "text": "Definition: https://snomed.info/id/386661006"
           }
         ]
       },
@@ -539,10 +432,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a123f070-6eb8-4d64-b5a2-d03d2189dabb",
+      "fullUrl": "urn:uuid:d1a46699-36b0-44dd-88b5-796ed9f39596",
       "resource": {
         "resourceType": "Observation",
-        "id": "a123f070-6eb8-4d64-b5a2-d03d2189dabb",
+        "id": "d1a46699-36b0-44dd-88b5-796ed9f39596",
         "status": "final",
         "category": [
           {
@@ -560,25 +453,25 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "90446007",
-              "display": "Pruritus ani"
+              "code": "267102003",
+              "display": "Sore throat"
             }
           ],
-          "text": "Pruritus"
+          "text": "Sore throat"
         },
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
         },
         "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:24:27.447108Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/90446007"
+            "text": "Definition: https://snomed.info/id/267102003"
           }
         ]
       },
@@ -588,10 +481,108 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:721e3611-1ef8-438d-a8d9-df6b6a24818f",
+      "fullUrl": "urn:uuid:da1b5a76-b57b-4071-9e22-8d024a18a547",
       "resource": {
         "resourceType": "Observation",
-        "id": "721e3611-1ef8-438d-a8d9-df6b6a24818f",
+        "id": "da1b5a76-b57b-4071-9e22-8d024a18a547",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "82991003",
+              "display": "Generalized aches and pains"
+            }
+          ],
+          "text": "Muscle aches"
+        },
+        "subject": {
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
+        },
+        "encounter": {
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/82991003"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e441e944-ee2b-462d-9844-c4ac82bf6f46",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e441e944-ee2b-462d-9844-c4ac82bf6f46",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "89757007",
+              "display": "Macular rash"
+            }
+          ],
+          "text": "Rash"
+        },
+        "subject": {
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
+        },
+        "encounter": {
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/89757007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d0770b23-5906-4d26-bc80-896cdf08ca3a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d0770b23-5906-4d26-bc80-896cdf08ca3a",
         "status": "final",
         "category": [
           {
@@ -609,35 +600,35 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "97057-4",
-              "display": "Body mass index"
+              "code": "8310-5",
+              "display": "Body temperature"
             }
           ],
-          "text": "Body Mass Index"
+          "text": "temperature"
         },
         "subject": {
-          "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+          "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
         },
         "encounter": {
-          "reference": "Encounter/d7310eda-ab63-497b-94af-bb9ae97da1b6"
+          "reference": "Encounter/c889ec03-27cc-4883-a8f5-82384074a48e"
         },
-        "effectiveDateTime": "2025-10-17T10:24:27.590284Z",
+        "effectiveDateTime": "2025-10-16",
         "valueQuantity": {
-          "value": 24.0,
-          "unit": "kg/m²",
+          "value": 39.5,
+          "unit": "°C",
           "system": "http://unitsofmeasure.org",
-          "code": "kg/m²"
+          "code": "°C"
         },
         "interpretation": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "N",
-                "display": "Normal"
+                "code": "A",
+                "display": "Abnormal"
               }
             ],
-            "text": "Normal"
+            "text": "Abnormal"
           }
         ]
       },
@@ -647,17 +638,17 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:1a46255b-6fdf-4256-a2c7-29b18e0b77f0",
+      "fullUrl": "urn:uuid:2dd402a3-e204-4c98-9f57-748bfa5df6a4",
       "resource": {
         "resourceType": "List",
-        "id": "1a46255b-6fdf-4256-a2c7-29b18e0b77f0",
+        "id": "2dd402a3-e204-4c98-9f57-748bfa5df6a4",
         "contained": [
           {
             "resourceType": "FamilyMemberHistory",
             "id": "fmh-1",
             "status": "completed",
             "patient": {
-              "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+              "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
             },
             "relationship": {
               "coding": [
@@ -675,8 +666,8 @@
                   "coding": [
                     {
                       "system": "http://snomed.info/sct",
-                      "code": "82119001",
-                      "display": "Thyroiditis"
+                      "code": "69896004",
+                      "display": "Rheumatoid arthritis"
                     }
                   ]
                 }
@@ -697,7 +688,12 @@
         },
         "subject": [
           {
-            "reference": "Patient/7f885d99-5470-493e-818a-18ae67546439"
+            "reference": "Patient/0b503138-8cd7-43d1-8e24-bae2a1f10dee"
+          }
+        ],
+        "note": [
+          {
+            "text": "family history of autoimmunity"
           }
         ],
         "entry": [

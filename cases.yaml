@@ -1,218 +1,183 @@
 acromegaly:
   - id: case_1
     text: |
-      A 36-year-old man, Andrei Petrov, presents with progressive enlargement of hands and feet,
-      headaches, and excessive sweating over the past two years. He reports needing larger shoes
-      and noticing coarsening of facial features. No visual field defects are reported.
-      Laboratory evaluation shows elevated IGF-1 and impaired fasting glucose.
-      On examination, he is overweight with increased head circumference.
-      Family history is notable for diabetes in his father and hypertension in his mother.
+      A 36-year-old man, Andrei Petrov, presents with progressive enlargement of hands and feet, 
+      headaches, and excessive sweating over the past two years. 
+      He reports needing larger shoes and noticing coarsening of facial features. 
+      No visual field defects are reported. Laboratory evaluation shows elevated IGF-1 and impaired fasting glucose. 
+      On examination, he is overweight with increased head circumference. 
+      Family history is notable for diabetes in his father and hypertension in his mother. 
       He was recently started on metformin for impaired glucose tolerance.
-      Findings are consistent with early-stage acromegaly, likely due to a pituitary adenoma,
-      though imaging is pending.
   - id: case_2
     text: |
-      A 34-year-old woman, Sofia Ivanova, reports subtle facial puffiness and mild fatigue over the past year.
-      Her dentist noted increased interdental spacing, and she recently changed her ring size.
-      She attributes her symptoms to weight gain and stress.
-      Physical examination reveals slightly thickened skin and mild frontal bossing, but no visual changes.
-      IGF-1 is mildly elevated; oral glucose tolerance test shows borderline suppression of GH.
-      MRI is pending. Findings suggest early acromegaly likely due to a microadenoma.
-wilson:
+      A 34-year-old woman, Sofia Ivanova, reports subtle facial puffiness and mild fatigue over the past year. 
+      Her dentist noted increased interdental spacing, and she recently changed her ring size. She attributes her symptoms to weight gain and stress. 
+      Physical examination reveals slightly thickened skin and mild frontal bossing, but no visual changes. IGF-1 is mildly elevated; 
+      oral glucose tolerance test shows borderline suppression of GH.
+wilson_disease:
   - id: case_1
     text: |
       Patient Andrei Ivanov, a 16‑year‑old male, presented with complaints of persistent fatigue and occasional mild abdominal discomfort over the past three months. 
       His family noted a subtle yellowing of the eyes, though he denied pruritus, dark urine, or pale stools. 
-      There was no history of alcohol intake, drug use, or significant past illness. Family history was negative for liver or neurological disease.
-      On examination, Andrei appeared well nourished, with mild scleral icterus. 
+      There was no history of alcohol intake, drug use, or significant past illness. 
+      Family history was negative for liver or neurological disease. On examination, 
+      Andrei appeared well nourished, with mild scleral icterus. 
       The liver edge was palpable 2 cm below the right costal margin, smooth and mildly tender. 
-      No splenomegaly was detected. Neurological examination revealed no tremor, dysarthria, or abnormal movements.
-      Laboratory investigations showed mildly elevated transaminases, with ALT and AST both above the upper limit of normal, and a borderline increase in total bilirubin. 
-      Serum ceruloplasmin was reduced at 12 mg/dL. 
+      No splenomegaly was detected. Neurological examination revealed no tremor, dysarthria, or abnormal movements. 
+      Laboratory investigations showed mildly elevated transaminases, with ALT and AST both above the upper limit of normal, 
+      and a borderline increase in total bilirubin. Serum ceruloplasmin was reduced at 12 mg/dL. 
       A 24‑hour urinary copper excretion was elevated at 150 µg/24h. 
-      Hematological studies showed no evidence of hemolysis.
-      Abdominal ultrasound confirmed mild hepatomegaly with preserved parenchymal echotexture.
+      Hematological studies showed no evidence of hemolysis. 
+      Abdominal ultrasound confirmed mild hepatomegaly with preserved parenchymal echotexture. 
       Ophthalmological slit‑lamp examination revealed early Kayser–Fleischer rings at the corneal periphery.
   - id: case_2
     text: |
-      A 19-year-old university student, Rajesh N., presents with persistent fatigue and mild hand tremors.
-      He has been treated for depression for six months with limited response.
-      Liver function tests show mildly elevated ALT and AST.
-      On slit-lamp exam, a faint Kayser-Fleischer ring is suspected.
-      Ceruloplasmin levels are low-normal; 24-hour urinary copper excretion is slightly elevated.
-      Early Wilson disease with hepatic and neurologic involvement is considered.
-  - id: case_3
-    text: |
-      A 33-year-old woman, Julia R., presents with gradual changes in facial appearance over 18 months, which she attributes to aging.
-      She notes mild swelling of her hands, needing to loosen her wedding ring, and intermittent headaches.
-      On examination, she has slightly coarse facial features and a small increase in interdental spacing.
-      BMI is 26.4 kg/m², BP 138/88 mmHg.
-      IGF-1 is mildly elevated (2.1× ULN), GH is not fully suppressed after an oral glucose tolerance test.
-      MRI of the pituitary shows a 4 mm microadenoma.
-      Family history: maternal hypertension, no endocrine disorders.
-      Findings suggest early acromegaly due to a GH-secreting pituitary microadenoma.
+      A 29-year-old woman, Katerina Dmitrieva, presents with complaints of chronic, subtle tremors in her hands and mild difficulty with coordination over the past year. 
+      She also reports episodes of fatigue and irritability. Her mother had a history of psychiatric illness, 
+      but there was no history of liver disease. Examination shows slight dysarthria and mild rigidity in her upper extremities, though no overt tremors. 
+      The liver is not palpable. Laboratory findings reveal a low serum ceruloplasmin level at 7 mg/dL, 
+      and a 24-hour urinary copper excretion is markedly elevated at 400 µg/24h. Serum bilirubin is normal.
+
 spigfd:
   - id: case_1
     text: |
-      A 10-year-old boy, Mateo L., presents with marked short stature despite normal birth weight and length.
-      His growth velocity over the past two years has fallen below the 3rd percentile.
-      Bone age is delayed by two years.
-      GH stimulation test shows normal GH secretion, but serum IGF-1 is profoundly low.
-      No chronic illness or malnutrition is present.
-      Mild facial hypoplasia and a high-pitched voice are noted.
-      Findings suggest early recognition of SPIGFD.
+      A 28-year-old woman, Mila Markova, presents with persistent low-grade fever, muscle aches, 
+      and unintentional weight loss over the past three months. 
+      She also reports occasional mouth ulcers and erythematous rash over her cheeks. 
+      Her family history is notable for autoimmune disorders, including lupus in her maternal aunt. 
+      On examination, she has a butterfly-shaped rash on her face, mild joint swelling in the hands, and a temperature of 38°C. 
+      Blood work shows elevated ESR, CRP, and a positive ANA test. A skin biopsy from the rash site shows interface dermatitis. 
+      Rheumatology is consulted, and lupus is considered, but further workup, including a negative anti-dsDNA, raises concern for a more rare autoimmune etiology.
   - id: case_2
     text: |
-      A 9-year-old boy, Luka P., is evaluated for poor growth despite normal appetite and nutrition.
-      Height is −3.2 SD, weight −1.5 SD, BMI 16.8 kg/m².
-      Bone age delayed by 2 years.
-      IGF-1 is undetectable (<15 ng/mL), while GH levels are normal and increase appropriately after stimulation.
-      Thyroid and cortisol levels are normal.
-      There is no chronic illness or psychosocial deprivation.
-      Family history shows consanguinity and a paternal uncle of short stature.
-      Early SPIGFD suspected; IGF1R gene sequencing pending.
+      A 24-year-old man, Dmitry Fedorov, presents with a recent onset of recurrent fevers, 
+      headache, and myalgias, accompanied by an increasing joint pain in his knees. 
+      He reports no recent travel but notes a recent increase in skin rashes on his forearms. 
+      Family history includes a mother with rheumatoid arthritis. 
+      On examination, he has low-grade fever, tender joints, and a maculopapular rash along his forearms. 
+      Lab tests reveal mildly elevated inflammatory markers (ESR, CRP), negative rheumatoid factor, and a mild leukocytosis. 
+      A recent joint X-ray shows soft tissue swelling but no erosions. 
+      A skin biopsy from his rash shows features concerning for a rare systemic inflammatory disease.
 stills_disease:
   - id: case_1
     text: |
-      A 28-year-old woman, Katty Purits, presents with intermittent high fevers for three weeks, arthralgia, and sore throat.
-      She reports an evanescent salmon-colored rash that appears with fever spikes.
-      Labs show mild leukocytosis with neutrophil predominance and elevated ferritin.
-      Rheumatoid factor and ANA are negative.
-      Liver enzymes are mildly elevated.
-      Early adult-onset Still’s disease is suspected before joint erosions or organ involvement.
+      A 32-year-old woman, Yulia Tarasova, presents with intermittent high fevers, sore throat, and muscle aches over the past two months. 
+      She denies recent infections, but has noticed a rash that appears on her arms and legs during fever episodes. She has a family history of autoimmunity, 
+      including rheumatoid arthritis in her mother. On examination, she has a temperature of 39.5°C, mild hepatomegaly, 
+      and a salmon-colored maculopapular rash on her upper arms. Blood tests reveal mild leukocytosis, elevated liver enzymes (ALT, AST), 
+      and an ESR of 90 mm/hr. Her ferritin level is elevated at 3000 ng/mL.
   - id: case_2
     text: |
-      A 25-year-old woman, Anna D., presents with daily low-grade fevers (up to 38.5°C) and intermittent joint pain in wrists and knees for six weeks.
-      She describes fleeting salmon-colored rashes on her trunk during febrile episodes.
-      No sore throat or infections reported.
-      Physical exam shows mild wrist tenderness, no effusion.
-      Labs: WBC 13 × 10⁹/L, ESR 55 mm/hr, ferritin 800 ng/mL, ANA and RF negative, liver enzymes mildly elevated.
-      Diagnosis: early adult-onset Still’s disease (pre-arthritis phase).
-fabry:
+      A 26-year-old man, Ivan Sokolov, reports recurring episodes of high fever, sore throat, 
+      and a diffuse rash over the past four months. He also has weight loss and persistent fatigue. 
+      His family history is negative for autoimmune disease. On examination, he has a fever of 40°C, 
+      mild hepatomegaly, and a non-pruritic salmon-colored rash on his torso and limbs. Lab results show elevated ferritin (2800 ng/mL), 
+      mild liver dysfunction (elevated ALT), and an ESR of 80 mm/hr. A biopsy of his skin rash shows nonspecific inflammation.
+fabry_disease:
   - id: case_1
     text: |
-      A 23-year-old man, Daniel P., complains of episodic burning pain in his hands and feet, worse with exercise or heat.
-      He reports decreased sweating and occasional abdominal pain after meals.
-      Physical exam reveals subtle angiokeratomas in the groin area.
-      Serum creatinine is normal, but urinalysis shows trace proteinuria.
-      α-galactosidase A activity is reduced.
-      Early Fabry disease is suspected, prior to renal or cardiac involvement.
+      A 25-year-old man, Nikolai Petrov, presents with episodes of severe burning pain in his hands and feet over the past 18 months. 
+      He also reports progressive hearing loss and corneal opacities. His family history is significant for a maternal uncle who died of kidney failure at age 45. 
+      On examination, Nikolai has bilateral corneal opacities and decreased hearing in both ears. 
+      Sensory testing reveals diminished sensation to pain and temperature in the hands and feet. 
+      Urinary tests show elevated albumin and protein. A skin biopsy shows deposits consistent with glycosphingolipids. 
+
   - id: case_2
     text: |
-      A 22-year-old man, Tomas V., presents with episodic burning pain in hands and feet for the past two years, worsened by heat and exercise.
-      He has occasional abdominal discomfort and diarrhea.
-      Physical exam reveals angiokeratomas over the lower trunk.
-      Serum creatinine normal; urinalysis shows mild proteinuria.
-      ECG: mild LVH pattern.
-      α-Galactosidase A activity reduced at 20% of normal.
-      Genetic testing confirms GLA gene mutation.
-      Family history: maternal uncle died of renal failure at 45.
-      Diagnosis: early Fabry disease (neuropathic and GI phase).
+      A 29-year-old woman, Anya Kuznetsova, reports episodes of sudden, intense pain in her hands and feet, 
+      which last for hours and are associated with mild swelling. She also complains of fatigue and mild dizziness over the past six months. 
+      Her family history is notable for a maternal grandfather with stroke at age 50. On examination, she has bilateral corneal opacities and mild hearing loss. 
+      Blood tests reveal elevated lyso-GL-3 levels, and renal ultrasound shows mild cystic changes in both kidneys.
 hemophagocytic_lymphohistiocytosis:
   - id: case_1
     text: |
-      A 17-year-old girl Nastya Lobark presents with persistent high fever, malaise, and hepatosplenomegaly.
-      She was initially treated for viral mononucleosis but has not improved.
-      CBC shows cytopenias in two lineages; ferritin and triglycerides are elevated.
-      Bone marrow aspiration is inconclusive for hemophagocytosis.
-      NK-cell activity is reduced.
-      Findings raise suspicion for early-stage secondary HLH, possibly triggered by EBV.
+      A 6-year-old boy, Maxim Karpov, presents with persistent fever, rash, and hepatosplenomegaly over the past three weeks. 
+      His parents report that his condition has been progressively worsening, and he now appears pale and lethargic. 
+      Laboratory tests show a markedly elevated ferritin level (6000 ng/mL), and a high lactate dehydrogenase (LDH). 
+      CBC reveals pancytopenia with a low platelet count. An abdominal ultrasound confirms hepatosplenomegaly. 
+      His family history is notable for unexplained deaths of two cousins in infancy.
   - id: case_2
     text: |
-      A 4-year-old boy, Anton S., presents with persistent fever (38.9°C) for 10 days, mild hepatosplenomegaly, and lethargy.
-      Labs: pancytopenia (Hb 9.8 g/dL, WBC 2.8 × 10⁹/L, platelets 90 × 10⁹/L), ferritin 2100 ng/mL, triglycerides 320 mg/dL.
-      Soluble IL-2 receptor elevated.
-      Bone marrow shows rare hemophagocytic histiocytes.
-      Family history: older sibling died at age 2 from “severe infection.”
-      Findings consistent with early familial HLH.
+      A 3-year-old girl, Darya Ivanova, presents with fever, skin rash, and enlarged lymph nodes that have persisted for the past month. 
+      Her parents are concerned about weight loss and lethargy. On examination, she appears pale and is febrile at 38.9°C. 
+      Laboratory findings include elevated ferritin (4500 ng/mL), elevated liver enzymes, and pancytopenia. 
+      A bone marrow biopsy is being performed to confirm the diagnosis of hemophagocytic lymphohistiocytosis. 
+      Family history is significant for a brother who died of a similar condition at age 2.
 homocystinuria:
   - id: case_1
     text: |
-      A 12-year-old boy John Geld presents with long limbs and mild myopia.
-      Teachers note learning difficulties and clumsiness in fine motor tasks.
-      Physical exam shows arachnodactyly and mild scoliosis.
-      Urinalysis reveals elevated homocystine levels.
-      Plasma homocysteine is high with normal methionine.
-      Differential includes Marfan syndrome, but homocystinuria is favored.
-      No thromboembolic events yet—early detection phase.
+      A 15-year-old boy, Kirill Orlov, presents with a history of developmental delay, mild learning difficulties, 
+      and a noticeable increase in height over the past few years. His mother notes that he has been more clumsy and prone to falls. 
+      There is no history of vision problems. On examination, he has long limbs, a high-arched palate, and a marfanoid body habitus. 
+      His gait is unsteady, and he displays mild hyperflexibility. Blood tests show mild hyperhomocysteinemia, 
+      and urine analysis reveals elevated homocystine levels. A genetic test for homocystinuria is pending. 
+      Family history is significant for a maternal cousin with intellectual disabilities and a history of blood clots.
   - id: case_2
     text: |
-      A 12-year-old boy, Peter M., referred for myopia worsening over two years and tall, thin habitus.
-      Height 162 cm (>97th percentile), weight 42 kg, BMI 16.0 kg/m².
-      Mild pes cavus and joint hypermobility noted.
-      Ophthalmology: downward lens subluxation.
-      Plasma homocysteine 120 µmol/L (↑), methionine elevated.
-      Vitamin B12 and folate normal.
-      Family history: cousin with unexplained stroke at 18.
-      Diagnosis: early homocystinuria (CBS deficiency).
-
+      A 10-year-old girl, Anastasia Pavlova, presents with a history of 
+      delayed speech development and frequent episodes of joint dislocation. Her mother is concerned about her vision, as she frequently squints.
+      On examination, the child is tall for her age, with a thin build, long fingers, and a high-arched palate. 
+      A family history reveals a brother with a history of deep vein thrombosis at a young age. 
+      Blood tests reveal elevated homocysteine levels, and a urinalysis shows increased homocystine.
 muckle_wells:
   - id: case_1
     text: |
-      A 22-year-old woman Lara Kro presents with recurrent episodes of low-grade fever, urticarial rash, and joint pain since adolescence.
-      Symptoms last 1–2 days and resolve spontaneously.
-      She has progressive hearing difficulty but no family history of autoimmune disease.
-      CRP and SAA are intermittently elevated between attacks.
-      Genetic testing for NLRP3 mutation is pending.
-      Early Muckle-Wells syndrome (a cryopyrin-associated periodic syndrome) is suspected.
+      A 32-year-old woman, Svetlana Ivanova, presents with recurrent episodes of fever, arthralgia, and a maculopapular rash on her forearms. 
+      These symptoms have been occurring intermittently for the last 18 months. She also has occasional eye redness and difficulty with joint stiffness in her knees. 
+      Family history is notable for a maternal cousin diagnosed with a rare systemic autoinflammatory disorder. 
+      On examination, she has a temperature of 38.5°C, a mild rash, and mild swelling in both knees. 
+      Laboratory tests show an elevated ESR and CRP.
   - id: case_2
     text: |
-      A 15-year-old girl, Elena F., has recurrent low-grade fevers, urticarial rash, and arthralgia since childhood.
-      Rash flares after cold exposure and lasts several hours.
-      CRP persistently elevated (20 mg/L).
-      Audiometry shows mild sensorineural hearing loss.
-      No family members with autoimmune disease, but mother reports similar childhood rashes.
-      Genetic testing reveals NLRP3 mutation.
-      Diagnosis: early Muckle–Wells syndrome, pre-amyloidosis phase.
+      A 28-year-old man, Alexander Zaitsev, presents with recurrent episodes of fever, chills, and pain in his ankles and wrists over the past year.
+      These episodes last for several days and are accompanied by a migratory rash on his legs. 
+      He reports that these symptoms are most pronounced after stress or infection. 
+      His family history reveals a maternal aunt with a history of a similar pattern of recurrent fevers and joint pain, 
+      though she was never formally diagnosed. Laboratory investigations show elevated inflammatory markers (CRP, ESR).
 paroxysmal_nocturnal_hemoglobinuria:
   - id: case_1
     text: |
-      A 30-year-old man Daniel Krek presents with episodes of dark urine in the morning and increasing fatigue.
-      He denies flank pain or infections.
-      CBC shows mild anemia and elevated LDH; bilirubin is unconjugated.
-      Reticulocyte count is high, haptoglobin is low.
-      Flow cytometry reveals partial deficiency of CD55 and CD59 on red cells.
-      Findings indicate early PNH before thrombotic or marrow failure complications.
+      A 25-year-old man, Oleg Melnikov, presents with episodes of dark-colored urine in the morning, 
+      particularly after sleep, along with fatigue and pallor. 
+      He reports that these episodes have been occurring every few weeks for the past six months. 
+      On examination, he is pale but does not have splenomegaly or hepatomegaly. 
+      He denies any history of hematuria or significant bleeding. 
+      His laboratory results reveal a low hemoglobin level (anemia), elevated reticulocyte count, and low haptoglobin.
   - id: case_2
     text: |
-      A 29-year-old man, Dmitri K., presents with morning dark urine and mild fatigue for three months.
-      No history of infection or drug use.
-      Physical exam normal, no splenomegaly.
-      Labs: Hb 11.2 g/dL, reticulocytes 4%, LDH elevated (900 U/L), haptoglobin undetectable, bilirubin mildly increased (2.2 mg/dL).
-      Flow cytometry shows deficiency of CD55 and CD59 on RBCs.
-      Diagnosis: early PNH with compensated intravascular hemolysis.
+      A 30-year-old woman, Irina Kovalchuk, reports increasing fatigue and intermittent dark urine, 
+      which has been especially noticeable upon waking in the morning for the last four months. 
+      She has also noticed mild shortness of breath after physical exertion. 
+      Family history is notable for a cousin with a history of unexplained anemia. 
+      On physical examination, she appears pale and has mild conjunctival pallor. 
+      Blood tests show anemia with an elevated LDH and a low platelet count.
 prader_willi:
   - id: case_1
     text: |
-      A 2-year-old boy Lomard Kroks presents with delayed motor milestones and persistent hypotonia.
-      He has poor muscle tone since birth but has recently developed increased appetite and weight gain.
-      Facial features show narrow bifrontal diameter and almond-shaped eyes.
-      Genetic testing for chromosome 15q11–q13 deletion is pending.
-      Findings suggest early-stage Prader-Willi syndrome before full obesity and behavioral features appear.
+      A 4-year-old boy, Pavel Sokolov, presents with poor growth, mild developmental delay, 
+      and an insatiable appetite over the past year. His parents report that he is constantly hungry 
+      and has recently gained weight rapidly despite relatively normal food intake. His motor skills are slightly delayed, 
+      and he has mild hypotonia. Family history is negative for genetic disorders. On examination, 
+      Pavel is overweight for his age, with a BMI above the 95th percentile, but height is below average.
   - id: case_2
     text: |
-      A 2-year-old boy, Maksim L., evaluated for hypotonia and developmental delay.
-      Parents report late milestones (sat at 15 months) and poor suck as an infant, now improved appetite and rapid weight gain.
-      Height and head circumference below average; BMI 18.9 kg/m².
-      Facial features: almond-shaped eyes, narrow forehead.
-      Genetic testing shows deletion on paternal chromosome 15q11-q13.
-      Diagnosis: early Prader–Willi syndrome, pre-obesity phase.
+      A 3-year-old girl, Elena Fedorova, is brought in by her parents for evaluation of developmental delay and obesity. 
+      Elena was born full-term but has been slower than her peers to reach milestones such as walking and talking. 
+      Her parents report that she is always hungry, and they are concerned about her increased food-seeking behavior. 
+      On physical examination, Elena is overweight, has a short stature, and exhibits mild hypotonia.
 primary_biliary_cholangitis:
   - id: case_1
     text: |
-      A 42-year-old woman Patricia Ford with mild fatigue and pruritus for six months presents for evaluation.
-      She has no history of liver disease or alcohol use.
-      Physical exam is unremarkable.
-      Labs show elevated alkaline phosphatase and mildly elevated GGT, with normal bilirubin.
-      AMA (anti-mitochondrial antibody) is positive.
-      Imaging shows no biliary obstruction.
-      Findings indicate early PBC before cirrhosis or xanthomas develop.
+      A 40-year-old woman, Maria Golubeva, presents with complaints of fatigue, pruritus, 
+      and right upper quadrant discomfort that has been worsening over the past 6 months. 
+      She denies jaundice but notes a history of intermittent dark urine and pale stools. 
+      Family history is positive for autoimmune thyroid disease in her mother. 
+      On physical examination, she has xanthomas on her eyelids and a slightly enlarged liver. 
+      Blood tests show elevated alkaline phosphatase and ALT, and a positive anti-mitochondrial antibody (AMA) test.
   - id: case_2
     text: |
-      A 42-year-old woman, Irina N., presents with persistent fatigue and mild pruritus over 6 months.
-      Physical exam unremarkable; BMI 24 kg/m².
-      Labs: ALP 280 U/L, GGT 110 U/L, AST and ALT mildly elevated, bilirubin normal.
-      AMA positive (1:160), IgM elevated.
-      Ultrasound: normal biliary tree and liver texture.
-      Family history: mother with thyroiditis.
-      Diagnosis: early-stage PBC (asymptomatic cholestatic phase).
+      A 45-year-old man, Viktor Ivanov, presents with complaints of increasing fatigue and itchy skin over 
+      the past 8 months. He also reports having yellowish eyes. 
+      His family history includes a maternal aunt with a history of autoimmune liver disease. 
+      On examination, he has scleral icterus and xanthomas on his elbows. 
+      Blood tests reveal elevated bilirubin, alkaline phosphatase, and GGT, and a positive AMA test.

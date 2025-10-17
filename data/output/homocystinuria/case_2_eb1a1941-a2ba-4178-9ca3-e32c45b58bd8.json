@@ -3,15 +3,15 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "urn:uuid:3036b139-c408-42ec-a83e-9505c0dee5e1",
+      "fullUrl": "urn:uuid:eb1a1941-a2ba-4178-9ca3-e32c45b58bd8",
       "resource": {
         "resourceType": "Patient",
-        "id": "3036b139-c408-42ec-a83e-9505c0dee5e1",
+        "id": "eb1a1941-a2ba-4178-9ca3-e32c45b58bd8",
         "name": [
           {
-            "family": "F.",
+            "family": "Pavlova",
             "given": [
-              "Elena"
+              "Anastasia"
             ]
           }
         ],
@@ -26,14 +26,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:3315889c-0960-4590-9a3d-3c4f112ee0a6",
+      "fullUrl": "urn:uuid:b215fd63-c684-48da-9fb2-959ff5887947",
       "resource": {
         "resourceType": "Encounter",
-        "id": "3315889c-0960-4590-9a3d-3c4f112ee0a6",
+        "id": "b215fd63-c684-48da-9fb2-959ff5887947",
         "identifier": [
           {
             "use": "temp",
-            "value": "Encounter_Elena F._20251017122321"
+            "value": "Encounter_Anastasia Pavlova_20251017182828"
           }
         ],
         "status": "completed",
@@ -58,15 +58,15 @@
           }
         ],
         "subject": {
-          "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1",
-          "display": "Elena F."
+          "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8",
+          "display": "Anastasia Pavlova"
         },
         "reason": [
           {
             "value": [
               {
                 "concept": {
-                  "text": "recurrent low-grade fevers, urticarial rash, and arthralgia"
+                  "text": "delayed speech development and frequent episodes of joint dislocation"
                 }
               }
             ]
@@ -79,10 +79,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:09c4f0d5-375e-4986-8218-660bb97156e9",
+      "fullUrl": "urn:uuid:3446bf4f-cc4f-4d6c-8b85-55f9e3fde629",
       "resource": {
         "resourceType": "Observation",
-        "id": "09c4f0d5-375e-4986-8218-660bb97156e9",
+        "id": "3446bf4f-cc4f-4d6c-8b85-55f9e3fde629",
         "status": "final",
         "category": [
           {
@@ -100,25 +100,19 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "35648-5",
-              "display": "CRP Quint SerPl Qn HS"
+              "code": "2428-1",
+              "display": "Hcys SerPl-mCnc"
             }
           ],
-          "text": "C-Reactive Protein (CRP)"
+          "text": "Homocysteine"
         },
         "subject": {
-          "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
+          "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
         },
         "encounter": {
-          "reference": "Encounter/3315889c-0960-4590-9a3d-3c4f112ee0a6"
+          "reference": "Encounter/b215fd63-c684-48da-9fb2-959ff5887947"
         },
-        "effectiveDateTime": "2025-10-17T10:23:22.115091Z",
-        "valueQuantity": {
-          "value": 20.0,
-          "unit": "mg/L",
-          "system": "http://unitsofmeasure.org",
-          "code": "mg/L"
-        },
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
@@ -132,7 +126,7 @@
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/35648-5/"
+            "text": "Definition: https://loinc.org/2428-1/"
           }
         ]
       },
@@ -142,10 +136,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:77afc6e6-2b04-45cd-bbb6-01916f022b9c",
+      "fullUrl": "urn:uuid:65085e9d-9bbd-4b25-b126-28fad930678b",
       "resource": {
         "resourceType": "Observation",
-        "id": "77afc6e6-2b04-45cd-bbb6-01916f022b9c",
+        "id": "65085e9d-9bbd-4b25-b126-28fad930678b",
         "status": "final",
         "category": [
           {
@@ -163,19 +157,19 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "89015-2",
-              "display": "Pure tone threshold audiometry panel"
+              "code": "18729-4",
+              "display": "Urinalysis studies"
             }
           ],
-          "text": "Audiometry"
+          "text": "Urinalysis"
         },
         "subject": {
-          "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
+          "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
         },
         "encounter": {
-          "reference": "Encounter/3315889c-0960-4590-9a3d-3c4f112ee0a6"
+          "reference": "Encounter/b215fd63-c684-48da-9fb2-959ff5887947"
         },
-        "effectiveDateTime": "2025-10-17T10:23:22.319731Z",
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
@@ -189,7 +183,7 @@
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/89015-2/"
+            "text": "Definition: https://loinc.org/18729-4/"
           }
         ]
       },
@@ -199,54 +193,195 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:5f42ea21-a933-4220-a80b-81afccae52f9",
+      "fullUrl": "urn:uuid:0d97d53d-d035-4985-a0aa-0f1d708d04ca",
       "resource": {
         "resourceType": "Observation",
-        "id": "5f42ea21-a933-4220-a80b-81afccae52f9",
+        "id": "0d97d53d-d035-4985-a0aa-0f1d708d04ca",
         "status": "final",
         "category": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
+                "code": "exam",
+                "display": "Exam"
               }
             ],
-            "text": "Laboratory"
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "425067005",
+              "display": "Speech and language development finding"
+            }
+          ],
+          "text": "Delayed speech development"
+        },
+        "subject": {
+          "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
+        },
+        "encounter": {
+          "reference": "Encounter/b215fd63-c684-48da-9fb2-959ff5887947"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/425067005"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:62671c45-dbec-421e-a455-24620b405d78",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "62671c45-dbec-421e-a455-24620b405d78",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "108367008",
+              "display": "Dislocation of joint"
+            }
+          ],
+          "text": "Joint dislocation"
+        },
+        "subject": {
+          "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
+        },
+        "encounter": {
+          "reference": "Encounter/b215fd63-c684-48da-9fb2-959ff5887947"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/108367008"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b5cc7f7d-10f9-4221-a1f3-fbd84ff4f133",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b5cc7f7d-10f9-4221-a1f3-fbd84ff4f133",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Squinting"
+        },
+        "subject": {
+          "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
+        },
+        "encounter": {
+          "reference": "Encounter/b215fd63-c684-48da-9fb2-959ff5887947"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/None"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2a4fb6ec-562a-4cc2-a59d-8ffe896707ba",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2a4fb6ec-562a-4cc2-a59d-8ffe896707ba",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
           }
         ],
         "code": {
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "80109-2",
-              "display": "Fet Preg risk fact prenat genetic test"
+              "code": "92998-4",
+              "display": "Lower segment"
             }
           ],
-          "text": "Genetic testing"
+          "text": "Height"
         },
         "subject": {
-          "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
+          "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
         },
         "encounter": {
-          "reference": "Encounter/3315889c-0960-4590-9a3d-3c4f112ee0a6"
+          "reference": "Encounter/b215fd63-c684-48da-9fb2-959ff5887947"
         },
-        "effectiveDateTime": "2025-10-17T10:23:22.525041Z",
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "A",
-                "display": "Abnormal"
+                "code": "H",
+                "display": "High"
               }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/80109-2/"
+            ],
+            "text": "High"
           }
         ]
       },
@@ -256,58 +391,50 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:1010bc56-9d3c-48be-8629-09d1da9c94f8",
+      "fullUrl": "urn:uuid:f3d0e580-d97d-4df5-a79d-2666cc3007bf",
       "resource": {
         "resourceType": "Observation",
-        "id": "1010bc56-9d3c-48be-8629-09d1da9c94f8",
+        "id": "f3d0e580-d97d-4df5-a79d-2666cc3007bf",
         "status": "final",
         "category": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam",
-                "display": "Exam"
+                "code": "vital-signs",
+                "display": "Vital Signs"
               }
             ],
-            "text": "Exam"
+            "text": "Vital Signs"
           }
         ],
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "402656007",
-              "display": "Urticarial vasculitis"
+              "system": "http://loinc.org",
+              "code": "97057-4",
+              "display": "Body mass index"
             }
           ],
-          "text": "Urticarial rash"
+          "text": "Body mass index"
         },
         "subject": {
-          "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
+          "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
         },
         "encounter": {
-          "reference": "Encounter/3315889c-0960-4590-9a3d-3c4f112ee0a6"
+          "reference": "Encounter/b215fd63-c684-48da-9fb2-959ff5887947"
         },
-        "effectivePeriod": {
-          "start": "2025-10-17T10:23:23.972361Z"
-        },
-        "valueBoolean": true,
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "A",
-                "display": "Abnormal"
+                "code": "L",
+                "display": "Low"
               }
             ],
-            "text": "Abnormal"
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://snomed.info/id/402656007"
+            "text": "Low"
           }
         ]
       },
@@ -317,207 +444,24 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:f9461a8c-dc56-4343-a7c8-1b1a5b216b17",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "f9461a8c-dc56-4343-a7c8-1b1a5b216b17",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam",
-                "display": "Exam"
-              }
-            ],
-            "text": "Exam"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "277138006",
-              "display": "Rubella arthralgia"
-            }
-          ],
-          "text": "Arthralgia"
-        },
-        "subject": {
-          "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
-        },
-        "encounter": {
-          "reference": "Encounter/3315889c-0960-4590-9a3d-3c4f112ee0a6"
-        },
-        "effectivePeriod": {
-          "start": "2025-10-17T10:23:25.807537Z"
-        },
-        "valueBoolean": true,
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "A",
-                "display": "Abnormal"
-              }
-            ],
-            "text": "Abnormal"
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://snomed.info/id/277138006"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:2173b2cf-f1ec-43b9-9487-20bd21e92615",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "2173b2cf-f1ec-43b9-9487-20bd21e92615",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam",
-                "display": "Exam"
-              }
-            ],
-            "text": "Exam"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "369766003",
-              "display": "Low grade (lymphoma)"
-            }
-          ],
-          "text": "Low-grade fever"
-        },
-        "subject": {
-          "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
-        },
-        "encounter": {
-          "reference": "Encounter/3315889c-0960-4590-9a3d-3c4f112ee0a6"
-        },
-        "effectivePeriod": {
-          "start": "2025-10-17T10:23:27.433823Z"
-        },
-        "valueBoolean": true,
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "A",
-                "display": "Abnormal"
-              }
-            ],
-            "text": "Abnormal"
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://snomed.info/id/369766003"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:5956aa2a-1dc7-4c80-9eb3-7d1abf6d385d",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "5956aa2a-1dc7-4c80-9eb3-7d1abf6d385d",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam",
-                "display": "Exam"
-              }
-            ],
-            "text": "Exam"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "60700002",
-              "display": "Sensorineural hearing loss"
-            }
-          ],
-          "text": "Sensorineural hearing loss"
-        },
-        "subject": {
-          "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
-        },
-        "encounter": {
-          "reference": "Encounter/3315889c-0960-4590-9a3d-3c4f112ee0a6"
-        },
-        "effectivePeriod": {
-          "start": "2025-10-17T10:23:29.069696Z"
-        },
-        "valueBoolean": true,
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "A",
-                "display": "Abnormal"
-              }
-            ],
-            "text": "Abnormal"
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://snomed.info/id/60700002"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:780424c5-c8d6-449a-866b-506f0ad9d935",
+      "fullUrl": "urn:uuid:5c50dce9-b5d5-4c31-947e-bdc4b606a294",
       "resource": {
         "resourceType": "List",
-        "id": "780424c5-c8d6-449a-866b-506f0ad9d935",
+        "id": "5c50dce9-b5d5-4c31-947e-bdc4b606a294",
         "contained": [
           {
             "resourceType": "FamilyMemberHistory",
             "id": "fmh-1",
             "status": "completed",
             "patient": {
-              "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
+              "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
             },
             "relationship": {
               "coding": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "72705000",
-                  "display": "Mother"
+                  "code": "70924004",
+                  "display": "Brother"
                 }
               ]
             },
@@ -528,8 +472,8 @@
                   "coding": [
                     {
                       "system": "http://snomed.info/sct",
-                      "code": "255398004",
-                      "display": "Childhood"
+                      "code": "432805000",
+                      "display": "Suspected deep vein thrombosis"
                     }
                   ]
                 }
@@ -550,12 +494,7 @@
         },
         "subject": [
           {
-            "reference": "Patient/3036b139-c408-42ec-a83e-9505c0dee5e1"
-          }
-        ],
-        "note": [
-          {
-            "text": "No family members with autoimmune disease"
+            "reference": "Patient/eb1a1941-a2ba-4178-9ca3-e32c45b58bd8"
           }
         ],
         "entry": [

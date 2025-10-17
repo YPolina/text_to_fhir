@@ -7,7 +7,7 @@ class FamilyCondition(BaseModel):
 
 class FamilyMember(BaseModel):
     relationship: str
-    deceased: bool = False
+    deceased: Optional[bool] = False
     conditions: List[FamilyCondition] = Field(default_factory=list)
 
 class FamilyHistorySchema(BaseModel):

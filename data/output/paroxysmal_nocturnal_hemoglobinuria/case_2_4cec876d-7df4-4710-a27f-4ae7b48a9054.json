@@ -3,15 +3,15 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "urn:uuid:5ff8d02f-aac1-42c7-a12b-d08577315ea8",
+      "fullUrl": "urn:uuid:4cec876d-7df4-4710-a27f-4ae7b48a9054",
       "resource": {
         "resourceType": "Patient",
-        "id": "5ff8d02f-aac1-42c7-a12b-d08577315ea8",
+        "id": "4cec876d-7df4-4710-a27f-4ae7b48a9054",
         "name": [
           {
-            "family": "Ford",
+            "family": "Kovalchuk",
             "given": [
-              "Patricia"
+              "Irina"
             ]
           }
         ],
@@ -26,14 +26,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:306bd0f8-fde7-407b-83d1-ab4414be10c3",
+      "fullUrl": "urn:uuid:876efe67-d307-4814-b095-f55b360f789d",
       "resource": {
         "resourceType": "Encounter",
-        "id": "306bd0f8-fde7-407b-83d1-ab4414be10c3",
+        "id": "876efe67-d307-4814-b095-f55b360f789d",
         "identifier": [
           {
             "use": "temp",
-            "value": "Encounter_Patricia Ford_20251017122415"
+            "value": "Encounter_Irina Kovalchuk_20251017182927"
           }
         ],
         "status": "completed",
@@ -58,15 +58,15 @@
           }
         ],
         "subject": {
-          "reference": "Patient/5ff8d02f-aac1-42c7-a12b-d08577315ea8",
-          "display": "Patricia Ford"
+          "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054",
+          "display": "Irina Kovalchuk"
         },
         "reason": [
           {
             "value": [
               {
                 "concept": {
-                  "text": "mild fatigue and pruritus for six months"
+                  "text": "increasing fatigue and intermittent dark urine"
                 }
               }
             ]
@@ -79,10 +79,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:010a9a2c-e848-4ce4-886b-7de9a4ea8c30",
+      "fullUrl": "urn:uuid:27d77c19-8d1d-4430-9fd9-5b36d375301f",
       "resource": {
         "resourceType": "Observation",
-        "id": "010a9a2c-e848-4ce4-886b-7de9a4ea8c30",
+        "id": "27d77c19-8d1d-4430-9fd9-5b36d375301f",
         "status": "final",
         "category": [
           {
@@ -100,19 +100,19 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "62898-2",
-              "display": "PhenX - alkaline phosphatase protocol 170101"
+              "code": "2546-0",
+              "display": "LDH4 SerPl-cCnc"
             }
           ],
-          "text": "Alkaline Phosphatase"
+          "text": "LDH"
         },
         "subject": {
-          "reference": "Patient/5ff8d02f-aac1-42c7-a12b-d08577315ea8"
+          "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054"
         },
         "encounter": {
-          "reference": "Encounter/306bd0f8-fde7-407b-83d1-ab4414be10c3"
+          "reference": "Encounter/876efe67-d307-4814-b095-f55b360f789d"
         },
-        "effectiveDateTime": "2025-10-17T10:24:16.074415Z",
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
@@ -126,7 +126,7 @@
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/62898-2/"
+            "text": "Definition: https://loinc.org/2546-0/"
           }
         ]
       },
@@ -136,10 +136,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:546bb063-1507-405c-99fb-159e00a045d8",
+      "fullUrl": "urn:uuid:607df436-3f43-4ce2-891b-647ad3b34f7a",
       "resource": {
         "resourceType": "Observation",
-        "id": "546bb063-1507-405c-99fb-159e00a045d8",
+        "id": "607df436-3f43-4ce2-891b-647ad3b34f7a",
         "status": "final",
         "category": [
           {
@@ -157,33 +157,33 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "100741-8",
-              "display": "GGT Macro SerPl Ql"
+              "code": "74775-8",
+              "display": "Platelet # PRP Auto"
             }
           ],
-          "text": "GGT"
+          "text": "Platelet count"
         },
         "subject": {
-          "reference": "Patient/5ff8d02f-aac1-42c7-a12b-d08577315ea8"
+          "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054"
         },
         "encounter": {
-          "reference": "Encounter/306bd0f8-fde7-407b-83d1-ab4414be10c3"
+          "reference": "Encounter/876efe67-d307-4814-b095-f55b360f789d"
         },
-        "effectiveDateTime": "2025-10-17T10:24:16.281056Z",
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "H",
-                "display": "High"
+                "code": "L",
+                "display": "Low"
               }
             ]
           }
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/100741-8/"
+            "text": "Definition: https://loinc.org/74775-8/"
           }
         ]
       },
@@ -193,124 +193,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:913d3192-f2d4-47d3-bccc-13a5665b16b6",
+      "fullUrl": "urn:uuid:3ef13efd-d81a-4aa5-ab89-6495830e0432",
       "resource": {
         "resourceType": "Observation",
-        "id": "913d3192-f2d4-47d3-bccc-13a5665b16b6",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "78442-1",
-              "display": "Bilirub Indirect Prt-sCnc"
-            }
-          ],
-          "text": "Bilirubin"
-        },
-        "subject": {
-          "reference": "Patient/5ff8d02f-aac1-42c7-a12b-d08577315ea8"
-        },
-        "encounter": {
-          "reference": "Encounter/306bd0f8-fde7-407b-83d1-ab4414be10c3"
-        },
-        "effectiveDateTime": "2025-10-17T10:24:16.484415Z",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "N",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/78442-1/"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:25f9eb11-d52c-4a27-97d4-e031f6389630",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "25f9eb11-d52c-4a27-97d4-e031f6389630",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "111022-0",
-              "display": "Mitochondria M2 Ab Msmt Ser"
-            }
-          ],
-          "text": "AMA (Anti-Mitochondrial Antibody)"
-        },
-        "subject": {
-          "reference": "Patient/5ff8d02f-aac1-42c7-a12b-d08577315ea8"
-        },
-        "encounter": {
-          "reference": "Encounter/306bd0f8-fde7-407b-83d1-ab4414be10c3"
-        },
-        "effectiveDateTime": "2025-10-17T10:24:16.688851Z",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "H",
-                "display": "High"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/111022-0/"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:954f9273-3ad1-456c-b3b2-256a42aa3973",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "954f9273-3ad1-456c-b3b2-256a42aa3973",
+        "id": "3ef13efd-d81a-4aa5-ab89-6495830e0432",
         "status": "final",
         "category": [
           {
@@ -335,13 +221,13 @@
           "text": "Fatigue"
         },
         "subject": {
-          "reference": "Patient/5ff8d02f-aac1-42c7-a12b-d08577315ea8"
+          "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054"
         },
         "encounter": {
-          "reference": "Encounter/306bd0f8-fde7-407b-83d1-ab4414be10c3"
+          "reference": "Encounter/876efe67-d307-4814-b095-f55b360f789d"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:24:18.231045Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
@@ -356,10 +242,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:ba18a114-fe8c-4ec5-a9cc-435f70d12ca4",
+      "fullUrl": "urn:uuid:9611eb40-9d33-4c7a-8454-259d9ce74820",
       "resource": {
         "resourceType": "Observation",
-        "id": "ba18a114-fe8c-4ec5-a9cc-435f70d12ca4",
+        "id": "9611eb40-9d33-4c7a-8454-259d9ce74820",
         "status": "final",
         "category": [
           {
@@ -377,31 +263,200 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "90446007",
-              "display": "Pruritus ani"
+              "code": "39575007",
+              "display": "Urine looks dark"
             }
           ],
-          "text": "Pruritus"
+          "text": "Dark urine"
         },
         "subject": {
-          "reference": "Patient/5ff8d02f-aac1-42c7-a12b-d08577315ea8"
+          "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054"
         },
         "encounter": {
-          "reference": "Encounter/306bd0f8-fde7-407b-83d1-ab4414be10c3"
+          "reference": "Encounter/876efe67-d307-4814-b095-f55b360f789d"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:24:19.868113Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/90446007"
+            "text": "Definition: https://snomed.info/id/39575007"
           }
         ]
       },
       "request": {
         "method": "POST",
         "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0535bc06-af78-4838-aeef-0fd9fce0c661",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0535bc06-af78-4838-aeef-0fd9fce0c661",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "135833008",
+              "display": "CLASP shortness of breath score"
+            }
+          ],
+          "text": "Shortness of breath"
+        },
+        "subject": {
+          "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054"
+        },
+        "encounter": {
+          "reference": "Encounter/876efe67-d307-4814-b095-f55b360f789d"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/135833008"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5856ba4b-1ea9-4ea7-a311-9a4422f5f9c9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5856ba4b-1ea9-4ea7-a311-9a4422f5f9c9",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "unknown",
+              "display": "Pallor"
+            }
+          ],
+          "text": "Pallor"
+        },
+        "subject": {
+          "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054"
+        },
+        "encounter": {
+          "reference": "Encounter/876efe67-d307-4814-b095-f55b360f789d"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fe772e35-f540-4d4a-9020-ed033f781405",
+      "resource": {
+        "resourceType": "List",
+        "id": "fe772e35-f540-4d4a-9020-ed033f781405",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "55538000",
+                  "display": "Cousin"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "237145004",
+                      "display": "Unexplained infertility"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/4cec876d-7df4-4710-a27f-4ae7b48a9054"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
       }
     }
   ]

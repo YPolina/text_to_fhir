@@ -569,7 +569,7 @@ def medication_to_fhir(
 def encounter_to_fhir(
         data: dict,
         patient_id: str,
-        patient_name: Optional[str] = None
+        patient_name: Optional[str] = None,
 ) -> tuple[Encounter, int]:
     """
     Convert LLM data into a FHIR Encounter resource.
@@ -658,50 +658,74 @@ def to_fhir_bundle(
     )
 
     # ENCOUNTER
-    encounter_resource, encounter_id = encounter_to_fhir(
-        llm_output["encounter"], patient_id, patient_name
-    )
-    entries.append(
-        BundleEntry(
-            fullUrl=f"urn:uuid:{encounter_id}",
-            resource=encounter_resource,
-            request=BundleEntryRequest(method="POST", url="Encounter")
+    for encounter_data in llm_output.get("encounters", []):
+        date = encounter_data["encounter_date"]
+        encounter_resource, encounter_id = encounter_to_fhir(
+            encounter_data,
+            patient_id=patient_id,
+            patient_name=patient_name
         )
-    )
 
-    # OBSERVATION
-    if "observation" in llm_output:
-        obs_data = llm_output["observation"]
+        entries.append(
+            BundleEntry(
+                fullUrl=f"urn:uuid:{encounter_id}",
+                resource=encounter_resource,
+                request=BundleEntryRequest(method="POST", url="Encounter")
+            )
+        )
 
+        #observations
+        obs_data = encounter_data.get("observation", {})
+        #lab
         for lab in obs_data.get("laboratory", []):
-            obs = lab_observation_to_fhir(lab, patient_id, encounter_id)
-            entries.append(
-                BundleEntry(
-                    fullUrl=f"urn:uuid:{obs.id}",
-                    resource=obs,
-                    request=BundleEntryRequest(method="POST", url="Observation")
-                )
-            )
+            obs = lab_observation_to_fhir(
+                lab,
+                patient_id,
+                encounter_id,
+                date)
+            entries.append(BundleEntry(
+                fullUrl=f"urn:uuid:{obs.id}",
+                resource=obs,
+                request=BundleEntryRequest(method="POST", url="Observation"),
 
+            ))
+        #symptom
         for sym in obs_data.get("symptom", []):
-            obs = symptom_observation_to_fhir(sym, patient_id, encounter_id)
-            entries.append(
-                BundleEntry(
-                    fullUrl=f"urn:uuid:{obs.id}",
-                    resource=obs,
-                    request=BundleEntryRequest(method="POST", url="Observation")
-                )
-            )
-
+            obs = symptom_observation_to_fhir(
+                sym,
+                patient_id,
+                encounter_id,
+                date)
+            entries.append(BundleEntry(
+                fullUrl=f"urn:uuid:{obs.id}",
+                resource=obs,
+                request=BundleEntryRequest(method="POST", url="Observation")
+            ))
+        #vital signs
         for vital in obs_data.get("vital_sign", []):
-            obs = vital_observation_to_fhir(vital, patient_id, encounter_id)
-            entries.append(
-                BundleEntry(
-                    fullUrl=f"urn:uuid:{obs.id}",
-                    resource=obs,
-                    request=BundleEntryRequest(method="POST", url="Observation")
-                )
-            )
+            obs = vital_observation_to_fhir(
+                vital,
+                patient_id,
+                encounter_id,
+                date)
+            entries.append(BundleEntry(
+                fullUrl=f"urn:uuid:{obs.id}",
+                resource=obs,
+                request=BundleEntryRequest(method="POST", url="Observation")
+            ))
+
+        #medications
+        for med in encounter_data.get("medication", []):
+            med_res = medication_to_fhir(
+                med,
+                patient_id,
+                encounter_id,
+                date)
+            entries.append(BundleEntry(
+                fullUrl=f"urn:uuid:{med_res.id}",
+                resource=med_res,
+                request=BundleEntryRequest(method="POST", url="MedicationStatement")
+            ))
 
     # FAMILY HISTORY
     if "family_history" in llm_output and llm_output["family_history"].get("members"):
@@ -713,18 +737,6 @@ def to_fhir_bundle(
                 request=BundleEntryRequest(method="POST", url="FamilyMemberHistory")
             )
         )
-
-    # MEDICATION
-    if "medication" in llm_output and llm_output["medication"]:
-        for med in llm_output["medication"]:
-            med_res = medication_to_fhir(med, patient_id, encounter_id)
-            entries.append(
-                BundleEntry(
-                    fullUrl=f"urn:uuid:{med_res.id}",
-                    resource=med_res,
-                    request=BundleEntryRequest(method="POST", url="MedicationStatement")
-                )
-            )
 
     # BUNDLE
     bundle = Bundle(
@@ -738,4 +750,3 @@ def to_fhir_bundle(
     with open(filename, "w", encoding="utf-8") as f:
         f.write(bundle_json)
     return filename
-

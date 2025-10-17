@@ -3,15 +3,15 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "urn:uuid:96dd288b-8d4c-4a25-bd87-64cf7c8e5b15",
+      "fullUrl": "urn:uuid:0285bfcb-a821-4510-8024-118c7e6d6e2b",
       "resource": {
         "resourceType": "Patient",
-        "id": "96dd288b-8d4c-4a25-bd87-64cf7c8e5b15",
+        "id": "0285bfcb-a821-4510-8024-118c7e6d6e2b",
         "name": [
           {
-            "family": "Purits",
+            "family": "Dmitrieva",
             "given": [
-              "Katty"
+              "Katerina"
             ]
           }
         ],
@@ -26,14 +26,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:ef787a58-5521-42de-ab34-e00b7d9616f5",
+      "fullUrl": "urn:uuid:bd5e73f3-6030-4496-9b7d-5b5826a1589c",
       "resource": {
         "resourceType": "Encounter",
-        "id": "ef787a58-5521-42de-ab34-e00b7d9616f5",
+        "id": "bd5e73f3-6030-4496-9b7d-5b5826a1589c",
         "identifier": [
           {
             "use": "temp",
-            "value": "Encounter_Katty Purits_20251017122140"
+            "value": "Encounter_Katerina Dmitrieva_20251017182525"
           }
         ],
         "status": "completed",
@@ -58,15 +58,15 @@
           }
         ],
         "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15",
-          "display": "Katty Purits"
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b",
+          "display": "Katerina Dmitrieva"
         },
         "reason": [
           {
             "value": [
               {
                 "concept": {
-                  "text": "intermittent high fevers for three weeks, arthralgia, and sore throat"
+                  "text": "complaints of chronic, subtle tremors in her hands and mild difficulty with coordination"
                 }
               }
             ]
@@ -79,10 +79,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:f07174b1-ecd5-4002-8283-05fc283f976b",
+      "fullUrl": "urn:uuid:2c87285c-7ef1-4fcb-97f9-ce242e50be4d",
       "resource": {
         "resourceType": "Observation",
-        "id": "f07174b1-ecd5-4002-8283-05fc283f976b",
+        "id": "2c87285c-7ef1-4fcb-97f9-ce242e50be4d",
         "status": "final",
         "category": [
           {
@@ -100,133 +100,25 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "50233-6",
-              "display": "WBC clumps #/area UrnS Auto"
+              "code": "2064-4",
+              "display": "Ceruloplasmin SerPl-mCnc"
             }
           ],
-          "text": "Leukocyte count"
+          "text": "Serum Ceruloplasmin"
         },
         "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
         },
         "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
+          "reference": "Encounter/bd5e73f3-6030-4496-9b7d-5b5826a1589c"
         },
-        "effectiveDateTime": "2025-10-17T10:21:41.125271Z",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "A",
-                "display": "Abnormal"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/50233-6/"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:c1875a4d-2ecf-44e7-9c40-44fc2cdb81ab",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "c1875a4d-2ecf-44e7-9c40-44fc2cdb81ab",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53048-5",
-              "display": "Ferritin Fld-mCnc"
-            }
-          ],
-          "text": "Ferritin"
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 7.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
         },
-        "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
-        },
-        "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
-        },
-        "effectiveDateTime": "2025-10-17T10:21:41.250601Z",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "H",
-                "display": "High"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/53048-5/"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:d53e61f8-da00-4284-9cc0-d4a3a85721a8",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "d53e61f8-da00-4284-9cc0-d4a3a85721a8",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "25746-9",
-              "display": "Rheumatoid fact Titr Fld Shp Aggl"
-            }
-          ],
-          "text": "Rheumatoid factor"
-        },
-        "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
-        },
-        "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
-        },
-        "effectiveDateTime": "2025-10-17T10:21:41.432469Z",
         "interpretation": [
           {
             "coding": [
@@ -240,7 +132,7 @@
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/25746-9/"
+            "text": "Definition: https://loinc.org/2064-4/"
           }
         ]
       },
@@ -250,67 +142,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:94f831cb-adfe-490c-a8b2-bf97b68f456e",
+      "fullUrl": "urn:uuid:b33b1fde-c559-44e6-bffd-c5029ccbf0c8",
       "resource": {
         "resourceType": "Observation",
-        "id": "94f831cb-adfe-490c-a8b2-bf97b68f456e",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "20399-2",
-              "display": "ANA nucleolar Titr Ser"
-            }
-          ],
-          "text": "Antinuclear antibody (ANA)"
-        },
-        "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
-        },
-        "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
-        },
-        "effectiveDateTime": "2025-10-17T10:21:41.637662Z",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "L",
-                "display": "Low"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/20399-2/"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:208a2fdf-2520-4d74-ba1a-2f6c5504514e",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "208a2fdf-2520-4d74-ba1a-2f6c5504514e",
+        "id": "b33b1fde-c559-44e6-bffd-c5029ccbf0c8",
         "status": "final",
         "category": [
           {
@@ -329,18 +164,24 @@
             {
               "system": "http://loinc.org",
               "code": "unknown",
-              "display": "Liver enzymes"
+              "display": "24-hour Urinary Copper Excretion"
             }
           ],
-          "text": "Liver enzymes"
+          "text": "24-hour Urinary Copper Excretion"
         },
         "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
         },
         "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
+          "reference": "Encounter/bd5e73f3-6030-4496-9b7d-5b5826a1589c"
         },
-        "effectiveDateTime": "2025-10-17T10:21:41.842348Z",
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 400.0,
+          "unit": "µg/24h",
+          "system": "http://unitsofmeasure.org",
+          "code": "µg/24h"
+        },
         "interpretation": [
           {
             "coding": [
@@ -359,58 +200,54 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:9b6afd9e-993b-40be-afdb-23170bc8bf81",
+      "fullUrl": "urn:uuid:93fd3e1a-1efd-4929-b9f9-f9d28acf882f",
       "resource": {
         "resourceType": "Observation",
-        "id": "9b6afd9e-993b-40be-afdb-23170bc8bf81",
+        "id": "93fd3e1a-1efd-4929-b9f9-f9d28acf882f",
         "status": "final",
         "category": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam",
-                "display": "Exam"
+                "code": "laboratory",
+                "display": "Laboratory"
               }
             ],
-            "text": "Exam"
+            "text": "Laboratory"
           }
         ],
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "386661006",
-              "display": "Fever"
+              "system": "http://loinc.org",
+              "code": "109066-1",
+              "display": "Bilirub Indirect Msmt SerPl"
             }
           ],
-          "text": "Fever"
+          "text": "Serum Bilirubin"
         },
         "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
         },
         "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
+          "reference": "Encounter/bd5e73f3-6030-4496-9b7d-5b5826a1589c"
         },
-        "effectivePeriod": {
-          "start": "2025-10-17T10:21:45.020244Z"
-        },
-        "valueBoolean": true,
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "H",
-                "display": "High"
+                "code": "N",
+                "display": "Normal"
               }
-            ],
-            "text": "High"
+            ]
           }
         ],
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/386661006"
+            "text": "Definition: https://loinc.org/109066-1/"
           }
         ]
       },
@@ -420,10 +257,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a9f375f9-80f7-4993-89af-093f6ceec566",
+      "fullUrl": "urn:uuid:2b2e47e5-1a2e-4136-9539-3808919584dc",
       "resource": {
         "resourceType": "Observation",
-        "id": "a9f375f9-80f7-4993-89af-093f6ceec566",
+        "id": "2b2e47e5-1a2e-4136-9539-3808919584dc",
         "status": "final",
         "category": [
           {
@@ -441,25 +278,25 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "277138006",
-              "display": "Rubella arthralgia"
+              "code": "49958005",
+              "display": "Aspergillus clavatus tremors"
             }
           ],
-          "text": "Arthralgia"
+          "text": "Tremors"
         },
         "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
         },
         "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
+          "reference": "Encounter/bd5e73f3-6030-4496-9b7d-5b5826a1589c"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:21:46.557136Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/277138006"
+            "text": "Definition: https://snomed.info/id/49958005"
           }
         ]
       },
@@ -469,10 +306,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:772c2b6c-619c-46d1-8de4-34f504e7bff4",
+      "fullUrl": "urn:uuid:7ef87f50-0ae3-4cfb-a369-972d50adc3e5",
       "resource": {
         "resourceType": "Observation",
-        "id": "772c2b6c-619c-46d1-8de4-34f504e7bff4",
+        "id": "7ef87f50-0ae3-4cfb-a369-972d50adc3e5",
         "status": "final",
         "category": [
           {
@@ -490,25 +327,25 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "267102003",
-              "display": "Sore throat"
+              "code": "84229001",
+              "display": "Fatigue"
             }
           ],
-          "text": "Sore throat"
+          "text": "Fatigue"
         },
         "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
         },
         "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
+          "reference": "Encounter/bd5e73f3-6030-4496-9b7d-5b5826a1589c"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:21:48.298013Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/267102003"
+            "text": "Definition: https://snomed.info/id/84229001"
           }
         ]
       },
@@ -518,10 +355,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:8f6e58f3-a176-446e-a374-a05237493ec0",
+      "fullUrl": "urn:uuid:1165e500-37bf-4548-885b-bba63ac1b98a",
       "resource": {
         "resourceType": "Observation",
-        "id": "8f6e58f3-a176-446e-a374-a05237493ec0",
+        "id": "1165e500-37bf-4548-885b-bba63ac1b98a",
         "status": "final",
         "category": [
           {
@@ -539,31 +376,196 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "89757007",
-              "display": "Macular rash"
+              "code": "271697007",
+              "display": "Muscle irritability"
             }
           ],
-          "text": "Rash"
+          "text": "Irritability"
         },
         "subject": {
-          "reference": "Patient/96dd288b-8d4c-4a25-bd87-64cf7c8e5b15"
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
         },
         "encounter": {
-          "reference": "Encounter/ef787a58-5521-42de-ab34-e00b7d9616f5"
+          "reference": "Encounter/bd5e73f3-6030-4496-9b7d-5b5826a1589c"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:21:50.039323Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/89757007"
+            "text": "Definition: https://snomed.info/id/271697007"
           }
         ]
       },
       "request": {
         "method": "POST",
         "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:01293dd8-0c19-4029-947e-465769f5d577",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "01293dd8-0c19-4029-947e-465769f5d577",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "8011004",
+              "display": "Dysarthria"
+            }
+          ],
+          "text": "Dysarthria"
+        },
+        "subject": {
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
+        },
+        "encounter": {
+          "reference": "Encounter/bd5e73f3-6030-4496-9b7d-5b5826a1589c"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/8011004"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:362d354a-1bac-4390-826d-7657f1377a57",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "362d354a-1bac-4390-826d-7657f1377a57",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "30155000",
+              "display": "Decerebrate rigidity"
+            }
+          ],
+          "text": "Rigidity"
+        },
+        "subject": {
+          "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
+        },
+        "encounter": {
+          "reference": "Encounter/bd5e73f3-6030-4496-9b7d-5b5826a1589c"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/30155000"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2691914e-512f-4953-b043-cec22d4a15e1",
+      "resource": {
+        "resourceType": "List",
+        "id": "2691914e-512f-4953-b043-cec22d4a15e1",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72705000",
+                  "display": "Mother"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "192498004",
+                      "display": "Enduring personality change after psychiatric illness"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/0285bfcb-a821-4510-8024-118c7e6d6e2b"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
       }
     }
   ]

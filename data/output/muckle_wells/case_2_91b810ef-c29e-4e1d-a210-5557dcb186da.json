@@ -3,19 +3,19 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "urn:uuid:a2fdd138-75f2-474c-a3b8-d11003532354",
+      "fullUrl": "urn:uuid:91b810ef-c29e-4e1d-a210-5557dcb186da",
       "resource": {
         "resourceType": "Patient",
-        "id": "a2fdd138-75f2-474c-a3b8-d11003532354",
+        "id": "91b810ef-c29e-4e1d-a210-5557dcb186da",
         "name": [
           {
-            "family": "Kro",
+            "family": "Zaitsev",
             "given": [
-              "Lara"
+              "Alexander"
             ]
           }
         ],
-        "gender": "female",
+        "gender": "male",
         "address": [
           {}
         ]
@@ -26,14 +26,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:6121570b-949c-47a2-b6d7-6fbf35abc5dd",
+      "fullUrl": "urn:uuid:228ff54d-0776-479f-b052-cc5747dc2e9c",
       "resource": {
         "resourceType": "Encounter",
-        "id": "6121570b-949c-47a2-b6d7-6fbf35abc5dd",
+        "id": "228ff54d-0776-479f-b052-cc5747dc2e9c",
         "identifier": [
           {
             "use": "temp",
-            "value": "Encounter_Lara Kro_20251017122311"
+            "value": "Encounter_Alexander Zaitsev_20251017182905"
           }
         ],
         "status": "completed",
@@ -58,15 +58,15 @@
           }
         ],
         "subject": {
-          "reference": "Patient/a2fdd138-75f2-474c-a3b8-d11003532354",
-          "display": "Lara Kro"
+          "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da",
+          "display": "Alexander Zaitsev"
         },
         "reason": [
           {
             "value": [
               {
                 "concept": {
-                  "text": "recurrent episodes of low-grade fever, urticarial rash, and joint pain"
+                  "text": "recurrent episodes of fever, chills, and pain in his ankles and wrists"
                 }
               }
             ]
@@ -79,10 +79,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e0af2336-1692-4b97-a886-016f8aa02b28",
+      "fullUrl": "urn:uuid:ff9a4e12-28cf-4832-b6d7-3b966cf819fb",
       "resource": {
         "resourceType": "Observation",
-        "id": "e0af2336-1692-4b97-a886-016f8aa02b28",
+        "id": "ff9a4e12-28cf-4832-b6d7-3b966cf819fb",
         "status": "final",
         "category": [
           {
@@ -107,12 +107,12 @@
           "text": "C-Reactive Protein (CRP)"
         },
         "subject": {
-          "reference": "Patient/a2fdd138-75f2-474c-a3b8-d11003532354"
+          "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da"
         },
         "encounter": {
-          "reference": "Encounter/6121570b-949c-47a2-b6d7-6fbf35abc5dd"
+          "reference": "Encounter/228ff54d-0776-479f-b052-cc5747dc2e9c"
         },
-        "effectiveDateTime": "2025-10-17T10:23:11.555244Z",
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
@@ -136,10 +136,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:6786a82c-4c08-4d20-b293-ec4ffc0499fa",
+      "fullUrl": "urn:uuid:ff77840a-875d-40ff-8e68-55608cdb2e42",
       "resource": {
         "resourceType": "Observation",
-        "id": "6786a82c-4c08-4d20-b293-ec4ffc0499fa",
+        "id": "ff77840a-875d-40ff-8e68-55608cdb2e42",
         "status": "final",
         "category": [
           {
@@ -157,19 +157,19 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "1847-3",
-              "display": "AA Prot Ser-mCnc"
+              "code": "unknown",
+              "display": "Erythrocyte Sedimentation Rate (ESR)"
             }
           ],
-          "text": "Serum Amyloid A (SAA)"
+          "text": "Erythrocyte Sedimentation Rate (ESR)"
         },
         "subject": {
-          "reference": "Patient/a2fdd138-75f2-474c-a3b8-d11003532354"
+          "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da"
         },
         "encounter": {
-          "reference": "Encounter/6121570b-949c-47a2-b6d7-6fbf35abc5dd"
+          "reference": "Encounter/228ff54d-0776-479f-b052-cc5747dc2e9c"
         },
-        "effectiveDateTime": "2025-10-17T10:23:11.760490Z",
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
@@ -180,11 +180,6 @@
               }
             ]
           }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/1847-3/"
-          }
         ]
       },
       "request": {
@@ -193,10 +188,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:3648670a-317c-4eb5-8f84-a4a63a5d58ba",
+      "fullUrl": "urn:uuid:7aff0d2d-64c2-4f3c-8523-daf2d915b843",
       "resource": {
         "resourceType": "Observation",
-        "id": "3648670a-317c-4eb5-8f84-a4a63a5d58ba",
+        "id": "7aff0d2d-64c2-4f3c-8523-daf2d915b843",
         "status": "final",
         "category": [
           {
@@ -214,25 +209,25 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "369766003",
-              "display": "Low grade (lymphoma)"
+              "code": "386661006",
+              "display": "Fever"
             }
           ],
-          "text": "Low-grade fever"
+          "text": "Fever"
         },
         "subject": {
-          "reference": "Patient/a2fdd138-75f2-474c-a3b8-d11003532354"
+          "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da"
         },
         "encounter": {
-          "reference": "Encounter/6121570b-949c-47a2-b6d7-6fbf35abc5dd"
+          "reference": "Encounter/228ff54d-0776-479f-b052-cc5747dc2e9c"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:23:13.719094Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/369766003"
+            "text": "Definition: https://snomed.info/id/386661006"
           }
         ]
       },
@@ -242,10 +237,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:55133fe0-38b3-4a8f-8b84-ba62cc5bffb6",
+      "fullUrl": "urn:uuid:a2b4f1f4-986b-4e3d-b09b-5188028580b3",
       "resource": {
         "resourceType": "Observation",
-        "id": "55133fe0-38b3-4a8f-8b84-ba62cc5bffb6",
+        "id": "a2b4f1f4-986b-4e3d-b09b-5188028580b3",
         "status": "final",
         "category": [
           {
@@ -263,25 +258,25 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "402656007",
-              "display": "Urticarial vasculitis"
+              "code": "274640006",
+              "display": "Fever with chills"
             }
           ],
-          "text": "Urticarial rash"
+          "text": "Chills"
         },
         "subject": {
-          "reference": "Patient/a2fdd138-75f2-474c-a3b8-d11003532354"
+          "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da"
         },
         "encounter": {
-          "reference": "Encounter/6121570b-949c-47a2-b6d7-6fbf35abc5dd"
+          "reference": "Encounter/228ff54d-0776-479f-b052-cc5747dc2e9c"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:23:15.554862Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/402656007"
+            "text": "Definition: https://snomed.info/id/274640006"
           }
         ]
       },
@@ -291,10 +286,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:678bb9dc-bbc8-49af-a5cd-49f81ba55639",
+      "fullUrl": "urn:uuid:8a26db69-1936-4391-b3a7-50c03214dd63",
       "resource": {
         "resourceType": "Observation",
-        "id": "678bb9dc-bbc8-49af-a5cd-49f81ba55639",
+        "id": "8a26db69-1936-4391-b3a7-50c03214dd63",
         "status": "final",
         "category": [
           {
@@ -312,25 +307,25 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "57676002",
-              "display": "Joint pain"
+              "code": "69948000",
+              "display": "Both ankles"
             }
           ],
-          "text": "Joint pain"
+          "text": "Pain in ankles and wrists"
         },
         "subject": {
-          "reference": "Patient/a2fdd138-75f2-474c-a3b8-d11003532354"
+          "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da"
         },
         "encounter": {
-          "reference": "Encounter/6121570b-949c-47a2-b6d7-6fbf35abc5dd"
+          "reference": "Encounter/228ff54d-0776-479f-b052-cc5747dc2e9c"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:23:16.957412Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/57676002"
+            "text": "Definition: https://snomed.info/id/69948000"
           }
         ]
       },
@@ -340,10 +335,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:59409999-d921-4eda-966e-fe85b0f6c353",
+      "fullUrl": "urn:uuid:7e2cdd5a-97db-4a3b-8df4-272a24ca7ce0",
       "resource": {
         "resourceType": "Observation",
-        "id": "59409999-d921-4eda-966e-fe85b0f6c353",
+        "id": "7e2cdd5a-97db-4a3b-8df4-272a24ca7ce0",
         "status": "final",
         "category": [
           {
@@ -361,43 +356,98 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "162340000",
-              "display": "Hearing difficulty"
+              "code": "249898006",
+              "display": "Slow on legs"
             }
           ],
-          "text": "Hearing difficulty"
+          "text": "Migratory rash on legs"
         },
         "subject": {
-          "reference": "Patient/a2fdd138-75f2-474c-a3b8-d11003532354"
+          "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da"
         },
         "encounter": {
-          "reference": "Encounter/6121570b-949c-47a2-b6d7-6fbf35abc5dd"
+          "reference": "Encounter/228ff54d-0776-479f-b052-cc5747dc2e9c"
         },
         "effectivePeriod": {
-          "start": "2025-10-17T10:23:18.527355Z"
+          "start": "2025-10-16"
         },
         "valueBoolean": true,
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "A",
-                "display": "Abnormal"
-              }
-            ],
-            "text": "Abnormal"
-          }
-        ],
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/162340000"
+            "text": "Definition: https://snomed.info/id/249898006"
           }
         ]
       },
       "request": {
         "method": "POST",
         "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f633c201-3317-49f7-8492-7bbdd4c2309d",
+      "resource": {
+        "resourceType": "List",
+        "id": "f633c201-3317-49f7-8492-7bbdd4c2309d",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "736454006",
+                  "display": "Maternal aunt"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "439469002",
+                      "display": "Recurrent abdominal pain"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/91b810ef-c29e-4e1d-a210-5557dcb186da"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
       }
     }
   ]
