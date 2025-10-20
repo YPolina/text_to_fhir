@@ -1,7 +1,7 @@
 import json
 from src.utils.llm_utils import extract_json_block
 from src.core import settings
-from src.utils.prompt import PROMPT_TEMPLATE
+from src.utils.prompt import EXTRACTION_PROMPT
 from src.utils.prompt_schemas import OUTPUT_SCHEMA
 
 def process_patient_records(patient_record_text:str, client, model, logger) -> dict:
@@ -17,7 +17,7 @@ def process_patient_records(patient_record_text:str, client, model, logger) -> d
         dict: The extracted metadata.
     """
     schema_str = json.dumps(OUTPUT_SCHEMA, indent=2)
-    prompt = PROMPT_TEMPLATE.format(schema=schema_str, patient_record_text=patient_record_text)
+    prompt = EXTRACTION_PROMPT.format(schema=schema_str, patient_record_text=patient_record_text)
 
     conversation = [{
         "role": "user",
