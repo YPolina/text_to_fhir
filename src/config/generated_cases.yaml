@@ -65,6 +65,39 @@ homocystinuria:
     for a routine check-up, at which time his physical examination and laboratory
     results were unremarkable. Since then, his parents have noticed a gradual decline
     in his coordination and an increase in his frequency of falling.
+- id: case_5
+  text: A 10-year-old boy, Ethan Thompson, presents with complaints of mild clumsiness
+    and difficulty with fine motor tasks, such as tying his shoelaces and buttoning
+    his shirt, which have been noticeable over the past six months. His parents report
+    that he has been experiencing occasional episodes of double vision and has had
+    a few instances of dislocating his shoulder during physical activities. On examination,
+    his vital signs are within normal limits, with a temperature of 37.2 degrees Celsius,
+    weight of 32 kilograms, height of 140 centimeters, and a body mass index of 16.3.
+    His oxygen saturation is 98% on room air. Laboratory evaluation shows a slightly
+    elevated homocysteine level at 15 micromoles per liter, with normal levels of
+    folate and vitamin B12. He is currently taking a daily multivitamin supplement
+    as recommended by his pediatrician. His family history is notable for a maternal
+    uncle with a history of blood clots and a paternal grandmother who had a stroke
+    at the age of 60. Both parents are alive and healthy, with no known history of
+    genetic disorders. During his previous encounter two months ago, Ethan's parents
+    expressed concerns about his learning difficulties in school, particularly with
+    math and reading comprehension, but no significant abnormalities were found on
+    his physical examination at that time.
+- id: case_6
+  text: A 10-year-old boy, Lucas Thompson, presents with complaints of mild vision
+    problems and frequent bruising over the past six months. He reports difficulty
+    seeing the board in class and has noticed that he bruises easily, even with minor
+    trauma. His vital signs are within normal limits, with a temperature of 36.8°C,
+    weight of 32 kg, height of 140 cm, and BMI of 16.3. His oxygen saturation is 98%
+    on room air. On examination, he has a slight increase in blood pressure at 110/70
+    mmHg. Laboratory results show a slightly elevated homocysteine level at 15.2 μmol/L,
+    with normal vitamin B12 and folate levels. He is currently taking a daily multivitamin
+    as recommended by his pediatrician. His family history is notable for a maternal
+    uncle with a history of deep vein thrombosis at a young age, and both parents
+    are alive and healthy. Two years ago, Lucas was seen for a routine check-up, at
+    which time his physical examination and laboratory results were unremarkable.
+    Since then, his parents have noticed a gradual decline in his visual acuity and
+    an increase in easy bruising.
 fabry_disease:
 - id: case_1
   text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
@@ -134,3 +167,38 @@ fabry_disease:
     her mother being healthy. Sofia last visited her primary care physician about
     six months ago, at which time her symptoms were similar, but she had not yet started
     experiencing the gastrointestinal issues.
+- id: case_5
+  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
+    of burning pain in her hands and feet, which she has been experiencing for the
+    past five years. She reports that these episodes are often triggered by exposure
+    to heat or physical activity and can be quite debilitating. Her vital signs are
+    within normal limits, with a temperature of 36.8 degrees Celsius, weight of 58
+    kilograms, height of 165 centimeters, and a body mass index of 21.5. On examination,
+    she is found to have normal oxygen saturation at 98% on room air. She complains
+    of gastrointestinal symptoms, including bloating and diarrhea, which have been
+    persistent over the past year. Laboratory results show a slightly elevated creatinine
+    level at 1.1 mg/dL, with normal electrolyte levels. She is currently taking ibuprofen
+    400 milligrams as needed for pain, with fair adherence. Her family history is
+    notable for a father who suffered from chronic kidney disease, and both parents
+    are alive and healthy otherwise. Two years ago, she was seen for similar complaints,
+    at which time her laboratory results were largely unremarkable, except for a mild
+    elevation in her blood urea nitrogen level. Since then, she has noticed a gradual
+    increase in the frequency and severity of her pain episodes.
+- id: case_6
+  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
+    of burning pain in her hands and feet, which she has been experiencing for the
+    past five years. She reports that these episodes are often triggered by exposure
+    to heat or physical activity and can be quite debilitating. Her vital signs are
+    within normal limits, with a temperature of 37.2°C, weight of 65 kg, height of
+    165 cm, and a BMI of 24.1. Oxygen saturation is 98% on room air. She also complains
+    of occasional gastrointestinal disturbances, including diarrhea and abdominal
+    pain, which seem to be unrelated to her dietary habits. Laboratory evaluation
+    shows a slightly elevated creatinine level at 1.1 mg/dL, with normal electrolyte
+    levels. Her complete blood count is unremarkable. She is currently taking ibuprofen
+    400 mg as needed for pain relief, which provides some benefit. Sofia's family
+    history is notable for her father having suffered from a heart condition, and
+    her mother is alive and healthy. Two years ago, Sofia visited her primary care
+    physician for similar complaints, at which time her symptoms were attributed to
+    possible neuropathy, but no definitive diagnosis was made. Since then, the frequency
+    and severity of her pain episodes have increased, prompting her to seek further
+    evaluation.
