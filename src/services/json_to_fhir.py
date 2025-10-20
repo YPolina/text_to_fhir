@@ -82,7 +82,7 @@ def patient_to_fhir(
         country=addr_data.get("country")
     )
     gender = data.get("gender")
-    birthdate = data.get("birthdate")
+    birthdate = data.get("birthDate")
 
     patient = Patient(
         id=patient_id,
