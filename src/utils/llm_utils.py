@@ -15,7 +15,19 @@ def extract_json_block(raw_text: str) -> str:
         return match.group(0)
     return raw_text
 
-def save_generated_case(disease: str, case_text:str, yaml_path: str = "src/config/generated_cases.yaml"):
+def save_generated_case(disease: str, case_text: str, yaml_path: str = "src/config/generated_cases.yaml") -> None:
+    """
+    Appends a generated case description for a given disease to a YAML file.
+
+    Args:
+        disease (str): The name of the disease for which the case was generated.
+        case_text (str): The generated case text to be saved.
+        yaml_path (str, optional): Path to the YAML file where the case will be stored.
+            Defaults to "src/config/generated_cases.yaml".
+
+    Returns:
+        None
+    """
 
     yaml_file = Path(yaml_path)
     yaml_file.parent.mkdir(parents=True, exist_ok=True)

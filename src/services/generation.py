@@ -1,16 +1,27 @@
+from typing import Optional
+import logging
+import boto3
 from src.core import settings
 from src.utils.prompt import CASE_GENERATION_PROMPT
 
 
-def generate_case(disease:str, client, model, logger) -> dict:
+def generate_case(
+    disease: str,
+    client: boto3.client,
+    model: str,
+    logger: logging.Logger
+) -> Optional[str]:
     """
-    Extract metadata and compounds from text using LLM.
+    Generates a synthetic clinical case description for a given disease using an LLM via AWS Bedrock.
 
     Args:
-        disease (str): disease for case generation
-        client (boto3.client): AWS boto3 client.
-        model (ModelID): AWS model ID.
-        logger (logging.Logger): Logger.
+        disease (str): The name of the disease for which to generate a case.
+        client (boto3.client): An initialized AWS Bedrock runtime client.
+        model (str): The model ID to use for generation (e.g., Meta Llama 3 or Anthropic Claude).
+        logger (logging.Logger): Logger instance for logging progress and debugging.
+
+    Returns:
+        Optional[str]: The generated case text if successful, otherwise None.
     """
     prompt = CASE_GENERATION_PROMPT.format(disease=disease)
 
