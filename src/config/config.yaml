@@ -1,4 +1,4 @@
-mode: "generate" # or "pre-defined"
+mode: "rag_preparation" # or options: "pre-defined", "generate", "rag_preparation"
 
 diseases:
   - name: "Homocystinuria"
@@ -8,3 +8,6 @@ diseases:
 
 cases_file: "src/config/generated_cases.yaml"
 output_dir: "data/output"
+
+fhir_directory: "data/output/homocystinuria/case_3_f1c1bafe-87bc-40b7-a92a-4bbec701a8ad.json"
+parsed_fhir_dir: "data/parsed/"

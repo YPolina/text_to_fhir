@@ -9,8 +9,9 @@ import argparse
 from src.core import settings
 from src.services.generation import generate_case
 from src.services.text_to_json import process_patient_records
-from src.utils.llm_utils import save_generated_case
+from src.utils.llm_utils import save_generated_case, save_parsed_fhir
 from src.services.json_to_fhir import to_fhir_bundle
+from src.services.fhir_to_json import process_fhir_bundle
 from src.utils.load import load_config
 import logging
 
@@ -41,7 +42,18 @@ if __name__ == "__main__":
     config = load_config(args.config)
 
     mode = config["mode"]
-    if mode == "generate":
+    logger.info(f"Mode: {mode}")
+    if mode == 'rag_preparation':
+        fhir = Path(config["fhir_directory"])
+        llm_output = process_fhir_bundle(fhir, client, settings.MODEL_ID, logger)
+
+        logger.info(f"Processed fhir bundle {llm_output}")
+
+        save_parsed_fhir(llm_output, fhir)
+
+        logger.info(f"Parsed fhir bundle successfully saved")
+
+    elif mode == "generate":
         for disease_entry in config["diseases"]:
             disease = disease_entry["name"]
             num_gen = disease_entry.get("num_generation", 1)
@@ -51,23 +63,24 @@ if __name__ == "__main__":
                 case_text = generate_case(disease, client, settings.MODEL_ID, logger)
                 if case_text:
                     save_generated_case(disease, case_text, config["cases_file"])
-    cases = load_config(Path(config["cases_file"]))
-    output_dir = Path(config["output_dir"])
 
-    # Process all diseases and cases
-    for disease, case_list in cases.items():
-        disease_dir = output_dir / disease
-        disease_dir.mkdir(parents=True, exist_ok=True)
+    if mode in ["generate", "pre-defined"]:
+        cases = load_config(Path(config["cases_file"]))
+        output_dir = Path(config["output_dir"])
+        # Process all diseases and cases
+        for disease, case_list in cases.items():
+            disease_dir = output_dir / disease
+            disease_dir.mkdir(parents=True, exist_ok=True)
 
-        for case in case_list:
-            case_id = case["id"]
-            case_text = case["text"]
+            for case in case_list:
+                case_id = case["id"]
+                case_text = case["text"]
 
-            logger.info(f"Processing {disease} - {case_id}")
+                logger.info(f"Processing {disease} - {case_id}")
 
-            # Run your LLM pipeline on the case text
-            llm_output = process_patient_records(case_text, client, settings.MODEL_ID, logger=logger)
+                # Run your LLM pipeline on the case text
+                llm_output = process_patient_records(case_text, client, settings.MODEL_ID, logger=logger)
+                logger.info(f"Processed fhir bundle {llm_output}")
 
-            filename = to_fhir_bundle(llm_output, case_id, disease_dir)
-            logger.info(f"FHIR bundle saved to {filename}")
-
+                filename = to_fhir_bundle(llm_output, case_id, disease_dir)
+                logger.info(f"FHIR bundle saved to {filename}")
