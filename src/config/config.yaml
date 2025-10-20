@@ -1,0 +1,10 @@
+mode: "generate" # or "pre-defined"
+
+diseases:
+  - name: "Homocystinuria"
+    num_generation: 2
+  - name: "Fabry disease"
+    num_generation: 2
+
+cases_file: "src/config/generated_cases.yaml"
+output_dir: "data/output"
