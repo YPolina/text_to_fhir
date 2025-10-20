@@ -1,0 +1,446 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:543fa118-9dac-4e48-aa31-f30e6b10731d",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "543fa118-9dac-4e48-aa31-f30e6b10731d",
+        "name": [
+          {
+            "family": "Petrov",
+            "given": [
+              "Nikolai"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-07-04",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8e1861f4-db60-43c6-8c4c-636ccf01d583",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "8e1861f4-db60-43c6-8c4c-636ccf01d583",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Nikolai Petrov_20251020131716"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/543fa118-9dac-4e48-aa31-f30e6b10731d",
+          "display": "Nikolai Petrov"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "episodes of severe burning pain in hands and feet"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d2058fe2-131b-4ac1-9633-af35a5b7e569",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d2058fe2-131b-4ac1-9633-af35a5b7e569",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "unknown",
+              "display": "Urinary Albumin"
+            }
+          ],
+          "text": "Urinary Albumin"
+        },
+        "subject": {
+          "reference": "Patient/543fa118-9dac-4e48-aa31-f30e6b10731d"
+        },
+        "encounter": {
+          "reference": "Encounter/8e1861f4-db60-43c6-8c4c-636ccf01d583"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f22cc172-aee3-4be4-a414-c16cebe0a43a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f22cc172-aee3-4be4-a414-c16cebe0a43a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "unknown",
+              "display": "Urinary Protein"
+            }
+          ],
+          "text": "Urinary Protein"
+        },
+        "subject": {
+          "reference": "Patient/543fa118-9dac-4e48-aa31-f30e6b10731d"
+        },
+        "encounter": {
+          "reference": "Encounter/8e1861f4-db60-43c6-8c4c-636ccf01d583"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:847e955c-503c-403b-a212-c1891c55e747",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "847e955c-503c-403b-a212-c1891c55e747",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36031001",
+              "display": "Burning feet"
+            }
+          ],
+          "text": "Burning pain in hands and feet"
+        },
+        "subject": {
+          "reference": "Patient/543fa118-9dac-4e48-aa31-f30e6b10731d"
+        },
+        "encounter": {
+          "reference": "Encounter/8e1861f4-db60-43c6-8c4c-636ccf01d583"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/36031001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e146976f-8e77-40bf-9799-63d9dff9b9c1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e146976f-8e77-40bf-9799-63d9dff9b9c1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15188001",
+              "display": "Hearing loss"
+            }
+          ],
+          "text": "Progressive hearing loss"
+        },
+        "subject": {
+          "reference": "Patient/543fa118-9dac-4e48-aa31-f30e6b10731d"
+        },
+        "encounter": {
+          "reference": "Encounter/8e1861f4-db60-43c6-8c4c-636ccf01d583"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/15188001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:062e4ccc-53ca-4b67-9d4b-a62acf30006e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "062e4ccc-53ca-4b67-9d4b-a62acf30006e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "246957002",
+              "display": "Corneal stromal opacities"
+            }
+          ],
+          "text": "Corneal opacities"
+        },
+        "subject": {
+          "reference": "Patient/543fa118-9dac-4e48-aa31-f30e6b10731d"
+        },
+        "encounter": {
+          "reference": "Encounter/8e1861f4-db60-43c6-8c4c-636ccf01d583"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/246957002"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ee32be7-6596-4af2-b3a2-c2727967c3fd",
+      "resource": {
+        "resourceType": "List",
+        "id": "5ee32be7-6596-4af2-b3a2-c2727967c3fd",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/543fa118-9dac-4e48-aa31-f30e6b10731d"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "442031000124102",
+                  "display": "Maternal uncle"
+                }
+              ]
+            },
+            "deceasedBoolean": true,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "733139004",
+                      "display": "Acute kidney failure stage 3"
+                    }
+                  ]
+                },
+                "outcome": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "876883006",
+                      "display": "Died during operation"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/543fa118-9dac-4e48-aa31-f30e6b10731d"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}

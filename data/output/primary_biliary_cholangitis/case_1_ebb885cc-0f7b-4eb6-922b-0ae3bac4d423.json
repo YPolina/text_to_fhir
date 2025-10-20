@@ -1,0 +1,452 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:ebb885cc-0f7b-4eb6-922b-0ae3bac4d423",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "ebb885cc-0f7b-4eb6-922b-0ae3bac4d423",
+        "name": [
+          {
+            "family": "Golubeva",
+            "given": [
+              "Maria"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-07-04",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:10912e86-af83-4124-8a6e-16b32afc6d93",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10912e86-af83-4124-8a6e-16b32afc6d93",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Maria Golubeva_20251020132007"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423",
+          "display": "Maria Golubeva"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "complaints of fatigue, pruritus, and right upper quadrant discomfort"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c4792fed-07bb-4680-992f-c6e68c8842fe",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c4792fed-07bb-4680-992f-c6e68c8842fe",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62898-2",
+              "display": "PhenX - alkaline phosphatase protocol 170101"
+            }
+          ],
+          "text": "Alkaline Phosphatase"
+        },
+        "subject": {
+          "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423"
+        },
+        "encounter": {
+          "reference": "Encounter/10912e86-af83-4124-8a6e-16b32afc6d93"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/62898-2/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5998050c-f354-4c5b-8c62-6f5f9cae1414",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5998050c-f354-4c5b-8c62-6f5f9cae1414",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "93005-7",
+              "display": "Rapid alt hand move - L+R mean Score"
+            }
+          ],
+          "text": "ALT"
+        },
+        "subject": {
+          "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423"
+        },
+        "encounter": {
+          "reference": "Encounter/10912e86-af83-4124-8a6e-16b32afc6d93"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/93005-7/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c14cfe66-d9ba-481e-b0cc-b7e1f2ee5cb5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c14cfe66-d9ba-481e-b0cc-b7e1f2ee5cb5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "unknown",
+              "display": "Anti-mitochondrial Antibody (AMA) Test"
+            }
+          ],
+          "text": "Anti-mitochondrial Antibody (AMA) Test"
+        },
+        "subject": {
+          "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423"
+        },
+        "encounter": {
+          "reference": "Encounter/10912e86-af83-4124-8a6e-16b32afc6d93"
+        },
+        "effectiveDateTime": "2025-10-16"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:21d0f47c-d1c1-4134-98de-a282c8979d69",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "21d0f47c-d1c1-4134-98de-a282c8979d69",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "Fatigue"
+        },
+        "subject": {
+          "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423"
+        },
+        "encounter": {
+          "reference": "Encounter/10912e86-af83-4124-8a6e-16b32afc6d93"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/84229001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6213bf37-eb07-4ad0-ac89-119bb8b012cb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6213bf37-eb07-4ad0-ac89-119bb8b012cb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "90446007",
+              "display": "Pruritus ani"
+            }
+          ],
+          "text": "Pruritus"
+        },
+        "subject": {
+          "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423"
+        },
+        "encounter": {
+          "reference": "Encounter/10912e86-af83-4124-8a6e-16b32afc6d93"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/90446007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d030a141-ee7a-423a-a2ab-3f3f10c801cb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d030a141-ee7a-423a-a2ab-3f3f10c801cb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255497008",
+              "display": "Right upper quadrant"
+            }
+          ],
+          "text": "Right Upper Quadrant Discomfort"
+        },
+        "subject": {
+          "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423"
+        },
+        "encounter": {
+          "reference": "Encounter/10912e86-af83-4124-8a6e-16b32afc6d93"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/255497008"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aab0f574-dd43-42d1-a808-412d322a0331",
+      "resource": {
+        "resourceType": "List",
+        "id": "aab0f574-dd43-42d1-a808-412d322a0331",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72705000",
+                  "display": "Mother"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "85828009",
+                      "display": "Autoimmune disease"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/ebb885cc-0f7b-4eb6-922b-0ae3bac4d423"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}
