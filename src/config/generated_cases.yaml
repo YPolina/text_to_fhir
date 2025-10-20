@@ -1,0 +1,136 @@
+homocystinuria:
+- id: case_1
+  text: A 10-year-old boy, Lucas Brooks, presents with complaints of mild clumsiness
+    and difficulty with fine motor tasks, such as tying his shoelaces or buttoning
+    his shirt, over the past six months. His parents report that he has been experiencing
+    occasional episodes of double vision and has had a few instances of dislocating
+    his shoulder during physical activities. On examination, his vital signs are within
+    normal limits, with a temperature of 98.6°F, weight of 32 kg, height of 140 cm,
+    and a body mass index (BMI) of 18.5. His oxygen saturation is 98% on room air.
+    Laboratory evaluation shows a slightly elevated homocysteine level of 15 µmol/L
+    and a methionine level of 25 µmol/L. He is currently not taking any medications.
+    His family history is notable for his mother having a history of blood clots during
+    pregnancy and his father having high blood pressure. Both parents are alive and
+    healthy otherwise. During his previous encounter two months ago, Lucas had a normal
+    eye examination, but his parents have since noticed an increase in his clumsiness
+    and frequency of dislocating his shoulder.
+- id: case_2
+  text: A 10-year-old boy, Lucas Brooks, presents with complaints of mild clumsiness
+    and difficulty with fine motor tasks, such as tying his shoelaces or buttoning
+    his shirt, over the past six months. His parents report that he has been experiencing
+    some subtle vision problems, including occasional double vision and blurred vision,
+    particularly in the morning. On examination, his vital signs are within normal
+    limits, with a temperature of 98.6°F, weight of 32 kg, height of 140 cm, and BMI
+    of 16.2. His head circumference is slightly above average at 55 cm. Oxygen saturation
+    is 98% on room air. He exhibits mild bilateral lens dislocation, with his lenses
+    being superiorly and temporally displaced. Laboratory evaluation shows a slightly
+    elevated homocysteine level at 15.6 μmol/L and a methionine level of 25 μmol/L.
+    His complete blood count and blood chemistry are otherwise unremarkable. He is
+    currently not taking any medications. Family history is notable for a maternal
+    uncle with a history of thromboembolic events at a young age and a paternal grandmother
+    with a history of osteoporosis. Both parents are alive and healthy, with no known
+    history of similar conditions. At his previous encounter two months ago, his parents
+    reported that he had been doing well, with no significant changes in his symptoms.
+- id: case_3
+  text: A 10-year-old boy, Lucas Thompson, presents with complaints of mild clumsiness
+    and difficulty with fine motor tasks, such as tying his shoelaces or buttoning
+    his shirt, over the past six months. His parents report that he has been experiencing
+    occasional episodes of double vision and has had a few instances of dislocating
+    his shoulder during physical activities. On examination, his vital signs are within
+    normal limits, with a temperature of 98.6°F, weight of 32 kg, height of 140 cm,
+    and a body mass index of 18.5. His oxygen saturation is 98% on room air. Laboratory
+    evaluation shows a slightly elevated homocysteine level of 15 µmol/L, with normal
+    levels of folate and vitamin B12. He is currently taking a daily multivitamin
+    supplement as recommended by his pediatrician. His family history is notable for
+    his mother having a history of blood clots during pregnancy, and his father has
+    high blood pressure. Both parents are alive and healthy otherwise. During his
+    previous encounter two months ago, Lucas had a normal eye examination, but his
+    parents have since noticed an increase in his clumsiness, prompting this visit
+    to rule out any underlying conditions that may be contributing to his symptoms.
+- id: case_4
+  text: A 10-year-old boy, Lucas Brooks, presents with complaints of mild clumsiness
+    and difficulty with fine motor tasks, such as tying his shoelaces or buttoning
+    his shirt, over the past six months. His parents report that he has been experiencing
+    some learning difficulties, particularly with math and reading comprehension,
+    and has been noted to have a slight decrease in appetite. On examination, his
+    vital signs are within normal limits, with a temperature of 98.6°F, weight of
+    32 kg, height of 140 cm, and a body mass index (BMI) of 16.2. His head circumference
+    is measured at 54 cm, which is slightly below the 50th percentile. Oxygen saturation
+    is 98% on room air. He exhibits mild bilateral lens dislocation, but his visual
+    acuity is 20/20 in both eyes. Laboratory results show a mildly elevated homocysteine
+    level of 15 µmol/L and a methionine level of 25 µmol/L. His complete blood count
+    and blood chemistry are within normal limits. He is currently not taking any medications.
+    His family history is notable for a maternal uncle with a history of thrombotic
+    events, and both parents are alive and healthy. Two years ago, Lucas was seen
+    for a routine check-up, at which time his physical examination and laboratory
+    results were unremarkable. Since then, his parents have noticed a gradual decline
+    in his coordination and an increase in his frequency of falling.
+fabry_disease:
+- id: case_1
+  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
+    of burning pain in her hands and feet, which she has been experiencing for the
+    past five years. She reports that these episodes are often triggered by exercise
+    or exposure to heat, and are accompanied by a sensation of tingling and numbness.
+    Her vital signs are within normal limits, with a temperature of 36.8 degrees Celsius,
+    weight of 58 kilograms, height of 165 centimeters, and a body mass index of 21.5.
+    Laboratory evaluation shows a slightly elevated creatine kinase level at 180 U/L,
+    with normal electrolyte and complete blood count results. She is currently taking
+    acetaminophen as needed for pain relief, with a dosage of 500 milligrams every
+    six hours. Sofia's family history is notable for her father having suffered from
+    chronic kidney disease, and her mother having a history of hypertensive heart
+    disease. Two years ago, Sofia was seen for a similar complaint, at which time
+    her symptoms were attributed to overuse and she was advised to modify her exercise
+    routine; since then, the frequency and severity of her episodes have increased.
+- id: case_2
+  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
+    of burning pain in her hands and feet, which she has been experiencing for the
+    past five years. She describes the pain as severe and debilitating at times, often
+    triggered by exposure to heat or physical activity. Her vital signs are within
+    normal limits, with a temperature of 36.8 degrees Celsius, weight of 58 kilograms,
+    height of 165 centimeters, and a body mass index of 21.5. She reports experiencing
+    occasional gastrointestinal disturbances, including diarrhea and abdominal pain,
+    but these symptoms have been mild and self-limiting. Laboratory evaluation shows
+    a slightly elevated creatinine level of 1.1 mg/dL, but other renal function tests
+    are normal. She is currently taking ibuprofen as needed for pain management, with
+    a dosage of 400 milligrams every 6 hours. Sofia's family history is notable for
+    her father having suffered from chronic kidney disease, but both parents are alive
+    and otherwise healthy. During her previous encounter two years ago, she had reported
+    similar symptoms, but they were less frequent and severe, and her laboratory results
+    were largely unremarkable at that time.
+- id: case_3
+  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
+    of burning pain in her hands and feet, which she has been experiencing for the
+    past five years. She reports that these episodes are often triggered by exposure
+    to heat or physical activity and can be quite debilitating. Her vital signs are
+    within normal limits, with a temperature of 36.8 degrees Celsius, weight of 58
+    kilograms, height of 165 centimeters, and a body mass index of 21.4. On examination,
+    she is found to have normal oxygen saturation at 98% on room air. She complains
+    of occasional gastrointestinal disturbances, including diarrhea and abdominal
+    pain, but these symptoms are not consistent. Laboratory results show a slightly
+    elevated creatinine level at 1.1 mg/dL, but other renal function tests are within
+    normal limits. Her complete blood count and electrolyte panel are unremarkable.
+    She is currently taking ibuprofen as needed for pain management, with a dosage
+    of 400 milligrams every 6 hours, and reports good adherence to this regimen. Sofia's
+    family history is notable for her father having suffered from cardiac issues,
+    including hypertension and a myocardial infarction at the age of 55, but both
+    parents are currently alive. Two years ago, Sofia visited her primary care physician
+    for a routine check-up, at which time her blood pressure was found to be slightly
+    elevated at 130/85 mmHg, but no significant abnormalities were noted at that time.
+- id: case_4
+  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
+    of burning pain in her hands and feet, which she has been experiencing for the
+    past five years. She reports that these episodes are often triggered by exposure
+    to heat or physical activity and can be quite debilitating. Her vital signs are
+    within normal limits, with a temperature of 36.8 degrees Celsius, weight of 58
+    kilograms, height of 165 centimeters, and a body mass index of 21.5. On examination,
+    she is found to have normal oxygen saturation at 98% on room air. She complains
+    of occasional gastrointestinal symptoms, including bloating and diarrhea, but
+    these are not consistent. Laboratory results show a slightly elevated creatinine
+    level at 1.1 mg/dL, but all other parameters, including complete blood count and
+    electrolyte panel, are within normal ranges. She is currently taking ibuprofen
+    as needed for pain management, with a dosage of 400 milligrams every six hours,
+    and reports good adherence to this regimen. Her family history is notable for
+    her father having suffered from chronic kidney disease, requiring dialysis, and
+    her mother being healthy. Sofia last visited her primary care physician about
+    six months ago, at which time her symptoms were similar, but she had not yet started
+    experiencing the gastrointestinal issues.
