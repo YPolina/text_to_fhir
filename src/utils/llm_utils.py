@@ -1,5 +1,6 @@
 import re
 import yaml
+import json
 from pathlib import Path
 
 def extract_json_block(raw_text: str) -> str:
@@ -52,6 +53,30 @@ def save_generated_case(disease: str, case_text: str, yaml_path: str = "src/conf
     with open(yaml_file, "w", encoding="utf-8") as f:
         yaml.dump(data, f, sort_keys=False, allow_unicode=True)
 
+
+def save_parsed_fhir(parsed_fhir: dict, fhir_path: Path, parsed_base_dir: str = "data/parsed/") -> None:
+    """
+    Saves the parsed FHIR output to a structured directory under `parsed_base_dir`,
+    preserving the subdirectory and filename from the original FHIR path.
+
+    Args:
+        parsed_fhir (dict): The parsed FHIR data to save.
+        fhir_path (Path): The original path to the FHIR JSON file.
+        parsed_base_dir (str, optional): Base directory for saving parsed output.
+            Defaults to "data/parsed/".
+
+    Returns:
+        None
+    """
+
+    relative_path = fhir_path.relative_to("data/output")
+    target_path = Path(parsed_base_dir) / relative_path
+
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Save as JSON
+    with open(target_path, "w", encoding="utf-8") as f:
+        json.dump(parsed_fhir, f, indent=2, ensure_ascii=False)
 
 
 
