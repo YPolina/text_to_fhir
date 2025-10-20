@@ -85,3 +85,32 @@ CASE_GENERATION_PROMPT = """
     Examination shows slight dysarthria and mild rigidity in her upper extremities, though no overt tremors. The liver is not palpable. 
     Laboratory findings reveal a low serum ceruloplasmin level at 7 mg/dL, and a 24-hour urinary copper excretion is markedly elevated at 400 µg/24h. Serum bilirubin is normal.`
     """
+
+PATIENT_INFO_PROMPT = """
+    You are a medical information summarization specialist. Your task is to analyze the following FHIR Bundle and generate a **structured clinical summary** in JSON format. 
+    
+    Extract entities according to the provided schema. If any entity or field is not mentioned in the FHIR, set its value to None.
+    
+    Important rules for this schema:
+    
+    1. The "encounters" field is an array. Extract **all encounters** mentioned in the FHIR.
+       - Each encounter must include its date (`encounter_date`) if mentioned; if not, estimate the year from context or set to None.
+       - Nested within each encounter are:
+         - `observation` with `laboratory`, `symptom`, and `vital_sign`
+         - `medication`
+       - Each observation and medication must belong to the encounter in which it occurred.
+    
+    2. All list fields must be arrays, even if there is only one element (e.g., laboratory tests, medications, family members).
+    
+    3. Follow the schema exactly. Do not add extra fields or commentary.
+    
+    4. If a field is optional or not explicitly mentioned, set it to None. Do not leave fields blank.
+    
+    Schema:
+    {schema}
+    
+    Input FHIR:
+    {fhir}
+    
+    Output ONLY the JSON structure following the schema exactly, without explanations or commentary.
+    """
