@@ -9,7 +9,7 @@ class Patient_Address(BaseModel):
     country: Optional[str]
 
 class Patient_schema(BaseModel):
-    first_name: str
+    first_name: Optional[str] = None
     second_name: Optional[str] = None
     gender: Optional[Gender] = None
     birthDate: Optional[str] = None

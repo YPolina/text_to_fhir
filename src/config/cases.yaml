@@ -181,3 +181,11 @@ primary_biliary_cholangitis:
       His family history includes a maternal aunt with a history of autoimmune liver disease. 
       On examination, he has scleral icterus and xanthomas on his elbows. 
       Blood tests reveal elevated bilirubin, alkaline phosphatase, and GGT, and a positive AMA test.
+undefined:
+  - id: case_1
+    text: |
+        A 19-year-old woman presents with a 4–5 month history of blurred vision, knee pain after walking, and occasional clumsiness. She denies thrombotic events, cognitive delay, or family history of stroke or rare disease. On examination, she is tall and slim with long limbs, showing mild Marfanoid features including arachnodactyly. Ophthalmologic evaluation reveals mild myopia without lens dislocation, and neurologic testing shows slight imbalance on heel-to-toe walk. 
+        Skin examination is unremarkable.
+        Laboratory studies demonstrate mildly elevated plasma homocysteine (22 µmol/L) with trace urinary homocysteine, while vitamin B6, B12, and folate levels are normal. Plasma methionine was not measured. 
+        Coagulation studies, echocardiogram, brain MRI, and slit-lamp examination are all normal. Genetic testing is pending.
+        Overall, the patient exhibits Marfanoid features and elevated homocysteine without ectopia lentis, cognitive impairment, or thrombotic history. Genetic confirmation is awaited.
