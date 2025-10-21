@@ -1,0 +1,122 @@
+{
+  "patient": {
+    "first_name": "Emily",
+    "second_name": "Wilson",
+    "gender": "female",
+    "birthDate": "1990-07-04",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "complaints of intermittent burning sensations in her hands and feet",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "PhenX - serum creatinine assay for kidney function protocol 141401",
+            "value": 0.9,
+            "unit": "mg/dL",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Urinalysis studies",
+            "value": null,
+            "unit": null,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Burning feet",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Emotional upset",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Headaches",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "Blood pressure",
+            "value": 128.0,
+            "unit": "mmHg",
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "vital_type": "Pulse",
+            "value": 74.0,
+            "unit": "bpm",
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "vital_type": "BMI",
+            "value": 25.1,
+            "unit": "kg/m²",
+            "interpretation": null,
+            "status": "final"
+          }
+        ]
+      },
+      "medication": [
+        {
+          "name": "Multivitamin agent",
+          "note": null,
+          "dosage_text": "daily",
+          "frequency": 1,
+          "period": 1,
+          "adherence": null,
+          "period_unit": "d",
+          "reason": null
+        },
+        {
+          "name": "Ibuprofen",
+          "note": null,
+          "dosage_text": "as needed",
+          "frequency": null,
+          "period": null,
+          "adherence": null,
+          "period_unit": null,
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Mother",
+        "deceased": false,
+        "conditions": [
+          {
+            "condition_name": "Stroke volume",
+            "outcome": null
+          },
+          {
+            "condition_name": "Diabetes clinic",
+            "outcome": null
+          }
+        ]
+      }
+    ],
+    "note": "Both parents are alive."
+  }
+}

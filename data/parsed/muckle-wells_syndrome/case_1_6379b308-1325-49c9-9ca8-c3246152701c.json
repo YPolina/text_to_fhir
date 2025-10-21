@@ -1,0 +1,182 @@
+{
+  "patient": {
+    "first_name": "Emily",
+    "second_name": "Wilson",
+    "gender": "female",
+    "birthDate": "1993-01-01",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "recurring episodes of fever, rash, and joint pain",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "Erythrocyte Sedimentation Rate (ESR)",
+            "value": 25.0,
+            "unit": "mm/hour",
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "test_name": "C-reactive protein (CRP)",
+            "value": 10.0,
+            "unit": "mg/L",
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "test_name": "Complete Blood Count (CBC)",
+            "value": null,
+            "unit": null,
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Blood Chemistry Profiles",
+            "value": null,
+            "unit": null,
+            "interpretation": "Normal",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Fever",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Rash",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Joint pain",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "temperature",
+            "value": 37.8,
+            "unit": "°C",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "pulse",
+            "value": 82.0,
+            "unit": "bpm",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "blood pressure",
+            "value": 128.0,
+            "unit": "mmHg",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "respiratory rate",
+            "value": 18.0,
+            "unit": "breaths per minute",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "weight",
+            "value": 62.0,
+            "unit": "kg",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "height",
+            "value": 165.0,
+            "unit": "cm",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "BMI",
+            "value": 22.8,
+            "unit": "kg/m²",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "oxygen saturation",
+            "value": 98.0,
+            "unit": "%",
+            "interpretation": "Normal",
+            "status": "final"
+          }
+        ]
+      },
+      "medication": [
+        {
+          "name": "Ibuprofen",
+          "note": null,
+          "dosage_text": "400 mg as needed",
+          "frequency": null,
+          "period": null,
+          "adherence": null,
+          "period_unit": null,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "encounter_date": "2025-08-16",
+      "reason": "similar episode",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "Erythrocyte Sedimentation Rate (ESR)",
+            "value": null,
+            "unit": null,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "test_name": "C-reactive protein (CRP)",
+            "value": null,
+            "unit": null,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "symptom": [],
+        "vital_sign": []
+      },
+      "medication": []
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Paternal grandfather",
+        "deceased": true,
+        "conditions": [
+          {
+            "condition_name": "Myocardial infarction",
+            "outcome": "Died during operation"
+          }
+        ]
+      }
+    ],
+    "note": "Both parents are alive and healthy otherwise."
+  }
+}

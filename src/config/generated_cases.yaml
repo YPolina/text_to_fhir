@@ -1,204 +1,388 @@
-homocystinuria:
+acromegaly:
 - id: case_1
-  text: A 10-year-old boy, Lucas Brooks, presents with complaints of mild clumsiness
-    and difficulty with fine motor tasks, such as tying his shoelaces or buttoning
-    his shirt, over the past six months. His parents report that he has been experiencing
-    occasional episodes of double vision and has had a few instances of dislocating
-    his shoulder during physical activities. On examination, his vital signs are within
-    normal limits, with a temperature of 98.6°F, weight of 32 kg, height of 140 cm,
-    and a body mass index (BMI) of 18.5. His oxygen saturation is 98% on room air.
-    Laboratory evaluation shows a slightly elevated homocysteine level of 15 µmol/L
-    and a methionine level of 25 µmol/L. He is currently not taking any medications.
-    His family history is notable for his mother having a history of blood clots during
-    pregnancy and his father having high blood pressure. Both parents are alive and
-    healthy otherwise. During his previous encounter two months ago, Lucas had a normal
-    eye examination, but his parents have since noticed an increase in his clumsiness
-    and frequency of dislocating his shoulder.
+  text: A 38-year-old woman, Elena Vasquez, presents with complaints of gradual enlargement
+    of her hands and feet over the past year, as well as occasional joint pains, particularly
+    in her knees and wrists. She has noticed that her rings no longer fit and has
+    had to purchase larger shoes. Her blood pressure is 128/80 mmHg, pulse 70 bpm,
+    and BMI 26.5 kg/m². Laboratory results show a glucose level of 92 mg/dL, which
+    is within normal limits, and an insulin-like growth factor 1 (IGF-1) level of
+    420 ng/mL, slightly above the upper limit of the normal range for her age. She
+    reports no significant weight changes but mentions an increase in sweating and
+    mild fatigue. Her family history is notable for her father having type 2 diabetes,
+    and both parents are alive and healthy, with no known history of similar complaints.
+    Elena has been taking ibuprofen 400 mg as needed for her joint pains, with no
+    reported side effects. She visited her primary care physician six months ago for
+    a routine check-up, at which time her blood pressure was 120/75 mmHg, and no significant
+    abnormalities were noted. Since then, she has experienced a gradual progression
+    of her symptoms, prompting her to seek further evaluation.
 - id: case_2
-  text: A 10-year-old boy, Lucas Brooks, presents with complaints of mild clumsiness
-    and difficulty with fine motor tasks, such as tying his shoelaces or buttoning
-    his shirt, over the past six months. His parents report that he has been experiencing
-    some subtle vision problems, including occasional double vision and blurred vision,
-    particularly in the morning. On examination, his vital signs are within normal
-    limits, with a temperature of 98.6°F, weight of 32 kg, height of 140 cm, and BMI
-    of 16.2. His head circumference is slightly above average at 55 cm. Oxygen saturation
-    is 98% on room air. He exhibits mild bilateral lens dislocation, with his lenses
-    being superiorly and temporally displaced. Laboratory evaluation shows a slightly
-    elevated homocysteine level at 15.6 μmol/L and a methionine level of 25 μmol/L.
-    His complete blood count and blood chemistry are otherwise unremarkable. He is
-    currently not taking any medications. Family history is notable for a maternal
-    uncle with a history of thromboembolic events at a young age and a paternal grandmother
-    with a history of osteoporosis. Both parents are alive and healthy, with no known
-    history of similar conditions. At his previous encounter two months ago, his parents
-    reported that he had been doing well, with no significant changes in his symptoms.
-- id: case_3
-  text: A 10-year-old boy, Lucas Thompson, presents with complaints of mild clumsiness
-    and difficulty with fine motor tasks, such as tying his shoelaces or buttoning
-    his shirt, over the past six months. His parents report that he has been experiencing
-    occasional episodes of double vision and has had a few instances of dislocating
-    his shoulder during physical activities. On examination, his vital signs are within
-    normal limits, with a temperature of 98.6°F, weight of 32 kg, height of 140 cm,
-    and a body mass index of 18.5. His oxygen saturation is 98% on room air. Laboratory
-    evaluation shows a slightly elevated homocysteine level of 15 µmol/L, with normal
-    levels of folate and vitamin B12. He is currently taking a daily multivitamin
-    supplement as recommended by his pediatrician. His family history is notable for
-    his mother having a history of blood clots during pregnancy, and his father has
-    high blood pressure. Both parents are alive and healthy otherwise. During his
-    previous encounter two months ago, Lucas had a normal eye examination, but his
-    parents have since noticed an increase in his clumsiness, prompting this visit
-    to rule out any underlying conditions that may be contributing to his symptoms.
-- id: case_4
-  text: A 10-year-old boy, Lucas Brooks, presents with complaints of mild clumsiness
-    and difficulty with fine motor tasks, such as tying his shoelaces or buttoning
-    his shirt, over the past six months. His parents report that he has been experiencing
-    some learning difficulties, particularly with math and reading comprehension,
-    and has been noted to have a slight decrease in appetite. On examination, his
-    vital signs are within normal limits, with a temperature of 98.6°F, weight of
-    32 kg, height of 140 cm, and a body mass index (BMI) of 16.2. His head circumference
-    is measured at 54 cm, which is slightly below the 50th percentile. Oxygen saturation
-    is 98% on room air. He exhibits mild bilateral lens dislocation, but his visual
-    acuity is 20/20 in both eyes. Laboratory results show a mildly elevated homocysteine
-    level of 15 µmol/L and a methionine level of 25 µmol/L. His complete blood count
-    and blood chemistry are within normal limits. He is currently not taking any medications.
-    His family history is notable for a maternal uncle with a history of thrombotic
-    events, and both parents are alive and healthy. Two years ago, Lucas was seen
-    for a routine check-up, at which time his physical examination and laboratory
-    results were unremarkable. Since then, his parents have noticed a gradual decline
-    in his coordination and an increase in his frequency of falling.
-- id: case_5
-  text: A 10-year-old boy, Ethan Thompson, presents with complaints of mild clumsiness
-    and difficulty with fine motor tasks, such as tying his shoelaces and buttoning
-    his shirt, which have been noticeable over the past six months. His parents report
-    that he has been experiencing occasional episodes of double vision and has had
-    a few instances of dislocating his shoulder during physical activities. On examination,
-    his vital signs are within normal limits, with a temperature of 37.2 degrees Celsius,
-    weight of 32 kilograms, height of 140 centimeters, and a body mass index of 16.3.
-    His oxygen saturation is 98% on room air. Laboratory evaluation shows a slightly
-    elevated homocysteine level at 15 micromoles per liter, with normal levels of
-    folate and vitamin B12. He is currently taking a daily multivitamin supplement
-    as recommended by his pediatrician. His family history is notable for a maternal
-    uncle with a history of blood clots and a paternal grandmother who had a stroke
-    at the age of 60. Both parents are alive and healthy, with no known history of
-    genetic disorders. During his previous encounter two months ago, Ethan's parents
-    expressed concerns about his learning difficulties in school, particularly with
-    math and reading comprehension, but no significant abnormalities were found on
-    his physical examination at that time.
-- id: case_6
-  text: A 10-year-old boy, Lucas Thompson, presents with complaints of mild vision
-    problems and frequent bruising over the past six months. He reports difficulty
-    seeing the board in class and has noticed that he bruises easily, even with minor
-    trauma. His vital signs are within normal limits, with a temperature of 36.8°C,
-    weight of 32 kg, height of 140 cm, and BMI of 16.3. His oxygen saturation is 98%
-    on room air. On examination, he has a slight increase in blood pressure at 110/70
-    mmHg. Laboratory results show a slightly elevated homocysteine level at 15.2 μmol/L,
-    with normal vitamin B12 and folate levels. He is currently taking a daily multivitamin
-    as recommended by his pediatrician. His family history is notable for a maternal
-    uncle with a history of deep vein thrombosis at a young age, and both parents
-    are alive and healthy. Two years ago, Lucas was seen for a routine check-up, at
-    which time his physical examination and laboratory results were unremarkable.
-    Since then, his parents have noticed a gradual decline in his visual acuity and
-    an increase in easy bruising.
+  text: A 38-year-old woman, Sofia Rodriguez, presents with complaints of gradual
+    enlargement of her hands and feet over the past year, as well as occasional joint
+    pains, particularly in her knees and elbows. She has noticed that her rings no
+    longer fit and has had to purchase larger shoes. Her blood pressure is 128/80
+    mmHg, pulse 72 bpm, and BMI 26.5 kg/m². Laboratory results show a glucose level
+    of 92 mg/dL, which is within normal limits, and an insulin-like growth factor
+    1 (IGF-1) level of 420 ng/mL, slightly above the upper limit of the normal range
+    for her age. She reports experiencing mild headaches and sweating, but these symptoms
+    are intermittent and not severe enough to prompt her to seek medical attention
+    previously. Sofia's family history is notable for her father having type 2 diabetes,
+    and her mother is alive and healthy. She has been taking ibuprofen 400 mg as needed
+    for her joint pains, usually about two to three times a week, without any reported
+    side effects. Two months ago, Sofia visited her primary care physician for a routine
+    check-up, at which time her blood pressure was similar, and she had no significant
+    complaints other than the gradual increase in shoe size, which was not considered
+    alarming at the time.
+wilson_disease:
+- id: case_1
+  text: A 25-year-old woman, Alexandra Petrova, presents with complaints of mild tremors
+    in her hands, particularly noticeable when she is tired or under stress. She has
+    been experiencing these symptoms for about six months, with no significant progression
+    or worsening. Her vital signs are within normal limits, with a blood pressure
+    of 120/80 mmHg, pulse 72 bpm, and BMI 22.1 kg/m². Laboratory results show a serum
+    ceruloplasmin level of 15 mg/dL, which is slightly below the normal range, and
+    a 24-hour urine copper collection of 50 mcg, also slightly elevated. She reports
+    no other significant symptoms, such as liver dysfunction or neurological deficits.
+    Her family history is notable for a younger brother who has been diagnosed with
+    a neurological disorder of unknown etiology, and her mother has a history of psychiatric
+    issues, though the exact nature is unclear. Both parents are alive, and there
+    is no known consanguinity. Alexandra has been taking a multivitamin daily for
+    the past year and reports no other medication use. She had a physical examination
+    two years ago, which was unremarkable, with normal liver function tests and a
+    complete blood count. She now seeks evaluation for her tremors, concerned about
+    the possibility of a neurological condition.
+- id: case_2
+  text: A 25-year-old woman, Emma Taylor, presents with complaints of mild tremors
+    in her hands, particularly noticeable when she is tired or under stress. She has
+    been experiencing these symptoms for about six months, with no significant progression
+    or worsening. Her blood pressure is 120/80 mmHg, pulse 72 bpm, and BMI 22.5 kg/m².
+    Laboratory results show a serum ceruloplasmin level of 15 mg/dL, which is slightly
+    below the normal range, and a 24-hour urine copper collection of 50 mcg, slightly
+    elevated but not conclusively abnormal. She reports occasional episodes of abdominal
+    pain and nausea, but these are not persistent or severe. Her medications include
+    a multivitamin taken daily, and she has no known allergies. Emma's family history
+    is notable for her younger brother being diagnosed with a neurological condition
+    of unknown origin, and her mother having a history of psychiatric issues, though
+    the specifics are not well-documented. Both of Emma's parents are alive, and aside
+    from the mentioned conditions, they are reportedly healthy. Emma has been seen
+    in the clinic previously for routine check-ups, with the most recent visit about
+    a year ago showing normal findings. Since then, she has noticed the gradual onset
+    of her current symptoms, prompting her to seek medical evaluation.
+spigfd:
+- id: case_1
+  text: A 38-year-old woman, Elena Vasquez, presents with complaints of intermittent
+    abdominal pain and bloating over the past few months. She has a history of occasional
+    diarrhea but no significant weight loss or bloody stools. Her blood pressure is
+    128/82 mmHg, pulse 74 bpm, and BMI 25.1 kg/m². Laboratory results show a mild
+    elevation in liver enzymes, with ALT 42 U/L and AST 35 U/L, both slightly above
+    the normal range. Her complete blood count is within normal limits, and inflammatory
+    markers such as CRP are not elevated. She is currently taking a multivitamin daily
+    and an occasional antacid for heartburn. Her mother has a history of irritable
+    bowel syndrome, and her father has hypertension. Elena reports no recent travel,
+    changes in diet, or stressors that could be contributing to her symptoms. She
+    has not noticed any correlation between her symptoms and menstrual cycle or specific
+    food intake. Over the past year, she has had a few episodes of similar abdominal
+    discomfort that resolved on their own without seeking medical attention.
+- id: case_2
+  text: A 38-year-old woman, Sofia Rodriguez, presents with complaints of intermittent
+    abdominal pain and occasional diarrhea over the past two months. She has a temperature
+    of 36.8°C, pulse 82 bpm, blood pressure 128/80 mmHg, respiratory rate 18 breaths
+    per minute, weight 58 kg, height 165 cm, BMI 21.3 kg/m², and oxygen saturation
+    98% on room air. She describes the abdominal pain as mild to moderate, usually
+    occurring in the lower abdomen and sometimes accompanied by bloating. The diarrhea
+    episodes are loose and watery, occurring approximately twice a week, with no visible
+    blood or mucus. Laboratory results show a white blood cell count of 8.5 x 10^9/L,
+    hemoglobin 13.2 g/dL, and platelet count 220 x 10^9/L. Her electrolyte panel is
+    within normal limits, with sodium 140 mmol/L, potassium 4.2 mmol/L, and chloride
+    102 mmol/L. She is currently taking no medications. Sofia's mother has a history
+    of irritable bowel syndrome, and her father has hypertension. She reports no recent
+    travel, changes in diet, or stressful events. Two months ago, she had a similar
+    episode of abdominal pain that resolved on its own within a week. Sofia's symptoms
+    have been mild and intermittent, but she is concerned about the persistence of
+    her abdominal discomfort and the occasional diarrhea.
+still's_disease:
+- id: case_1
+  text: A 28-year-old woman, Sophia Patel, presents with a two-week history of intermittent
+    fever, ranging from 99.5 to 101.5 degrees Fahrenheit, accompanied by a persistent,
+    mild, and non-specific rash on her trunk and arms. She also reports experiencing
+    joint pain and stiffness, particularly in her knees and ankles, which worsens
+    in the morning and improves slightly with movement. Her blood pressure is 118/78
+    mmHg, pulse 88 bpm, respiratory rate 16 breaths per minute, and oxygen saturation
+    98% on room air. Laboratory results show a white blood cell count of 12,500 cells
+    per microliter, erythrocyte sedimentation rate of 40 mm per hour, and C-reactive
+    protein of 2.5 mg per deciliter. She has been taking ibuprofen 400 mg as needed
+    for her joint symptoms, with some relief. Sophia's mother has a history of rheumatoid
+    arthritis, and her younger brother was diagnosed with juvenile idiopathic arthritis.
+    She reports no recent travel, infections, or changes in her medication regimen.
+    Over the past few months, Sophia has noticed a gradual increase in her fatigue
+    levels, which she initially attributed to her busy work schedule, but now suspects
+    may be related to her current symptoms.
+- id: case_2
+  text: A 28-year-old woman, Sofia Rodriguez, presents with a two-week history of
+    intermittent fever, arthralgias, and morning stiffness in her hands and wrists.
+    She has been experiencing fatigue and a general feeling of being unwell, which
+    has prompted her to seek medical attention. On examination, her vital signs are
+    notable for a temperature of 38.2 degrees Celsius, pulse 90 bpm, blood pressure
+    120/80 mmHg, and oxygen saturation 98% on room air. Laboratory results reveal
+    a mildly elevated erythrocyte sedimentation rate of 30 mm/hour, C-reactive protein
+    of 15 mg/L, and a white blood cell count of 12,000 cells/microliter. Her hemoglobin
+    and platelet count are within normal limits. She has been taking ibuprofen 400
+    mg three times a day as needed for her joint pains, with some relief. Sofia's
+    mother has a history of rheumatoid arthritis, and her younger brother was diagnosed
+    with juvenile idiopathic arthritis. Both parents are alive and healthy otherwise.
+    Two months ago, Sofia was seen in the clinic for a similar episode of fever and
+    joint pains, which resolved spontaneously within a week. At that time, her laboratory
+    tests were largely unremarkable except for a slightly elevated C-reactive protein
+    level. Since then, she reports no significant changes in her symptoms or medication
+    use.
 fabry_disease:
 - id: case_1
-  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
-    of burning pain in her hands and feet, which she has been experiencing for the
-    past five years. She reports that these episodes are often triggered by exercise
-    or exposure to heat, and are accompanied by a sensation of tingling and numbness.
-    Her vital signs are within normal limits, with a temperature of 36.8 degrees Celsius,
-    weight of 58 kilograms, height of 165 centimeters, and a body mass index of 21.5.
-    Laboratory evaluation shows a slightly elevated creatine kinase level at 180 U/L,
-    with normal electrolyte and complete blood count results. She is currently taking
-    acetaminophen as needed for pain relief, with a dosage of 500 milligrams every
-    six hours. Sofia's family history is notable for her father having suffered from
-    chronic kidney disease, and her mother having a history of hypertensive heart
-    disease. Two years ago, Sofia was seen for a similar complaint, at which time
-    her symptoms were attributed to overuse and she was advised to modify her exercise
-    routine; since then, the frequency and severity of her episodes have increased.
+  text: A 35-year-old woman, Emily Wilson, presents with complaints of intermittent
+    burning sensations in her hands and feet, which she has been experiencing for
+    the past six months. She describes the sensations as mild to moderate in severity
+    and notes that they tend to worsen with exercise or in hot weather. Her blood
+    pressure is 128/82 mmHg, pulse 74 bpm, and BMI 25.1 kg/m². Laboratory results
+    show a serum creatinine level of 0.9 mg/dL, which is within the normal range,
+    and a urinalysis that reveals no significant abnormalities. She is currently taking
+    a multivitamin daily and ibuprofen as needed for occasional headaches. Her family
+    history is notable for her father having suffered a heart attack at the age of
+    50, and her mother has a history of stroke at the age of 55. Both parents are
+    alive, but her father has hypertension and her mother has diabetes. Emily reports
+    that she has been experiencing occasional bouts of gastrointestinal upset, characterized
+    by diarrhea and abdominal pain, over the past year, but these symptoms have been
+    mild and self-limiting. She has not noticed any recent changes in her vision,
+    hearing, or cognitive function.
 - id: case_2
-  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
-    of burning pain in her hands and feet, which she has been experiencing for the
-    past five years. She describes the pain as severe and debilitating at times, often
-    triggered by exposure to heat or physical activity. Her vital signs are within
-    normal limits, with a temperature of 36.8 degrees Celsius, weight of 58 kilograms,
-    height of 165 centimeters, and a body mass index of 21.5. She reports experiencing
-    occasional gastrointestinal disturbances, including diarrhea and abdominal pain,
-    but these symptoms have been mild and self-limiting. Laboratory evaluation shows
-    a slightly elevated creatinine level of 1.1 mg/dL, but other renal function tests
-    are normal. She is currently taking ibuprofen as needed for pain management, with
-    a dosage of 400 milligrams every 6 hours. Sofia's family history is notable for
-    her father having suffered from chronic kidney disease, but both parents are alive
-    and otherwise healthy. During her previous encounter two years ago, she had reported
-    similar symptoms, but they were less frequent and severe, and her laboratory results
-    were largely unremarkable at that time.
-- id: case_3
-  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
-    of burning pain in her hands and feet, which she has been experiencing for the
-    past five years. She reports that these episodes are often triggered by exposure
-    to heat or physical activity and can be quite debilitating. Her vital signs are
-    within normal limits, with a temperature of 36.8 degrees Celsius, weight of 58
-    kilograms, height of 165 centimeters, and a body mass index of 21.4. On examination,
-    she is found to have normal oxygen saturation at 98% on room air. She complains
-    of occasional gastrointestinal disturbances, including diarrhea and abdominal
-    pain, but these symptoms are not consistent. Laboratory results show a slightly
-    elevated creatinine level at 1.1 mg/dL, but other renal function tests are within
-    normal limits. Her complete blood count and electrolyte panel are unremarkable.
-    She is currently taking ibuprofen as needed for pain management, with a dosage
-    of 400 milligrams every 6 hours, and reports good adherence to this regimen. Sofia's
-    family history is notable for her father having suffered from cardiac issues,
-    including hypertension and a myocardial infarction at the age of 55, but both
-    parents are currently alive. Two years ago, Sofia visited her primary care physician
-    for a routine check-up, at which time her blood pressure was found to be slightly
-    elevated at 130/85 mmHg, but no significant abnormalities were noted at that time.
-- id: case_4
-  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
-    of burning pain in her hands and feet, which she has been experiencing for the
-    past five years. She reports that these episodes are often triggered by exposure
-    to heat or physical activity and can be quite debilitating. Her vital signs are
-    within normal limits, with a temperature of 36.8 degrees Celsius, weight of 58
-    kilograms, height of 165 centimeters, and a body mass index of 21.5. On examination,
-    she is found to have normal oxygen saturation at 98% on room air. She complains
-    of occasional gastrointestinal symptoms, including bloating and diarrhea, but
-    these are not consistent. Laboratory results show a slightly elevated creatinine
-    level at 1.1 mg/dL, but all other parameters, including complete blood count and
-    electrolyte panel, are within normal ranges. She is currently taking ibuprofen
-    as needed for pain management, with a dosage of 400 milligrams every six hours,
-    and reports good adherence to this regimen. Her family history is notable for
-    her father having suffered from chronic kidney disease, requiring dialysis, and
-    her mother being healthy. Sofia last visited her primary care physician about
-    six months ago, at which time her symptoms were similar, but she had not yet started
-    experiencing the gastrointestinal issues.
-- id: case_5
-  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
-    of burning pain in her hands and feet, which she has been experiencing for the
-    past five years. She reports that these episodes are often triggered by exposure
-    to heat or physical activity and can be quite debilitating. Her vital signs are
-    within normal limits, with a temperature of 36.8 degrees Celsius, weight of 58
-    kilograms, height of 165 centimeters, and a body mass index of 21.5. On examination,
-    she is found to have normal oxygen saturation at 98% on room air. She complains
-    of gastrointestinal symptoms, including bloating and diarrhea, which have been
-    persistent over the past year. Laboratory results show a slightly elevated creatinine
-    level at 1.1 mg/dL, with normal electrolyte levels. She is currently taking ibuprofen
-    400 milligrams as needed for pain, with fair adherence. Her family history is
-    notable for a father who suffered from chronic kidney disease, and both parents
-    are alive and healthy otherwise. Two years ago, she was seen for similar complaints,
-    at which time her laboratory results were largely unremarkable, except for a mild
-    elevation in her blood urea nitrogen level. Since then, she has noticed a gradual
-    increase in the frequency and severity of her pain episodes.
-- id: case_6
-  text: A 32-year-old woman, Sofia Rodriguez, presents with intermittent episodes
-    of burning pain in her hands and feet, which she has been experiencing for the
-    past five years. She reports that these episodes are often triggered by exposure
-    to heat or physical activity and can be quite debilitating. Her vital signs are
-    within normal limits, with a temperature of 37.2°C, weight of 65 kg, height of
-    165 cm, and a BMI of 24.1. Oxygen saturation is 98% on room air. She also complains
-    of occasional gastrointestinal disturbances, including diarrhea and abdominal
-    pain, which seem to be unrelated to her dietary habits. Laboratory evaluation
-    shows a slightly elevated creatinine level at 1.1 mg/dL, with normal electrolyte
-    levels. Her complete blood count is unremarkable. She is currently taking ibuprofen
-    400 mg as needed for pain relief, which provides some benefit. Sofia's family
-    history is notable for her father having suffered from a heart condition, and
-    her mother is alive and healthy. Two years ago, Sofia visited her primary care
-    physician for similar complaints, at which time her symptoms were attributed to
-    possible neuropathy, but no definitive diagnosis was made. Since then, the frequency
-    and severity of her pain episodes have increased, prompting her to seek further
-    evaluation.
+  text: A 35-year-old woman, Emily Wilson, presents with complaints of intermittent
+    burning sensations in her hands and feet, which she has been experiencing for
+    the past six months. She describes the sensations as mild to moderate in severity
+    and notes that they tend to worsen with exposure to heat or physical activity.
+    Her vital signs at presentation include a temperature of 37.2 degrees Celsius,
+    pulse of 82 bpm, blood pressure of 128/80 mmHg, respiratory rate of 18 breaths
+    per minute, weight of 62 kg, height of 165 cm, and a BMI of 22.8 kg/m², with an
+    oxygen saturation of 98% on room air. Laboratory results reveal a serum creatinine
+    level of 0.9 mg/dL, which is within the normal range, and a urinalysis that shows
+    no significant abnormalities. She is currently taking no prescribed medications
+    but reports taking over-the-counter pain relievers as needed for her symptoms.
+    Her family history is notable for her mother having been diagnosed with a heart
+    condition, and her younger brother has experienced similar episodes of burning
+    sensations in his extremities, though no formal diagnosis has been made. Emily
+    reports that she has been feeling generally well otherwise, with no recent changes
+    in her medication regimen or significant infections. She was seen in the clinic
+    two years ago for a routine check-up, at which time her blood pressure was 120/75
+    mmHg, and her laboratory results were unremarkable.
+hemophagocytic_lymphohistiocytosis:
+- id: case_1
+  text: A 28-year-old woman, Sofia Rodriguez, presents with a two-week history of
+    intermittent fever, ranging from 99.5 to 101.5 degrees Fahrenheit, and fatigue
+    that has been progressively worsening. She also reports experiencing night sweats
+    and a 5-pound weight loss over the past month. Her blood pressure is 120/80 mmHg,
+    pulse 100 bpm, respiratory rate 18 breaths per minute, and oxygen saturation 98%
+    on room air. Laboratory results show a white blood cell count of 12,000 cells
+    per microliter, hemoglobin 11.5 grams per deciliter, and platelet count 90,000
+    cells per microliter. Her liver function tests reveal an alanine transaminase
+    of 45 units per liter and an aspartate transaminase of 30 units per liter, both
+    slightly elevated. She has been taking acetaminophen 650 milligrams every 4 hours
+    as needed for fever. Sofia's mother has a history of autoimmune disorders, and
+    her younger brother was diagnosed with a viral infection last year. Two months
+    ago, Sofia had a viral upper respiratory tract infection that resolved with supportive
+    care. She denies any recent travel or exposure to sick contacts.
+- id: case_2
+  text: A 28-year-old woman, Sofia Rodriguez, presents with a two-week history of
+    intermittent fever, ranging from 38 to 39 degrees Celsius, and fatigue that has
+    been progressively worsening. She also reports experiencing night sweats and a
+    2-kilogram weight loss over the past month. On physical examination, her vital
+    signs are notable for a temperature of 38.5 degrees Celsius, pulse of 110 beats
+    per minute, blood pressure of 120/80 mmHg, respiratory rate of 22 breaths per
+    minute, and oxygen saturation of 98% on room air. Laboratory results reveal a
+    white blood cell count of 12,000 cells per microliter, with a slight left shift,
+    hemoglobin of 11.5 grams per deciliter, and platelet count of 90,000 cells per
+    microliter. Her liver function tests show a mild elevation in aspartate aminotransferase
+    to 45 units per liter and alanine aminotransferase to 50 units per liter. She
+    has been taking acetaminophen as needed for fever and ibuprofen for occasional
+    headaches. Sofia's family history is notable for her mother having been diagnosed
+    with systemic lupus erythematosus, and her younger brother has a history of recurrent
+    infections. Two months ago, Sofia was seen for a similar episode of fever and
+    fatigue, at which time her laboratory results were largely unremarkable except
+    for a mildly elevated erythrocyte sedimentation rate. Since then, she reports
+    having had several episodes of similar symptoms, prompting her current visit for
+    further evaluation.
+homocystinuria:
+- id: case_1
+  text: A 25-year-old woman, Emily Wilson, presents with complaints of blurred vision
+    and occasional double vision over the past few months. She has been experiencing
+    mild muscle weakness, particularly in her legs, which she attributes to increased
+    physical activity at work. Her blood pressure is 128/82 mmHg, pulse 72 bpm, and
+    BMI 22.1 kg/m². Laboratory results show a serum homocysteine level of 25 μmol/L,
+    slightly elevated compared to the normal range of 5-15 μmol/L. Her complete blood
+    count and basic metabolic panel are within normal limits. She is taking a multivitamin
+    daily and reports good adherence. Emily's family history is notable for her younger
+    brother being diagnosed with a learning disability, and her mother has a history
+    of recurrent miscarriages. Both parents are alive and healthy, with no known chronic
+    medical conditions. Emily reports no recent changes in her diet or lifestyle,
+    except for increasing her physical activity level over the past year. She had
+    a normal annual check-up six months ago, with no significant findings or concerns
+    at that time.
+- id: case_2
+  text: A 25-year-old woman, Emily Wilson, presents with complaints of blurred vision
+    and occasional muscle weakness in her legs over the past few months. She has a
+    blood pressure of 120/80 mmHg, pulse 70 bpm, and BMI 22.5 kg/m². Laboratory results
+    show a serum homocysteine level of 25 μmol/L, which is slightly elevated, and
+    a normal complete blood count. She reports experiencing occasional headaches and
+    feeling tired, but these symptoms have been intermittent and not severe enough
+    to prompt medical attention until now. Her family history is notable for a younger
+    brother who has had several episodes of deep vein thrombosis, and her mother has
+    a history of cardiovascular disease. Both parents are alive, and there is no known
+    family history of similar symptoms. Emily's previous encounters with healthcare
+    have been limited to routine check-ups, with the last visit being about a year
+    ago, where all laboratory tests were within normal limits. She is not currently
+    taking any prescribed medications but has been taking a multivitamin supplement
+    daily for the past year.
+muckle-wells_syndrome:
+- id: case_1
+  text: 'A 32-year-old woman, Emily Wilson, presents with recurring episodes of fever,
+    rash, and joint pain over the past six months. She has been experiencing these
+    symptoms intermittently, with each episode lasting around 3-5 days, and reports
+    that they seem to be triggered by stress or minor infections. Her current vital
+    signs are: temperature 37.8°C, pulse 82 bpm, blood pressure 128/80 mmHg, respiratory
+    rate 18 breaths per minute, weight 62 kg, height 165 cm, BMI 22.8 kg/m², and oxygen
+    saturation 98% on room air. She describes the rash as a non-pruritic, pinkish-red
+    maculopapular eruption primarily affecting her arms, legs, and torso, which resolves
+    on its own within a few days. Laboratory results show a mildly elevated erythrocyte
+    sedimentation rate (ESR) of 25 mm/hour and C-reactive protein (CRP) of 10 mg/L,
+    with normal complete blood count (CBC) and blood chemistry profiles. She is currently
+    taking ibuprofen 400 mg as needed for pain and fever, with some relief. Her family
+    history is notable for her mother having a history of recurrent urticaria and
+    her paternal grandfather having died of a myocardial infarction at the age of
+    60. Both parents are alive and healthy otherwise. Emily reports that she has been
+    feeling generally well between episodes but has noticed a slight increase in the
+    frequency and severity of her symptoms over the past few months. She was seen
+    in the clinic two months ago for a similar episode, at which time her laboratory
+    results were similar, and she was advised to continue with symptomatic treatment
+    and follow-up.'
+- id: case_2
+  text: A 32-year-old woman, Emily Wilson, presents with recurring episodes of fever,
+    rash, and joint pain over the past six months. She has been experiencing these
+    symptoms intermittently, with each episode lasting around 3-5 days, and reports
+    that they seem to be triggered by stress or minor infections. On presentation,
+    her vital signs are within normal limits, with a temperature of 37.2°C, pulse
+    82 bpm, blood pressure 122/78 mmHg, and oxygen saturation 98% on room air. She
+    describes the rash as a pink, non-pruritic, maculopapular eruption primarily affecting
+    her arms and legs, and the joint pain as mild to moderate, affecting her knees
+    and ankles. Laboratory results show a mild elevation in C-reactive protein at
+    12 mg/L and an erythrocyte sedimentation rate of 25 mm/h, with normal complete
+    blood count and liver function tests. She is currently taking ibuprofen 400 mg
+    as needed for pain relief, with good adherence. Her family history is notable
+    for her mother having a history of recurrent urticaria and her father being healthy.
+    She reports no recent travel or exposure to sick contacts, and her last visit
+    to the clinic was two months ago for a similar episode, at which time her symptoms
+    were attributed to a viral illness.
+paroxysmal_nocturnal_hemoglobinuria:
+- id: case_1
+  text: A 38-year-old woman, Elena Vasquez, presents with complaints of intermittent
+    dark-colored urine and fatigue over the past few months. She has been experiencing
+    these symptoms mostly at night, waking up to void and noticing the discoloration
+    in the morning. Her vital signs are within normal limits, with a blood pressure
+    of 128/82 mmHg, pulse 74 bpm, respiratory rate 16 breaths per minute, and oxygen
+    saturation 98% on room air. She reports occasional mild chest discomfort but no
+    significant shortness of breath. Laboratory results show a hemoglobin level of
+    12.1 g/dL, slightly below the normal range, with a mean corpuscular volume of
+    92 fL and a reticulocyte count of 2.5%, indicating a mild increase in red blood
+    cell turnover. Her white blood cell and platelet counts are within normal limits.
+    She has been taking oral contraceptives for the past year, with no recent changes
+    in her medication regimen. Elena's family history is notable for her mother having
+    a history of autoimmune disorders, including lupus, but there is no known family
+    history of hematological diseases. She had a normal annual check-up six months
+    ago, with no significant findings or abnormalities reported at that time. Elena's
+    current symptoms have been gradual in onset, and she has not experienced any recent
+    infections, weight loss, or other systemic symptoms that might suggest an underlying
+    chronic condition.
+- id: case_2
+  text: A 38-year-old woman, Elena Vasquez, presents with complaints of intermittent
+    dark urine and fatigue over the past few months. She has been experiencing these
+    symptoms mostly at night, waking up to void and noticing the discoloration of
+    her urine. Her vital signs are within normal limits, with a temperature of 36.8
+    degrees Celsius, pulse 72 bpm, blood pressure 128/80 mmHg, respiratory rate 16
+    breaths per minute, and oxygen saturation 98% on room air. She reports no significant
+    weight loss or gain, with a current weight of 62 kg and height of 165 cm, resulting
+    in a BMI of 22.8 kg/m². Laboratory results show a hemoglobin level of 12.1 g/dL,
+    which is slightly below the normal range, and a reticulocyte count of 2.5%, indicating
+    an active bone marrow response. Her lactate dehydrogenase (LDH) level is mildly
+    elevated at 245 U/L, and total bilirubin is 1.2 mg/dL, with indirect bilirubin
+    being 0.8 mg/dL. She is not currently taking any medications. Both of her parents
+    are alive and healthy, with no known family history of hematological disorders.
+    Two months ago, she had a similar episode of dark urine, which resolved spontaneously,
+    but she did not seek medical attention at that time. She denies any recent travel,
+    infections, or exposure to toxins.
+prader-willi_syndrome:
+- id: case_1
+  text: A 5-year-old boy, Ethan Thompson, presents with concerns about his feeding
+    habits and overall development. He has been experiencing increased appetite and
+    eating frequency, often seeking food between meals. His mother reports that he
+    has been gaining weight steadily over the past year, with a current weight of
+    23 kg and height of 110 cm, resulting in a BMI of 19.1 kg/m². Vital signs include
+    a temperature of 36.8°C, pulse of 90 bpm, blood pressure of 90/60 mmHg, and respiratory
+    rate of 22 breaths per minute. Laboratory results show a fasting glucose level
+    of 90 mg/dL and an insulin level of 10 μU/mL, both within normal ranges. Ethan's
+    mother mentions that he has been having difficulty with speech and gross motor
+    skills, such as running and climbing, but his fine motor skills appear to be developing
+    normally. She is taking him to various therapists to address these issues. Both
+    parents are alive and healthy, though his father has a history of obesity. Ethan's
+    7-year-old sister is healthy and developing normally. At his last check-up two
+    months ago, his pediatrician noted that his weight gain was slightly above the
+    expected curve, but no specific concerns were raised at that time. Ethan is not
+    currently taking any prescribed medications. His mother notes that she has been
+    trying to limit his access to food between meals, but he often becomes upset and
+    demands snacks.
+- id: case_2
+  text: A 5-year-old boy, Ethan Thompson, presents with concerns about his eating
+    habits and slow weight gain. He has been experiencing increased appetite and food-seeking
+    behavior over the past year, often asking for snacks between meals. His vital
+    signs are within normal limits, with a temperature of 36.8 degrees Celsius, pulse
+    88 bpm, blood pressure 90/60 mmHg, and oxygen saturation 98% on room air. His
+    weight is 18.2 kg, height 110 cm, and BMI 15.1 kg/m². Laboratory results show
+    a normal complete blood count, electrolyte panel, and liver function tests. His
+    glucose level is 85 mg/dL, and insulin level is 5.2 μU/mL. He is not currently
+    taking any prescribed medication. Ethan's mother reports that he has been having
+    difficulty separating from her at preschool and exhibits tantrums when he is unable
+    to get his desired food. Both parents are alive and healthy, though his mother
+    has a family history of obesity. Ethan's older sister is healthy, with no significant
+    medical issues. At his last pediatric visit two months ago, his weight was 17.5
+    kg, and his height was 108 cm, indicating a steady growth pattern. His mother
+    notes that Ethan has been having trouble with speech articulation and has been
+    receiving speech therapy for the past six months.
+primary_biliary_cholangitis:
+- id: case_1
+  text: A 38-year-old woman, Emily Wilson, presents with complaints of intermittent
+    itching, particularly on her palms and soles, which has been bothering her for
+    the past few months. She also mentions feeling somewhat fatigued, though she attributes
+    this to her busy work schedule and lack of sleep. Her vital signs are within normal
+    limits, with a blood pressure of 122/80 mmHg, pulse 74 bpm, and BMI 25.1 kg/m².
+    Laboratory results show a mild elevation in alkaline phosphatase at 140 U/L, with
+    normal ranges of liver enzymes, including ALT and AST. Her total bilirubin is
+    0.8 mg/dL, and she has a slightly elevated cholesterol level of 220 mg/dL. She
+    is currently taking a multivitamin daily and occasional antihistamines for the
+    itching, which she finds somewhat relieving. Emily's mother has a history of autoimmune
+    thyroiditis, and her sister has been diagnosed with rheumatoid arthritis. Both
+    parents are alive and relatively healthy, with no known liver diseases in the
+    family. Emily reports that she has not noticed any changes in her stool or urine
+    color and has not experienced any abdominal pain or jaundice. She had a routine
+    health checkup about six months ago, which did not reveal any significant abnormalities,
+    though she did have a slightly elevated liver enzyme level at that time, which
+    was not pursued further due to its mild nature and the absence of symptoms.
+- id: case_2
+  text: A 52-year-old woman, Elena Vasquez, presents with complaints of intermittent
+    itching, particularly on her palms and soles, which has been bothering her for
+    the past few months. She also mentions feeling somewhat fatigued, though she attributes
+    this to her busy work schedule. Her vital signs are within normal limits, with
+    a blood pressure of 128/82 mmHg, pulse 74 bpm, and BMI 25.1 kg/m². Laboratory
+    results show a mild elevation in alkaline phosphatase at 140 U/L, with a normal
+    range of 30-120 U/L, and a slight increase in gamma-glutamyl transferase at 58
+    U/L, where the normal range is 0-55 U/L. Her complete blood count and basic metabolic
+    panel are unremarkable. She is currently taking no medications. Elena's mother
+    has a history of autoimmune thyroiditis, and her sister was diagnosed with rheumatoid
+    arthritis. Both parents are alive and healthy, with no known history of liver
+    diseases. Elena reports that she has not noticed any changes in her appetite,
+    bowel movements, or urine color, and she denies any recent travel or exposure
+    to toxins. She had a routine health check-up about six months ago, which did not
+    reveal any significant abnormalities, though she does recall her doctor mentioning
+    that her liver enzymes were at the upper limit of normal at that time.

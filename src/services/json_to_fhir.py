@@ -527,9 +527,9 @@ def medication_to_fhir(
         if med.frequency and med.period:
             timing = Timing(
                 repeat={
-                    "frequency": med.frequency,
-                    "period": med.period,
-                    "periodUnit": med.period_unit.value
+                    "frequency": med.frequency if med.frequency else None,
+                    "period": med.period if med.period else None,
+                    "periodUnit": med.period_unit.value if med.period_unit else None
                 }
             )
         dosage = Dosage(

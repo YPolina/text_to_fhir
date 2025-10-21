@@ -1,13 +1,31 @@
 mode: "rag_preparation" # or options: "pre-defined", "generate", "rag_preparation"
 
 diseases:
-  - name: "Homocystinuria"
+  - name: "Acromegaly"
+    num_generation: 2
+  - name: "Wilson disease"
+    num_generation: 2
+  - name: "SPIGFD"
+    num_generation: 2
+  - name: "Still's disease"
     num_generation: 2
   - name: "Fabry disease"
+    num_generation: 2
+  - name: "Hemophagocytic lymphohistiocytosis"
+    num_generation: 2
+  - name: "Homocystinuria"
+    num_generation: 2
+  - name: "Muckle-Wells syndrome"
+    num_generation: 2
+  - name: "Paroxysmal nocturnal hemoglobinuria"
+    num_generation: 2
+  - name: "Prader-Willi syndrome"
+    num_generation: 2
+  - name: "Primary biliary cholangitis"
     num_generation: 2
 
 cases_file: "src/config/generated_cases.yaml"
 output_dir: "data/output"
 
-fhir_directory: "data/output/homocystinuria/case_3_f1c1bafe-87bc-40b7-a92a-4bbec701a8ad.json"
+fhir_directory: "data/output/"
 parsed_fhir_dir: "data/parsed/"

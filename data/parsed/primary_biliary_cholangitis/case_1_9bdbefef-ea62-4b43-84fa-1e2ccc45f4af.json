@@ -1,0 +1,151 @@
+{
+  "patient": {
+    "first_name": "Emily",
+    "second_name": "Wilson",
+    "gender": "female",
+    "birthDate": "1987-01-01",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "complaints of intermittent itching",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "Alkaline Phosphatase",
+            "value": 140.0,
+            "unit": "U/L",
+            "interpretation": "Abnormal",
+            "status": "final"
+          },
+          {
+            "test_name": "ALT",
+            "value": null,
+            "unit": null,
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "AST",
+            "value": null,
+            "unit": null,
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Total Bilirubin",
+            "value": 0.8,
+            "unit": "mg/dL",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Cholesterol",
+            "value": 220.0,
+            "unit": "mg/dL",
+            "interpretation": "Abnormal",
+            "status": "final"
+          },
+          {
+            "test_name": "Liver Enzyme",
+            "value": null,
+            "unit": null,
+            "interpretation": "Abnormal",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Itching",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Fatigue",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "Blood Pressure",
+            "value": 122.0,
+            "unit": "mmHg",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Pulse",
+            "value": 74.0,
+            "unit": "bpm",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "BMI",
+            "value": 25.1,
+            "unit": "kg/m²",
+            "interpretation": "Abnormal",
+            "status": "final"
+          }
+        ]
+      },
+      "medication": [
+        {
+          "name": "Multivitamin",
+          "note": null,
+          "dosage_text": "daily",
+          "frequency": 1,
+          "period": 1,
+          "adherence": "taking",
+          "period_unit": "d"
+        },
+        {
+          "name": "Antihistamines",
+          "note": "somewhat relieving",
+          "dosage_text": "occasional",
+          "frequency": null,
+          "period": null,
+          "adherence": "taking",
+          "period_unit": null
+        }
+      ]
+    },
+    {
+      "encounter_date": "2025-04-16",
+      "reason": null,
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "Liver Enzyme",
+            "value": null,
+            "unit": null,
+            "interpretation": "Abnormal",
+            "status": "final"
+          }
+        ],
+        "symptom": [],
+        "vital_sign": []
+      },
+      "medication": []
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Father",
+        "deceased": false,
+        "conditions": []
+      }
+    ],
+    "note": "Both parents are alive and relatively healthy, with no known liver diseases in the family."
+  }
+}

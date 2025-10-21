@@ -1,0 +1,160 @@
+{
+  "patient": {
+    "first_name": "Sofia",
+    "second_name": "Rodriguez",
+    "gender": "female",
+    "birthDate": "1987-01-01",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "complaints of intermittent abdominal pain and occasional diarrhea",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "White Blood Cell Count",
+            "value": 8.5,
+            "unit": "x 10^9/L",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Hemoglobin",
+            "value": 13.2,
+            "unit": "g/dL",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Platelet Count",
+            "value": 220.0,
+            "unit": "x 10^9/L",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Sodium",
+            "value": 140.0,
+            "unit": "mmol/L",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Potassium",
+            "value": 4.2,
+            "unit": "mmol/L",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Chloride",
+            "value": 102.0,
+            "unit": "mmol/L",
+            "interpretation": "Normal",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Abdominal pain",
+            "present": true,
+            "interpretation": "Abnormal",
+            "status": "final"
+          },
+          {
+            "symptom_name": "Diarrhea",
+            "present": true,
+            "interpretation": "Abnormal",
+            "status": "final"
+          },
+          {
+            "symptom_name": "Bloating",
+            "present": true,
+            "interpretation": "Abnormal",
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "temperature",
+            "value": 36.8,
+            "unit": "°C",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "pulse",
+            "value": 82.0,
+            "unit": "bpm",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "blood pressure",
+            "value": 128.0,
+            "unit": "mmHg",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "respiratory rate",
+            "value": 18.0,
+            "unit": "breaths per minute",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "weight",
+            "value": 58.0,
+            "unit": "kg",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "height",
+            "value": 165.0,
+            "unit": "cm",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "BMI",
+            "value": 21.3,
+            "unit": "kg/m²",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "oxygen saturation",
+            "value": 98.0,
+            "unit": "%",
+            "interpretation": "Normal",
+            "status": "final"
+          }
+        ]
+      },
+      "medication": []
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Father",
+        "deceased": false,
+        "conditions": [
+          {
+            "condition_name": "Hypertensive disorder",
+            "outcome": null
+          }
+        ]
+      }
+    ],
+    "note": null
+  }
+}

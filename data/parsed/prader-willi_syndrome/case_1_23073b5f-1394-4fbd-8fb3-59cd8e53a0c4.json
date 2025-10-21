@@ -1,0 +1,138 @@
+{
+  "patient": {
+    "first_name": "Ethan",
+    "second_name": "Thompson",
+    "gender": "male",
+    "birthDate": "2020-01-01",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "concerns about feeding habits and overall development",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "Glucose challenge panel",
+            "value": 90.0,
+            "unit": "mg/dL",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "C peptide Msmt Ur",
+            "value": 10.0,
+            "unit": "μU/mL",
+            "interpretation": "Normal",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Increased appetite",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Has difficulty with speech",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Gross motor functions",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "Body temperature",
+            "value": 36.8,
+            "unit": "°C",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Bdy weight special circumstances",
+            "value": 23.0,
+            "unit": "kg",
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "vital_type": "Lower segment",
+            "value": 110.0,
+            "unit": "cm",
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "vital_type": "BMI formula",
+            "value": 19.1,
+            "unit": "kg/m²",
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "vital_type": "PhenX - respiratory - pulse oximetry - rest protocol 091101",
+            "value": 90.0,
+            "unit": "bpm",
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "vital_type": "Blood pressure",
+            "value": null,
+            "unit": null,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "vital_type": "Resp rate",
+            "value": 22.0,
+            "unit": "breaths per minute",
+            "interpretation": null,
+            "status": "final"
+          }
+        ]
+      },
+      "medication": []
+    },
+    {
+      "encounter_date": "2025-08-16",
+      "reason": null,
+      "observation": {
+        "laboratory": [],
+        "symptom": [],
+        "vital_sign": [
+          {
+            "vital_type": "Bdy weight special circumstances",
+            "value": null,
+            "unit": "kg",
+            "interpretation": null,
+            "status": "final"
+          }
+        ]
+      },
+      "medication": []
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Sibling",
+        "deceased": false,
+        "conditions": []
+      }
+    ],
+    "note": "Both parents are alive and healthy, though his father has a history of obesity. Ethan's 7-year-old sister is healthy and developing normally."
+  }
+}

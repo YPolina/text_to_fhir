@@ -44,14 +44,17 @@ if __name__ == "__main__":
     mode = config["mode"]
     logger.info(f"Mode: {mode}")
     if mode == 'rag_preparation':
-        fhir = Path(config["fhir_directory"])
-        llm_output = process_fhir_bundle(fhir, client, settings.MODEL_ID, logger)
+        fhir_base_dir = Path(config["fhir_directory"])
+        parsed_base_dir = Path(config["parsed_fhir_dir"])
 
-        logger.info(f"Processed fhir bundle {llm_output}")
+        for fhir_file in fhir_base_dir.rglob("*.json"):
+            logger.info(f"Processing FHIR bundle: {fhir_file}")
 
-        save_parsed_fhir(llm_output, fhir)
+            llm_output = process_fhir_bundle(fhir_file, client, settings.MODEL_ID, logger)
 
-        logger.info(f"Parsed fhir bundle successfully saved")
+            save_parsed_fhir(llm_output, fhir_file, fhir_base_dir, parsed_base_dir)
+
+            logger.info(f"Parsed FHIR bundle saved: {fhir_file}")
 
     elif mode == "generate":
         for disease_entry in config["diseases"]:
@@ -84,3 +87,4 @@ if __name__ == "__main__":
 
                 filename = to_fhir_bundle(llm_output, case_id, disease_dir)
                 logger.info(f"FHIR bundle saved to {filename}")
+

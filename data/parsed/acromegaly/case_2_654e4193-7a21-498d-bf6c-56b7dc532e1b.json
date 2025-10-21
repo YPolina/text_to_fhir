@@ -1,0 +1,121 @@
+{
+  "patient": {
+    "first_name": "Sofia",
+    "second_name": "Rodriguez",
+    "gender": "female",
+    "birthDate": "1987-01-01",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "gradual enlargement of hands and feet, joint pains",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "Glucose challenge panel",
+            "value": 92.0,
+            "unit": "mg/dL",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "test_name": "Insulin-like growth factor 1 (IGF-1)",
+            "value": 420.0,
+            "unit": "ng/mL",
+            "interpretation": "Abnormal",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Joint pain",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Headache",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Sweating",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "Blood pressure",
+            "value": 128.0,
+            "unit": "mmHg",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Pulse",
+            "value": 72.0,
+            "unit": "bpm",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "BMI",
+            "value": 26.5,
+            "unit": "kg/m²",
+            "interpretation": "Abnormal",
+            "status": "final"
+          }
+        ]
+      },
+      "medication": [
+        {
+          "name": "Ibuprofen",
+          "note": null,
+          "dosage_text": "400 mg as needed",
+          "frequency": 2,
+          "period": 1,
+          "adherence": "Taking",
+          "period_unit": "wk",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "encounter_date": "2025-08-16",
+      "reason": "routine check-up",
+      "observation": {
+        "laboratory": [],
+        "symptom": [],
+        "vital_sign": [
+          {
+            "vital_type": "Blood pressure",
+            "value": 128.0,
+            "unit": "mmHg",
+            "interpretation": "Normal",
+            "status": "final"
+          }
+        ]
+      },
+      "medication": []
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Mother",
+        "deceased": false,
+        "conditions": []
+      }
+    ],
+    "note": null
+  }
+}

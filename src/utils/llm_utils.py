@@ -54,7 +54,7 @@ def save_generated_case(disease: str, case_text: str, yaml_path: str = "src/conf
         yaml.dump(data, f, sort_keys=False, allow_unicode=True)
 
 
-def save_parsed_fhir(parsed_fhir: dict, fhir_path: Path, parsed_base_dir: str = "data/parsed/") -> None:
+def save_parsed_fhir(parsed_fhir: dict, fhir_path: Path, fhir_base_dir: str = "data/output/", parsed_base_dir: str = "data/parsed/")  -> None:
     """
     Saves the parsed FHIR output to a structured directory under `parsed_base_dir`,
     preserving the subdirectory and filename from the original FHIR path.
@@ -68,8 +68,7 @@ def save_parsed_fhir(parsed_fhir: dict, fhir_path: Path, parsed_base_dir: str = 
     Returns:
         None
     """
-
-    relative_path = fhir_path.relative_to("data/output")
+    relative_path = fhir_path.relative_to(fhir_base_dir)
     target_path = Path(parsed_base_dir) / relative_path
 
     target_path.parent.mkdir(parents=True, exist_ok=True)

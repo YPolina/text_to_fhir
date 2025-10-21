@@ -1,0 +1,134 @@
+{
+  "patient": {
+    "first_name": "Emily",
+    "second_name": "Wilson",
+    "gender": "female",
+    "birthDate": "1993-01-01",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "recurring episodes of fever, rash, and joint pain",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "CRP Quint SerPl Qn HS",
+            "value": 12.0,
+            "unit": "mg/L",
+            "interpretation": "high",
+            "status": "final"
+          },
+          {
+            "test_name": "Erythrocyte Sed Rat Bld",
+            "value": 25.0,
+            "unit": "mm/h",
+            "interpretation": "high",
+            "status": "final"
+          },
+          {
+            "test_name": "Complete blood count panel",
+            "value": null,
+            "unit": null,
+            "interpretation": "normal",
+            "status": "final"
+          },
+          {
+            "test_name": "liver function tests",
+            "value": null,
+            "unit": null,
+            "interpretation": "normal",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Fever",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Macular rash",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Joint pain",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "Body temperature",
+            "value": 37.2,
+            "unit": "°C",
+            "interpretation": "normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Pulse",
+            "value": 82.0,
+            "unit": "bpm",
+            "interpretation": "normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Blood pressure",
+            "value": null,
+            "unit": null,
+            "interpretation": "normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "OxyHgb MFr Plas",
+            "value": 98.0,
+            "unit": "%",
+            "interpretation": "normal",
+            "status": "final"
+          }
+        ]
+      },
+      "medication": [
+        {
+          "name": "Ibuprofen",
+          "note": null,
+          "dosage_text": "400 mg as needed",
+          "frequency": null,
+          "period": null,
+          "adherence": "taking",
+          "period_unit": null,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "similar episode",
+      "observation": {
+        "laboratory": [],
+        "symptom": [],
+        "vital_sign": []
+      },
+      "medication": []
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Father",
+        "deceased": false,
+        "conditions": []
+      }
+    ],
+    "note": null
+  }
+}

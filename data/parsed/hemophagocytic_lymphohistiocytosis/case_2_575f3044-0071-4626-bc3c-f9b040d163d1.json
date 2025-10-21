@@ -1,0 +1,191 @@
+{
+  "patient": {
+    "first_name": "Sofia",
+    "second_name": "Rodriguez",
+    "gender": "female",
+    "birthDate": "1997-01-01",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "intermittent fever and fatigue",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "White Blood Cell Count",
+            "value": 12000.0,
+            "unit": "cells per microliter",
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "test_name": "Hemoglobin",
+            "value": 11.5,
+            "unit": "grams per deciliter",
+            "interpretation": "Low",
+            "status": "final"
+          },
+          {
+            "test_name": "Platelet Count",
+            "value": 90000.0,
+            "unit": "cells per microliter",
+            "interpretation": "Low",
+            "status": "final"
+          },
+          {
+            "test_name": "Aspartate Aminotransferase",
+            "value": 45.0,
+            "unit": "units per liter",
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "test_name": "Alanine Aminotransferase",
+            "value": 50.0,
+            "unit": "units per liter",
+            "interpretation": "High",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Fever",
+            "present": true,
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "symptom_name": "Fatigue",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Night sweats",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "Body Temperature",
+            "value": 38.5,
+            "unit": "degrees Celsius",
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "vital_type": "Pulse",
+            "value": 110.0,
+            "unit": "beats per minute",
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "vital_type": "Blood Pressure",
+            "value": null,
+            "unit": null,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "vital_type": "Respiratory Rate",
+            "value": 22.0,
+            "unit": "breaths per minute",
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "vital_type": "Oxygen Saturation",
+            "value": 98.0,
+            "unit": "%",
+            "interpretation": "Normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Weight",
+            "value": 2.0,
+            "unit": "kilograms",
+            "interpretation": "Low",
+            "status": "final"
+          }
+        ]
+      },
+      "medication": [
+        {
+          "name": "Acetaminophen",
+          "note": null,
+          "dosage_text": "as needed",
+          "frequency": null,
+          "period": null,
+          "adherence": null,
+          "period_unit": null,
+          "reason": null
+        },
+        {
+          "name": "Ibuprofen",
+          "note": null,
+          "dosage_text": null,
+          "frequency": null,
+          "period": null,
+          "adherence": null,
+          "period_unit": null,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "encounter_date": "2025-08-16",
+      "reason": "similar episode of fever and fatigue",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "Erythrocyte Sedimentation Rate",
+            "value": null,
+            "unit": null,
+            "interpretation": "High",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Fever",
+            "present": true,
+            "interpretation": "High",
+            "status": "final"
+          },
+          {
+            "symptom_name": "Fatigue",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": []
+      },
+      "medication": []
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Brother",
+        "deceased": false,
+        "conditions": [
+          {
+            "condition_name": "Micrognathia, recurrent infections, behavioral abnormalities, mild intellectual disability syndrome",
+            "outcome": null
+          }
+        ]
+      }
+    ],
+    "note": null
+  }
+}

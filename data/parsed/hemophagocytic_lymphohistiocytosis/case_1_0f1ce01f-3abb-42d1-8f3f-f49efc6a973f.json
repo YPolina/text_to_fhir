@@ -1,0 +1,153 @@
+{
+  "patient": {
+    "first_name": "Sofia",
+    "second_name": "Rodriguez",
+    "gender": "female",
+    "birthDate": "1997-01-01",
+    "address": {
+      "text": null,
+      "city": null,
+      "state": null,
+      "country": null
+    }
+  },
+  "encounters": [
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "intermittent fever and fatigue",
+      "observation": {
+        "laboratory": [
+          {
+            "test_name": "White Blood Cell Count",
+            "value": 12000.0,
+            "unit": "cells per microliter",
+            "interpretation": "high",
+            "status": "final"
+          },
+          {
+            "test_name": "Hemoglobin",
+            "value": 11.5,
+            "unit": "grams per deciliter",
+            "interpretation": "low",
+            "status": "final"
+          },
+          {
+            "test_name": "Platelet Count",
+            "value": 90000.0,
+            "unit": "cells per microliter",
+            "interpretation": "low",
+            "status": "final"
+          },
+          {
+            "test_name": "Alanine Transaminase",
+            "value": 45.0,
+            "unit": "units per liter",
+            "interpretation": "high",
+            "status": "final"
+          },
+          {
+            "test_name": "Aspartate Transaminase",
+            "value": 30.0,
+            "unit": "units per liter",
+            "interpretation": "high",
+            "status": "final"
+          }
+        ],
+        "symptom": [
+          {
+            "symptom_name": "Fever",
+            "present": true,
+            "interpretation": "high",
+            "status": "final"
+          },
+          {
+            "symptom_name": "Fatigue",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          },
+          {
+            "symptom_name": "Night sweats",
+            "present": true,
+            "interpretation": null,
+            "status": "final"
+          }
+        ],
+        "vital_sign": [
+          {
+            "vital_type": "Blood pressure",
+            "value": 120.0,
+            "unit": "mmHg",
+            "interpretation": "normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Pulse",
+            "value": 100.0,
+            "unit": "bpm",
+            "interpretation": "high",
+            "status": "final"
+          },
+          {
+            "vital_type": "Respiratory Rate",
+            "value": 18.0,
+            "unit": "breaths per minute",
+            "interpretation": "normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Oxygen Saturation",
+            "value": 98.0,
+            "unit": "%",
+            "interpretation": "normal",
+            "status": "final"
+          },
+          {
+            "vital_type": "Weight",
+            "value": 5.0,
+            "unit": "pounds",
+            "interpretation": "low",
+            "status": "final"
+          }
+        ]
+      },
+      "medication": [
+        {
+          "name": "Acetaminophen",
+          "note": null,
+          "dosage_text": "650 milligrams every 4 hours as needed",
+          "frequency": 1,
+          "period": 4,
+          "adherence": null,
+          "period_unit": "hours",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "encounter_date": "2025-10-16",
+      "reason": "viral upper respiratory tract infection",
+      "observation": {
+        "laboratory": [],
+        "symptom": [],
+        "vital_sign": []
+      },
+      "medication": []
+    }
+  ],
+  "family_history": {
+    "members": [
+      {
+        "relationship": "Younger brother",
+        "deceased": false,
+        "conditions": [
+          {
+            "condition_name": "Viral cardiovascular infection",
+            "outcome": "Full renal function recovered"
+          }
+        ]
+      }
+    ],
+    "note": null
+  }
+}
