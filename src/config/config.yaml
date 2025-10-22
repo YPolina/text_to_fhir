@@ -1,4 +1,4 @@
-mode: "rag_preparation" # or options: "pre-defined", "generate", "rag_preparation"
+mode: "pre-defined" # or options: "pre-defined", "generate", "rag_preparation"
 
 diseases:
   - name: "Acromegaly"
@@ -27,5 +27,4 @@ diseases:
 cases_file: "src/config/cases.yaml"
 output_dir: "data/output"
 
-fhir_directory: "data/output/undefined/"
-parsed_fhir_dir: "data/parsed/"
+fhir_directory: "data/output/fabry_disease/"

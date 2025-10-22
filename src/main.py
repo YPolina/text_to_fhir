@@ -11,7 +11,7 @@ from src.services.generation import generate_case
 from src.services.text_to_json import process_patient_records
 from src.utils.llm_utils import save_generated_case, save_parsed_fhir
 from src.services.json_to_fhir import to_fhir_bundle
-from src.services.fhir_to_json import process_fhir_bundle
+from src.services.fhir_to_summary import process_fhir_bundle
 from src.utils.load import load_config
 import logging
 
@@ -45,16 +45,12 @@ if __name__ == "__main__":
     logger.info(f"Mode: {mode}")
     if mode == 'rag_preparation':
         fhir_base_dir = Path(config["fhir_directory"])
-        parsed_base_dir = Path(config["parsed_fhir_dir"])
 
         for fhir_file in fhir_base_dir.rglob("*.json"):
             logger.info(f"Processing FHIR bundle: {fhir_file}")
 
-            llm_output = process_fhir_bundle(fhir_file, client, settings.MODEL_ID, logger)
-
-            save_parsed_fhir(llm_output, fhir_file, fhir_base_dir, parsed_base_dir)
-
-            logger.info(f"Parsed FHIR bundle saved: {fhir_file}")
+            patient_info = process_fhir_bundle(fhir_file, logger)
+            print('patient object', patient_info)
 
     elif mode == "generate":
         for disease_entry in config["diseases"]:

@@ -3,20 +3,20 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "urn:uuid:08ea3d69-211b-4529-ad60-cc99fa0db86a",
+      "fullUrl": "urn:uuid:a74565ff-e82f-4581-b74e-57de135a85a1",
       "resource": {
         "resourceType": "Patient",
-        "id": "08ea3d69-211b-4529-ad60-cc99fa0db86a",
+        "id": "a74565ff-e82f-4581-b74e-57de135a85a1",
         "name": [
           {
-            "family": "Wilson",
+            "family": "Markova",
             "given": [
-              "Emily"
+              "Mila"
             ]
           }
         ],
         "gender": "female",
-        "birthDate": "2000-07-12",
+        "birthDate": "1997-07-04",
         "address": [
           {}
         ]
@@ -27,14 +27,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e16b92ae-706f-4aa5-89c0-545872344d8a",
+      "fullUrl": "urn:uuid:6ea03e59-49a2-441d-9df2-1854150a5b1a",
       "resource": {
         "resourceType": "Encounter",
-        "id": "e16b92ae-706f-4aa5-89c0-545872344d8a",
+        "id": "6ea03e59-49a2-441d-9df2-1854150a5b1a",
         "identifier": [
           {
             "use": "temp",
-            "value": "Encounter_Emily Wilson_20251021093906"
+            "value": "Encounter_Mila Markova_20251022152120"
           }
         ],
         "status": "completed",
@@ -59,15 +59,15 @@
           }
         ],
         "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a",
-          "display": "Emily Wilson"
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1",
+          "display": "Mila Markova"
         },
         "reason": [
           {
             "value": [
               {
                 "concept": {
-                  "text": "complaints of blurred vision and occasional double vision"
+                  "text": "persistent low-grade fever, muscle aches, and unintentional weight loss over the past three months"
                 }
               }
             ]
@@ -80,10 +80,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:deda5c6b-9d95-414b-bafd-f705d7bc4169",
+      "fullUrl": "urn:uuid:bb5f8525-8465-49d2-94e5-6794d1d2250d",
       "resource": {
         "resourceType": "Observation",
-        "id": "deda5c6b-9d95-414b-bafd-f705d7bc4169",
+        "id": "bb5f8525-8465-49d2-94e5-6794d1d2250d",
         "status": "final",
         "category": [
           {
@@ -101,25 +101,71 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "32615-7",
-              "display": "Hycs-Cys diS SerPl-sCnc"
+              "code": "unknown",
+              "display": "Erythrocyte Sedimentation Rate (ESR)"
             }
           ],
-          "text": "Serum Homocysteine"
+          "text": "Erythrocyte Sedimentation Rate (ESR)"
         },
         "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
         },
         "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
         },
         "effectiveDateTime": "2025-10-16",
-        "valueQuantity": {
-          "value": 25.0,
-          "unit": "μmol/L",
-          "system": "http://unitsofmeasure.org",
-          "code": "μmol/L"
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a92605e2-08aa-4877-9614-c691adc00f75",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a92605e2-08aa-4877-9614-c691adc00f75",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "35648-5",
+              "display": "CRP Quint SerPl Qn HS"
+            }
+          ],
+          "text": "C-Reactive Protein (CRP)"
         },
+        "subject": {
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
+        },
+        "encounter": {
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
+        },
+        "effectiveDateTime": "2025-10-16",
         "interpretation": [
           {
             "coding": [
@@ -133,7 +179,7 @@
         ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/32615-7/"
+            "text": "Definition: https://loinc.org/35648-5/"
           }
         ]
       },
@@ -143,10 +189,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:f7e0789a-3cba-4979-86d4-bb8a696e4d5e",
+      "fullUrl": "urn:uuid:9af15b4a-256d-4901-81c0-a3fcc27ce3e1",
       "resource": {
         "resourceType": "Observation",
-        "id": "f7e0789a-3cba-4979-86d4-bb8a696e4d5e",
+        "id": "9af15b4a-256d-4901-81c0-a3fcc27ce3e1",
         "status": "final",
         "category": [
           {
@@ -164,35 +210,19 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "58410-2",
-              "display": "Complete blood count panel"
+              "code": "unknown",
+              "display": "Antinuclear Antibody (ANA) Test"
             }
           ],
-          "text": "Complete Blood Count"
+          "text": "Antinuclear Antibody (ANA) Test"
         },
         "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
         },
         "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
         },
-        "effectiveDateTime": "2025-10-16",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "N",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Definition: https://loinc.org/58410-2/"
-          }
-        ]
+        "effectiveDateTime": "2025-10-16"
       },
       "request": {
         "method": "POST",
@@ -200,10 +230,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:f96dcb04-1e90-4c74-9357-1996f86853e0",
+      "fullUrl": "urn:uuid:792ba9ea-e881-4faa-bca0-65e579a214b9",
       "resource": {
         "resourceType": "Observation",
-        "id": "f96dcb04-1e90-4c74-9357-1996f86853e0",
+        "id": "792ba9ea-e881-4faa-bca0-65e579a214b9",
         "status": "final",
         "category": [
           {
@@ -221,33 +251,22 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "51990-0",
-              "display": "Basic metabolic panel"
+              "code": "111462-8",
+              "display": "dsDNA Ab Msmt Ser"
             }
           ],
-          "text": "Basic Metabolic Panel"
+          "text": "Anti-dsDNA"
         },
         "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
         },
         "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
         },
         "effectiveDateTime": "2025-10-16",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "N",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
         "note": [
           {
-            "text": "Definition: https://loinc.org/51990-0/"
+            "text": "Definition: https://loinc.org/111462-8/"
           }
         ]
       },
@@ -257,10 +276,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:94501f7b-200b-45c3-8508-759992fcbbbb",
+      "fullUrl": "urn:uuid:e97b4e61-de9b-4910-9552-faa895771664",
       "resource": {
         "resourceType": "Observation",
-        "id": "94501f7b-200b-45c3-8508-759992fcbbbb",
+        "id": "e97b4e61-de9b-4910-9552-faa895771664",
         "status": "final",
         "category": [
           {
@@ -278,17 +297,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "72436007",
-              "display": "Blurred disc margin"
+              "code": "369766003",
+              "display": "Low grade (lymphoma)"
             }
           ],
-          "text": "Blurred Vision"
+          "text": "Low-grade fever"
         },
         "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
         },
         "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
         },
         "effectivePeriod": {
           "start": "2025-10-16"
@@ -296,7 +315,7 @@
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/72436007"
+            "text": "Definition: https://snomed.info/id/369766003"
           }
         ]
       },
@@ -306,10 +325,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:fe75536a-7fbf-4362-ad2d-1d7f52934504",
+      "fullUrl": "urn:uuid:f7aef031-bdec-42f6-9ba0-fdaca1cf22f7",
       "resource": {
         "resourceType": "Observation",
-        "id": "fe75536a-7fbf-4362-ad2d-1d7f52934504",
+        "id": "f7aef031-bdec-42f6-9ba0-fdaca1cf22f7",
         "status": "final",
         "category": [
           {
@@ -327,17 +346,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "1305003",
-              "display": "Double"
+              "code": "82991003",
+              "display": "Generalized aches and pains"
             }
           ],
-          "text": "Double Vision"
+          "text": "Muscle aches"
         },
         "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
         },
         "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
         },
         "effectivePeriod": {
           "start": "2025-10-16"
@@ -345,7 +364,7 @@
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/1305003"
+            "text": "Definition: https://snomed.info/id/82991003"
           }
         ]
       },
@@ -355,10 +374,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:f0732956-b1c6-4f01-bd70-61ee0fc6009f",
+      "fullUrl": "urn:uuid:4f33b26d-75d8-47c4-a536-efe91e0e2e63",
       "resource": {
         "resourceType": "Observation",
-        "id": "f0732956-b1c6-4f01-bd70-61ee0fc6009f",
+        "id": "4f33b26d-75d8-47c4-a536-efe91e0e2e63",
         "status": "final",
         "category": [
           {
@@ -376,17 +395,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "26544005",
-              "display": "Muscle weakness"
+              "code": "448765001",
+              "display": "Unintentional weight loss"
             }
           ],
-          "text": "Mild Muscle Weakness"
+          "text": "Unintentional weight loss"
         },
         "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
         },
         "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
         },
         "effectivePeriod": {
           "start": "2025-10-16"
@@ -394,7 +413,7 @@
         "valueBoolean": true,
         "note": [
           {
-            "text": "Definition: https://snomed.info/id/26544005"
+            "text": "Definition: https://snomed.info/id/448765001"
           }
         ]
       },
@@ -404,302 +423,181 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:d338948b-66e6-442f-81ec-dd56bddae7a9",
+      "fullUrl": "urn:uuid:bbe0d1f6-2244-4ce0-8639-8cd831cab6ef",
       "resource": {
         "resourceType": "Observation",
-        "id": "d338948b-66e6-442f-81ec-dd56bddae7a9",
+        "id": "bbe0d1f6-2244-4ce0-8639-8cd831cab6ef",
         "status": "final",
         "category": [
           {
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs",
-                "display": "Vital Signs"
+                "code": "exam",
+                "display": "Exam"
               }
             ],
-            "text": "Vital Signs"
+            "text": "Exam"
           }
         ],
         "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "18684-1",
-              "display": "Blood pressure"
-            }
-          ],
-          "text": "Blood Pressure"
-        },
-        "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
-        },
-        "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
-        },
-        "effectiveDateTime": "2025-10-16",
-        "valueQuantity": {
-          "value": 128.0,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mmHg"
-        },
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "N",
-                "display": "Normal"
-              }
-            ],
-            "text": "Normal"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:8885f348-9b33-4dc7-a77c-dbd7a09a144a",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "8885f348-9b33-4dc7-a77c-dbd7a09a144a",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs",
-                "display": "Vital Signs"
-              }
-            ],
-            "text": "Vital Signs"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "62733-1",
-              "display": "PhenX - respiratory - pulse oximetry - rest protocol 091101"
-            }
-          ],
-          "text": "Pulse"
-        },
-        "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
-        },
-        "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
-        },
-        "effectiveDateTime": "2025-10-16",
-        "valueQuantity": {
-          "value": 72.0,
-          "unit": "bpm",
-          "system": "http://unitsofmeasure.org",
-          "code": "bpm"
-        },
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "N",
-                "display": "Normal"
-              }
-            ],
-            "text": "Normal"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:6bce06d5-163f-4cd7-b765-31654857898e",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "6bce06d5-163f-4cd7-b765-31654857898e",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs",
-                "display": "Vital Signs"
-              }
-            ],
-            "text": "Vital Signs"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "107102-6",
-              "display": "BMI formula"
-            }
-          ],
-          "text": "BMI"
-        },
-        "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
-        },
-        "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
-        },
-        "effectiveDateTime": "2025-10-16",
-        "valueQuantity": {
-          "value": 22.1,
-          "unit": "kg/m²",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg/m²"
-        },
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "code": "N",
-                "display": "Normal"
-              }
-            ],
-            "text": "Normal"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:ff38d22b-ad34-4db8-9aac-6d6c221115e8",
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "ff38d22b-ad34-4db8-9aac-6d6c221115e8",
-        "status": "recorded",
-        "medication": {
-          "concept": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "412250002",
-                "display": "Multivitamin agent"
-              }
-            ],
-            "text": "Multivitamin"
-          }
-        },
-        "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
-        },
-        "encounter": {
-          "reference": "Encounter/e16b92ae-706f-4aa5-89c0-545872344d8a"
-        },
-        "effectiveDateTime": "2025-10-16",
-        "informationSource": [
-          {
-            "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
-          }
-        ],
-        "dosage": [
-          {
-            "text": "daily",
-            "timing": {
-              "repeat": {
-                "frequency": 1,
-                "period": 1.0,
-                "periodUnit": "d"
-              }
-            }
-          }
-        ],
-        "adherence": {
-          "code": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/CodeSystem/medication-statement-adherence",
-                "code": "taking",
-                "display": "Taking"
-              }
-            ]
-          }
-        }
-      },
-      "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:c3d68d31-0f62-40d4-bf36-784076556602",
-      "resource": {
-        "resourceType": "Encounter",
-        "id": "c3d68d31-0f62-40d4-bf36-784076556602",
-        "identifier": [
-          {
-            "use": "temp",
-            "value": "Encounter_Emily Wilson_20251021093915"
-          }
-        ],
-        "status": "completed",
-        "priority": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "17621005",
-              "display": "Normal"
+              "code": "125318001",
+              "display": "Multiple ulcers"
             }
-          ]
+          ],
+          "text": "Mouth ulcers"
         },
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "11429006",
-                "display": "Consultation"
-              }
-            ]
-          }
-        ],
         "subject": {
-          "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a",
-          "display": "Emily Wilson"
-        }
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
+        },
+        "encounter": {
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/125318001"
+          }
+        ]
       },
       "request": {
         "method": "POST",
-        "url": "Encounter"
+        "url": "Observation"
       }
     },
     {
-      "fullUrl": "urn:uuid:51faaefa-c7bc-48ee-b7ce-58a4b425779c",
+      "fullUrl": "urn:uuid:2ec6e0b7-4701-49fb-b34a-6e66ee901ca1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2ec6e0b7-4701-49fb-b34a-6e66ee901ca1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "827160004",
+              "display": "Erythematous rash"
+            }
+          ],
+          "text": "Erythematous rash"
+        },
+        "subject": {
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
+        },
+        "encounter": {
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/827160004"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c0372a3d-499e-4b11-8e7b-2a9425b5791e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c0372a3d-499e-4b11-8e7b-2a9425b5791e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ],
+          "text": "Body Temperature"
+        },
+        "subject": {
+          "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
+        },
+        "encounter": {
+          "reference": "Encounter/6ea03e59-49a2-441d-9df2-1854150a5b1a"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 38.0,
+          "unit": "degrees C",
+          "system": "http://unitsofmeasure.org",
+          "code": "degrees C"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:251c18d4-ec49-4eb0-b974-5c4630cbd07c",
       "resource": {
         "resourceType": "List",
-        "id": "51faaefa-c7bc-48ee-b7ce-58a4b425779c",
+        "id": "251c18d4-ec49-4eb0-b974-5c4630cbd07c",
         "contained": [
           {
             "resourceType": "FamilyMemberHistory",
-            "id": "fmh-3",
+            "id": "fmh-1",
             "status": "completed",
             "patient": {
-              "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
+              "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
             },
             "relationship": {
               "coding": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "85411004",
-                  "display": "Younger brother"
+                  "code": "736454006",
+                  "display": "Maternal aunt"
                 }
               ]
             },
@@ -710,8 +608,8 @@
                   "coding": [
                     {
                       "system": "http://snomed.info/sct",
-                      "code": "408468001",
-                      "display": "Learning disability - specialty"
+                      "code": "200936003",
+                      "display": "Lupus erythematosus"
                     }
                   ]
                 }
@@ -732,18 +630,18 @@
         },
         "subject": [
           {
-            "reference": "Patient/08ea3d69-211b-4529-ad60-cc99fa0db86a"
+            "reference": "Patient/a74565ff-e82f-4581-b74e-57de135a85a1"
           }
         ],
         "note": [
           {
-            "text": "Both parents are alive and healthy, with no known chronic medical conditions."
+            "text": "Notable for autoimmune disorders"
           }
         ],
         "entry": [
           {
             "item": {
-              "reference": "#fmh-3"
+              "reference": "#fmh-1"
             }
           }
         ]
