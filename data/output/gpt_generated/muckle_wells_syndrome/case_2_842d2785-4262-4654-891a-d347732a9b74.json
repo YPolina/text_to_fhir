@@ -1,0 +1,476 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:842d2785-4262-4654-891a-d347732a9b74",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "842d2785-4262-4654-891a-d347732a9b74",
+        "name": [
+          {
+            "family": "Fedorov",
+            "given": [
+              "Alexey"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2008-07-12",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ba35c50a-92d7-48f2-9fcc-acf6c008a7a7",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ba35c50a-92d7-48f2-9fcc-acf6c008a7a7",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Alexey Fedorov_20251023103609"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74",
+          "display": "Alexey Fedorov"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "intermittent rash, joint stiffness, and mild hearing difficulty"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:56f7c558-686c-4c35-8476-75d831fc69b7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "56f7c558-686c-4c35-8476-75d831fc69b7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "35648-5",
+              "display": "CRP Quint SerPl Qn HS"
+            }
+          ],
+          "text": "C-Reactive Protein"
+        },
+        "subject": {
+          "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74"
+        },
+        "encounter": {
+          "reference": "Encounter/ba35c50a-92d7-48f2-9fcc-acf6c008a7a7"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 22.0,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/35648-5/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a1ae3413-ac0f-4ff4-aa9e-41f4ef430e67",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a1ae3413-ac0f-4ff4-aa9e-41f4ef430e67",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "30341-2",
+              "display": "Erythrocyte Sed Rat Bld"
+            }
+          ],
+          "text": "Erythrocyte Sedimentation Rate"
+        },
+        "subject": {
+          "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74"
+        },
+        "encounter": {
+          "reference": "Encounter/ba35c50a-92d7-48f2-9fcc-acf6c008a7a7"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 35.0,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm/h"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/30341-2/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fb9be831-9e55-48c2-b686-e501ca644ae2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fb9be831-9e55-48c2-b686-e501ca644ae2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "89757007",
+              "display": "Macular rash"
+            }
+          ],
+          "text": "Rash"
+        },
+        "subject": {
+          "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74"
+        },
+        "encounter": {
+          "reference": "Encounter/ba35c50a-92d7-48f2-9fcc-acf6c008a7a7"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/89757007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:93fb7b26-bb90-4aa6-adfe-eb7fcd6deea6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "93fb7b26-bb90-4aa6-adfe-eb7fcd6deea6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84445001",
+              "display": "Joint stiffness"
+            }
+          ],
+          "text": "Joint stiffness"
+        },
+        "subject": {
+          "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74"
+        },
+        "encounter": {
+          "reference": "Encounter/ba35c50a-92d7-48f2-9fcc-acf6c008a7a7"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/84445001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9dbab55b-8d8b-4b84-b667-a44acd37801a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9dbab55b-8d8b-4b84-b667-a44acd37801a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162340000",
+              "display": "Hearing difficulty"
+            }
+          ],
+          "text": "Hearing difficulty"
+        },
+        "subject": {
+          "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74"
+        },
+        "encounter": {
+          "reference": "Encounter/ba35c50a-92d7-48f2-9fcc-acf6c008a7a7"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/162340000"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:91dbe16e-b918-49cb-9fac-727f25174799",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "91dbe16e-b918-49cb-9fac-727f25174799",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ],
+          "text": "temperature"
+        },
+        "subject": {
+          "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74"
+        },
+        "encounter": {
+          "reference": "Encounter/ba35c50a-92d7-48f2-9fcc-acf6c008a7a7"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fc89069d-b6db-4a25-a1ad-2e0db7ace9ab",
+      "resource": {
+        "resourceType": "List",
+        "id": "fc89069d-b6db-4a25-a1ad-2e0db7ace9ab",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "394857004",
+                  "display": "Maternal grandfather"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "191965003",
+                      "display": "Psychogenic skin symptoms"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/842d2785-4262-4654-891a-d347732a9b74"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}

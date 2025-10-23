@@ -1,6 +1,6 @@
 import json
 from typing import Dict, List
-from src.utils.load import get_patient_str
+from src.utils.load_save import get_patient_str
 from src.schemas.patient import Patient_schema, Patient_Address, Patient
 from src.schemas.encounter import Encounter
 from src.schemas.observation import LabObservation_schema, VitalSignObservation_schema, SymptomObservation_schema
@@ -164,6 +164,6 @@ def process_fhir_bundle(fhir:str, logger) -> dict:
         encounters=list(encounters_dict.values()),
         family_history=FamilyHistorySchema(members=family_members)
     )
-    print(patient_obj)
     patient_info = get_patient_str(patient_obj)
     return patient_info
+

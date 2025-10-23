@@ -1,0 +1,849 @@
+**Disease:** stills_disease
+**Case:** case_1_0a078d5c-e89b-4543-b3ba-33c7801d9f4c
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 0a078d5c-e89b-4543-b3ba-33c7801d9f4c
+    Name: Olga Mikhailova
+    Gender: female
+    Age: 28
+    Birth Date: 1997-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent high fevers for two weeks
+  Symptoms:
+    - Fever: Present
+    - Sore throat: Present
+    - Generalized body aches: Present
+    - Pinkish rash: Present
+  Vital Signs:
+    - temperature: 38.7 °C
+    - pulse: 96.0 bpm
+  Laboratory Results:
+    - Leukocytosis:
+      Value: 13.5
+      Unit: ×10⁹/L
+    - CRP Bld HS-mCnc:
+      Value: 35.0
+      Unit: mg/L
+  Medications:
+
+Family History:
+--------------------------------
+**Disease:** stills_disease
+**Case:** case_2_5649d71e-4c73-40df-a649-05c5e85b16a7
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 5649d71e-4c73-40df-a649-05c5e85b16a7
+    Name: Andrei Lebedev
+    Gender: male
+    Age: 15
+    Birth Date: 2010-07-12
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: recurrent evening fevers and joint pain
+  Symptoms:
+    - Fever: Present
+    - Joint Pain: Present
+    - Rash: Present
+  Vital Signs:
+    - Body Temperature: 38.2 °C
+    - Pulse: 90.0 bpm
+  Laboratory Results:
+    - WBC # Bld:
+      Value: 14.2
+      Unit: 10^9/L
+    - Erythrocyte Sed Rat Bld:
+      Value: 48.0
+      Unit: mm/h
+    - AST Amn-cCnc:
+      Not available
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** muckle_wells_syndrome
+**Case:** case_2_842d2785-4262-4654-891a-d347732a9b74
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 842d2785-4262-4654-891a-d347732a9b74
+    Name: Alexey Fedorov
+    Gender: male
+    Age: 17
+    Birth Date: 2008-07-12
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent rash, joint stiffness, and mild hearing difficulty
+  Symptoms:
+    - Rash: Present
+    - Joint stiffness: Present
+    - Hearing difficulty: Present
+  Vital Signs:
+  Laboratory Results:
+    - CRP Quint SerPl Qn HS:
+      Value: 22.0
+      Unit: mg/L
+    - Erythrocyte Sed Rat Bld:
+      Value: 35.0
+      Unit: mm/h
+  Medications:
+
+Family History:
+  - Maternal grandfather (Deceased: No)
+    • Condition: Psychogenic skin symptoms
+--------------------------------
+**Disease:** muckle_wells_syndrome
+**Case:** case_1_d2dfa825-a216-4396-98ac-a966e9cb5652
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: d2dfa825-a216-4396-98ac-a966e9cb5652
+    Name: Kristina Popova
+    Gender: female
+    Age: 23
+    Birth Date: 2002-07-04
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: recurrent episodes of urticarial rash accompanied by joint pain and low-grade fever
+  Symptoms:
+    - Urticarial rash: Present
+    - Joint pain: Present
+    - Low-grade fever: Present
+  Vital Signs:
+    - temperature: 37.9 °C
+    - pulse: 82.0 bpm
+  Laboratory Results:
+    - CRP Quint SerPl Qn HS:
+      Value: 28.0
+      Unit: mg/L
+    - Erythrocyte Sed Rat Bld:
+      Value: 40.0
+      Unit: mm/h
+  Medications:
+
+Family History:
+  - Mother (Deceased: No)
+    • Condition: Episodic
+    • Condition: Hearing loss
+--------------------------------
+**Disease:** acromegaly
+**Case:** case_2_456063ce-2f82-4d4d-9010-ac2d7d58cbe6
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 456063ce-2f82-4d4d-9010-ac2d7d58cbe6
+    Name: Elena Sokolova
+    Gender: female
+    Age: 36
+    Birth Date: 1989-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: persistent fatigue, mild hand swelling, and recent dental spacing
+  Symptoms:
+    - Fatigue: Present
+    - Hand Swelling: Present
+    - Dental Spacing: Present
+  Vital Signs:
+    - Blood Pressure: 124.0 mmHg
+    - Pulse: 72.0 bpm
+    - BMI: 26.1 kg/m²
+  Laboratory Results:
+    - Glucose p fast Ur Ql:
+      Value: 5.9
+      Unit: mmol/L
+    - cAMP SerPl-sCnc:
+      Value: 1.6
+      Unit: mmol/L
+  Medications:
+    - Multivitamin:
+      Dosage: daily
+      Frequency: 1x every 1.0 d
+      Reason: Drugs not taken/completed
+
+Family History:
+  - Father (Deceased: No)
+    • Condition: Type 2 diabetes mellitus
+--------------------------------
+**Disease:** acromegaly
+**Case:** case_1_cf768c48-efb0-4fbb-b978-cf1cf1490869
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: cf768c48-efb0-4fbb-b978-cf1cf1490869
+    Name: Pavel Ivanov
+    Gender: male
+    Age: 41
+    Birth Date: 1984-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent headaches and a gradual increase in shoe and ring size over the past two years
+  Symptoms:
+    - Headaches: Present
+    - Joint discomfort: Present
+  Vital Signs:
+    - blood pressure: 138.0 mmHg
+    - pulse: 76.0 bpm
+    - height: 180.0 cm
+    - weight: 92.0 kg
+    - BMI: 28.4 kg/m²
+  Laboratory Results:
+    - Glucose challenge panel:
+      Value: 6.3
+      Unit: mmol/L
+    - Deprecated Hgb A1c Bld:
+      Value: 6.0
+      Unit: %
+  Medications:
+
+Family History:
+  - Mother (Deceased: No)
+--------------------------------
+**Disease:** homocystinuria
+**Case:** case_1_0fd29786-4fbd-4f36-8752-c9c74a2edf30
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 0fd29786-4fbd-4f36-8752-c9c74a2edf30
+    Name: Denis Kuznetsov
+    Gender: male
+    Age: 14
+    Birth Date: 2011-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: tall, slender build and myopia
+  Symptoms:
+    - Leg pain: Present
+    - Myopia: Present
+  Vital Signs:
+    - Height: 176.0 cm
+    - Weight: 50.0 kg
+    - BMI: 16.1 kg/m²
+  Laboratory Results:
+    - Hycs-Cys diS SerPl-sCnc:
+      Value: 95.0
+      Unit: µmol/L
+    - Folate Bld-mCnc:
+      Not available
+  Medications:
+
+Family History:
+  - Maternal uncle (Deceased: No)
+    • Condition: Stroke volume
+--------------------------------
+**Disease:** homocystinuria
+**Case:** case_2_b2c4591c-c54c-45fd-a7ab-828e556511ce
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: b2c4591c-c54c-45fd-a7ab-828e556511ce
+    Name: Marina Sidorova
+    Gender: female
+    Age: 10
+    Birth Date: 2015-07-04
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: developmental delay and vision problems
+  Symptoms:
+    - Developmental Delay: Present
+    - Vision Problems: Present
+  Vital Signs:
+  Laboratory Results:
+    - Hycs-Cys diS SerPl-sCnc:
+      Value: 88.0
+      Unit: µmol/L
+    - Vit B12b Ur-mCnc:
+      Not available
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** wilson_disease
+**Case:** case_1_e7f97332-974d-42ca-9b0c-2a6c741dafd6
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: e7f97332-974d-42ca-9b0c-2a6c741dafd6
+    Name: Nikita Petrov
+    Gender: male
+    Age: 22
+    Birth Date: 2003-07-04
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: fatigue, mild tremor of the hands, and occasional mood swings
+  Symptoms:
+    - Fatigue: Present
+    - Tremor: Present
+    - Mood swings: Present
+  Vital Signs:
+  Laboratory Results:
+    - AGXT gene Del+Dup Bld/T MLPA:
+      Value: 78.0
+      Unit: U/L
+    - AST Amn-cCnc:
+      Value: 64.0
+      Unit: U/L
+    - Bilirubin direct & total panel:
+      Value: 1.3
+      Unit: mg/dL
+    - Ceruloplasmin 24h Ur-mCnc:
+      Value: 0.16
+      Unit: g/L
+  Medications:
+
+Family History:
+  - Sister (Deceased: No)
+    • Condition: Postpartum hemolysis-elevated liver enzymes-low platelet count syndrome
+--------------------------------
+**Disease:** wilson_disease
+**Case:** case_2_993e7a76-7659-4439-bf13-5ae865d73e50
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 993e7a76-7659-4439-bf13-5ae865d73e50
+    Name: Alina Kuznetsova
+    Gender: female
+    Age: 19
+    Birth Date: 2006-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: recent episodes of hand clumsiness and increased irritability
+  Symptoms:
+    - Hand Clumsiness: Present
+    - Irritability: Present
+    - Yellowish Tint to Eyes: Present
+  Vital Signs:
+    - Blood Pressure: 110.0 mmHg
+    - Pulse: 74.0 bpm
+  Laboratory Results:
+    - ALT Macro SerPl-cCnc:
+      Value: 92.0
+      Unit: U/L
+    - APRI Ser+Bld Calc-Rto:
+      Value: 85.0
+      Unit: U/L
+    - Bilirubin direct & total panel:
+      Value: 1.6
+      Unit: mg/dL
+    - Ceruloplasmin SerPl-mCnc:
+      Value: 0.14
+      Unit: g/L
+    - Urinary Copper Excretion:
+      Not available
+  Medications:
+
+Family History:
+--------------------------------
+**Disease:** prader_willi_syndrome
+**Case:** case_2_d5083182-f9ec-4d0a-bea2-aca6e6a96555
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: d5083182-f9ec-4d0a-bea2-aca6e6a96555
+    Name: Sofia Lebedeva
+    Gender: female
+    Age: 10
+    Birth Date: 2015-07-12
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: behavioral issues and progressive weight gain
+  Symptoms:
+    - Behavioral issues: Present
+    - Progressive weight gain: Present
+    - Short stature: Present
+    - Mild hypotonia: Present
+    - Narrow forehead: Present
+  Vital Signs:
+    - height: 126.0 cm
+    - weight: 44.0 kg
+    - BMI: 27.7 kg/m²
+  Laboratory Results:
+  Medications:
+
+Family History:
+--------------------------------
+**Disease:** prader_willi_syndrome
+**Case:** case_1_f4e06789-50d0-42d0-a873-ececebc14f66
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: f4e06789-50d0-42d0-a873-ececebc14f66
+    Name: Ilya Tarasov
+    Gender: male
+    Age: 7
+    Birth Date: 2018-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: obesity and developmental delay
+  Symptoms:
+    - poor feeding: Present
+    - excessive appetite: Present
+    - mild hypotonia: Present
+    - learning difficulties: Present
+  Vital Signs:
+    - height: 118.0 cm
+    - weight: 34.0 kg
+    - BMI: 24.4 kg/m²
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** fabry_disease
+**Case:** case_2_c563e971-58d3-4b35-a57b-7902711d6dc3
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: c563e971-58d3-4b35-a57b-7902711d6dc3
+    Name: Irina Volkova
+    Gender: female
+    Age: 33
+    Birth Date: 1992-07-04
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: episodic sharp pain in her feet and a long history of heat intolerance
+  Symptoms:
+    - Episodic Sharp Pain: Present
+    - Heat Intolerance: Present
+    - Hearing Difficulty: Present
+  Vital Signs:
+  Laboratory Results:
+    - PhenX - serum creatinine assay for kidney function protocol 141401:
+      Value: 0.9
+      Unit: mg/dL
+    - A-Galactosidase A WBC-cCnt:
+      Not available
+  Medications:
+
+Family History:
+  - Maternal grandfather (Deceased: No)
+    • Condition: Strains similar
+--------------------------------
+**Disease:** fabry_disease
+**Case:** case_1_a21c87f9-851f-431b-89ea-5baa2edf5444
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: a21c87f9-851f-431b-89ea-5baa2edf5444
+    Name: Mikhail Romanov
+    Gender: male
+    Age: 27
+    Birth Date: 1998-07-04
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: burning pain in hands and feet
+  Symptoms:
+    - Burning pain in hands and feet: Present
+    - Abdominal discomfort: Present
+    - Reduced sweating: Present
+  Vital Signs:
+  Laboratory Results:
+    - PhenX - serum creatinine assay for kidney function protocol 141401:
+      Value: 1.0
+      Unit: mg/dL
+    - Urinalysis studies:
+      Not available
+  Medications:
+
+Family History:
+  - Maternal uncle (Deceased: No)
+    • Condition: Acute kidney failure stage 3
+--------------------------------
+**Disease:** primary_biliary_cholangitis
+**Case:** case_2_507a2b97-d18d-4c6f-8a55-7dcbe93197f9
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 507a2b97-d18d-4c6f-8a55-7dcbe93197f9
+    Name: Marina Petrova
+    Gender: female
+    Age: 49
+    Birth Date: 1976-07-04
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: generalized itching and mild right upper quadrant discomfort
+  Symptoms:
+    - Pruritus: Present
+    - Abdominal Discomfort: Present
+    - Jaundice: Present
+    - Dark Urine: Present
+  Vital Signs:
+  Laboratory Results:
+    - PhenX - alkaline phosphatase protocol 170101:
+      Value: 280.0
+      Unit: U/L
+    - AGXT gene Del+Dup Bld/T MLPA:
+      Value: 52.0
+      Unit: U/L
+    - Bilirubin direct & total panel:
+      Value: 0.8
+      Unit: mg/dL
+    - Mitochondria Ab Msmt Ser:
+      Not available
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** primary_biliary_cholangitis
+**Case:** case_1_691cd378-f9af-4e24-9a52-c70bf01d3575
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 691cd378-f9af-4e24-9a52-c70bf01d3575
+    Name: Tatiana Morozova
+    Gender: female
+    Age: 54
+    Birth Date: 1971-07-04
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: persistent fatigue and pruritus for six months
+  Symptoms:
+    - Fatigue: Present
+    - Pruritus: Present
+    - Abdominal pain: Present
+  Vital Signs:
+  Laboratory Results:
+    - PhenX - alkaline phosphatase protocol 170101:
+      Value: 320.0
+      Unit: U/L
+    - tTG IgG Msmt Ser:
+      Value: 210.0
+      Unit: U/L
+    - AST Amn-cCnc:
+      Value: 48.0
+      Unit: U/L
+    - Bilirub Indirect Prt-sCnc:
+      Not available
+  Medications:
+    - Atorvastatin:
+      Dosage: 10 mg daily
+      Frequency: 1x every 1.0 d
+      Reason: Drugs not taken/completed
+
+Family History:
+  - Mother (Deceased: No)
+    • Condition: Rheumatoid arthritis
+--------------------------------
+**Disease:** spigfd
+**Case:** case_1_91bd87bb-11df-4ffb-9203-75d78118bd47
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 91bd87bb-11df-4ffb-9203-75d78118bd47
+    Name: Timur Kadyrov
+    Gender: male
+    Age: 9
+    Birth Date: 2016-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: evaluation of short stature
+  Symptoms:
+    - Short stature: Present
+  Vital Signs:
+    - height: 114.0 cm
+    - weight: 23.0 kg
+    - BMI: 17.7 kg/m²
+  Laboratory Results:
+    - GHRH SerPl-mCnc:
+      Not available
+    - IGF-I BS SerPl-mCnc:
+      Value: 25.0
+      Unit: ng/mL
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** spigfd
+**Case:** case_2_b00d641f-bf17-4a33-9e1a-d1b8dbcd3a78
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: b00d641f-bf17-4a33-9e1a-d1b8dbcd3a78
+    Name: Daria Stepanenko
+    Gender: female
+    Age: 11
+    Birth Date: 2014-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: poor linear growth
+  Symptoms:
+    - Poor linear growth: Present
+  Vital Signs:
+    - height: 120.0 cm
+    - weight: 26.0 kg
+    - BMI: 18.0 kg/m²
+  Laboratory Results:
+    - GHRH SerPl-mCnc:
+      Value: 8.2
+      Unit: ng/mL
+    - IGF BP1 Vag Ql:
+      Value: 32.0
+      Unit: ng/mL
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** hemophagocytic_lymphohistiocytosis
+**Case:** case_2_4cdfb093-1db3-492d-b2be-1e0cd8767d3c
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 4cdfb093-1db3-492d-b2be-1e0cd8767d3c
+    Name: Viktoria Denisova
+    Gender: female
+    Age: 12
+    Birth Date: 2013-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: fever, malaise, and mild jaundice
+  Symptoms:
+    - Fever: Present
+    - Malaise: Present
+    - Mild Jaundice: Present
+    - Fatigue: Present
+    - Hepatosplenomegaly: Present
+  Vital Signs:
+    - temperature: 38.8 °C
+    - pulse: 102.0 bpm
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 9.8
+      Unit: g/dL
+    - Platelet # PRP Auto:
+      Value: 90.0
+      Unit: ×10⁹/L
+    - Ferritin Fld-mCnc:
+      Value: 1200.0
+      Unit: µg/L
+    - Triglycerides from lipid profile:
+      Value: 3.5
+      Unit: mmol/L
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** hemophagocytic_lymphohistiocytosis
+**Case:** case_1_6c8bf4be-8cbb-4f9c-b657-2720bae29e05
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 6c8bf4be-8cbb-4f9c-b657-2720bae29e05
+    Name: Sergei Morozov
+    Gender: male
+    Age: 5
+    Birth Date: 2020-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: persistent fever lasting 10 days and poor appetite
+  Symptoms:
+    - Fever: Present
+    - Poor appetite: Present
+    - Lethargy: Present
+    - Abdominal distension: Present
+  Vital Signs:
+    - temperature: 39.1 °C
+    - pulse: 110.0 bpm
+    - blood pressure: 95.0 mmHg
+    - spleen size: 3.0 cm
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 10.4
+      Unit: g/dL
+    - Lg Platelets/Platelet NFr Bld Auto:
+      Value: 115.0
+      Unit: ×10⁹/L
+    - SPECT W tagged WBC IV:
+      Value: 3.1
+      Unit: ×10⁹/L
+    - Ferritin Fld-mCnc:
+      Value: 980.0
+      Unit: µg/L
+  Medications:
+
+Family History:
+--------------------------------
+**Disease:** paroxysmal_nocturnal_hemoglobinuria
+**Case:** case_1_a6bd7d40-9567-4df9-9476-f1f34333a32b
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: a6bd7d40-9567-4df9-9476-f1f34333a32b
+    Name: Sergei Belov
+    Gender: male
+    Age: 34
+    Birth Date: 1991-07-04
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: dark-colored urine and fatigue
+  Symptoms:
+    - Dark-colored urine: Present
+    - Fatigue: Present
+  Vital Signs:
+    - blood pressure: 118.0 mmHg
+    - pulse: 80.0 bpm
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 10.8
+      Unit: g/dL
+    - LDH4 SerPl-cCnc:
+      Value: 680.0
+      Unit: U/L
+    - Haptoglob Msmt SerPl:
+      Not available
+    - Urinalysis studies:
+      Not available
+  Medications:
+
+Family History:
+--------------------------------
+**Disease:** paroxysmal_nocturnal_hemoglobinuria
+**Case:** case_2_ff50f13f-3fc1-4ffe-b54f-6c0c3cb0a3f3
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: ff50f13f-3fc1-4ffe-b54f-6c0c3cb0a3f3
+    Name: Yulia Antonova
+    Gender: female
+    Age: 29
+    Birth Date: 1996-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: recurrent episodes of morning urine discoloration and mild shortness of breath on exertion
+  Symptoms:
+    - Shortness of breath: Present
+    - Morning urine discoloration: Present
+  Vital Signs:
+    - Blood pressure: 110.0 mmHg
+    - Pulse: 78.0 bpm
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 9.6
+      Unit: g/dL
+    - Retics #:
+      Value: 4.5
+      Unit: %
+    - LDH4 SerPl-cCnc:
+      Value: 720.0
+      Unit: U/L
+  Medications:
+
+Family History:
+--------------------------------

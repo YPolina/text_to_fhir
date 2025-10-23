@@ -3,6 +3,9 @@ from src.utils.llm_utils import extract_json_block
 from src.core import settings
 from src.utils.prompt import EXTRACTION_PROMPT
 from src.utils.prompt_schemas import OUTPUT_SCHEMA
+import logging
+
+logger = logging.getLogger(__name__)
 
 def process_patient_records(patient_record_text:str, client, model, logger) -> dict:
     """
@@ -35,12 +38,5 @@ def process_patient_records(patient_record_text:str, client, model, logger) -> d
     raw_text = response["output"]["message"]["content"][0].get("text", "").strip()
     cleaned = extract_json_block(raw_text)
 
-    try:
-        parsed = json.loads(cleaned)
-        logger.info("Successfully parsed JSON response")
-        return parsed
-    except Exception as e:
-        logger.error(f"Parse error: {e}")
-        logger.debug(f"RAW OUTPUT:\n{raw_text}")
-        parsed = {}
-        return parsed
+    logger.info("Successfully parsed JSON response")
+    return cleaned

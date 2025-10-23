@@ -1,0 +1,1313 @@
+**Disease:** prader-willi_syndrome
+**Case:** case_1_e196215c-7f99-417c-bb7b-17c09151716b
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: e196215c-7f99-417c-bb7b-17c09151716b
+    Name: Ethan None
+    Gender: male
+    Age: 5
+    Birth Date: 2020-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: concerns regarding feeding habits and overall development
+  Symptoms:
+    - Increased Appetite: Present
+    - Difficulty with Speech: Present
+    - Difficulty with Gross Motor Skills: Present
+    - Tantrums: Present
+    - Mood Swings: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 100.0 beats per minute
+    - blood pressure: 90.0 mmHg
+    - respiratory rate: 24.0 breaths per minute
+    - weight: 18.0 kilograms
+    - height: 105.0 centimeters
+    - body mass index: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - Complete blood count panel:
+      Not available
+    - Basic metabolic panel:
+      Not available
+    - Thyroid Function Tests:
+      Not available
+    - C peptide Ur-sCnc:
+      Value: 12.0
+      Unit: microunits per milliliter
+  Medications:
+Encounter 2:
+  Date: 2025-08-16
+  Reason: None
+  Symptoms:
+  Vital Signs:
+    - weight: 16.0 kilograms
+    - height: 102.0 centimeters
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Mother (Deceased: No)
+    • Condition: Gestational diabetes mellitus
+--------------------------------
+**Disease:** prader-willi_syndrome
+**Case:** case_2_1db7c2bf-32fc-4ba3-b8b0-a489b65fa42b
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 1db7c2bf-32fc-4ba3-b8b0-a489b65fa42b
+    Name: Ethan Thompson
+    Gender: male
+    Age: 5
+    Birth Date: 2020-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: concerns about appetite and eating habits
+  Symptoms:
+    - Increased appetite: Present
+    - Difficulty with speech: Present
+    - Less active than peers: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 100.0 beats per minute
+    - blood pressure: 90.0 mmHg
+    - respiratory rate: 22.0 breaths per minute
+    - weight: 21.0 kilograms
+    - height: 110.0 centimeters
+    - body mass index: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 13.5
+      Unit: grams per deciliter
+    - Hematocrit test status &or results:
+      Value: 40.0
+      Unit: %
+    - Platelet # PRP Auto:
+      Value: 250000.0
+      Unit: per microliter
+  Medications:
+Encounter 2:
+  Date: None
+  Reason: None
+  Symptoms:
+    - Slow growth rate: Present
+    - Mild delays in developmental milestones: Present
+  Vital Signs:
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Sister (Deceased: No)
+--------------------------------
+**Disease:** acromegaly
+**Case:** case_1_73c8da08-ddf1-4260-9727-5eb17d1ac52f
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 73c8da08-ddf1-4260-9727-5eb17d1ac52f
+    Name: Emily Wilson
+    Gender: female
+    Age: 42
+    Birth Date: 1983-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: persistent headache and joint pain
+  Symptoms:
+    - Headache: Present
+    - Joint pain: Present
+    - Swelling in hands and feet: Present
+  Vital Signs:
+    - temperature: 36.8 degrees C
+    - pulse: 72.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 72.0 kg
+    - height: 165.0 cm
+    - body mass index: None None
+  Laboratory Results:
+    - Glucose challenge panel:
+      Value: 92.0
+      Unit: mg/dL
+    - IGF-I sp1 p chal SerPl-mCnc:
+      Value: 420.0
+      Unit: ng/mL
+  Medications:
+    - Ibuprofen:
+      Dosage: 400 milligrams three times a day as needed
+      Frequency: 3x every 1.0 (unit N/A)
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: None
+  Symptoms:
+    - Headache: Present
+    - Joint pain: Present
+  Vital Signs:
+  Laboratory Results:
+    - Thyroid function tests:
+      Not available
+    - Complete blood count panel:
+      Not available
+  Medications:
+
+Family History:
+  - Sibling (Deceased: No)
+--------------------------------
+**Disease:** acromegaly
+**Case:** case_2_77dbdfb7-4cd0-4397-8288-deb1dfe7d5a8
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 77dbdfb7-4cd0-4397-8288-deb1dfe7d5a8
+    Name: Sarah Thompson
+    Gender: female
+    Age: 42
+    Birth Date: 1983-07-05
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of gradual onset of joint pain and swelling in her hands
+  Symptoms:
+    - Joint pain: Present
+    - Headaches: Present
+    - Fatigue: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 65.0 kilograms
+    - height: 165.0 centimeters
+    - BMI: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - Glucose challenge panel:
+      Value: 5.8
+      Unit: mmol/L
+  Medications:
+    - multivitamin supplement:
+      Dosage: once daily
+      Frequency: 1x every 1.0 d
+      Reason: Drugs not taken/completed
+    - over-the-counter analgesic:
+      Dosage: as needed
+      Frequency: as needed
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: similar complaints of joint pain and fatigue
+  Symptoms:
+    - Joint pain: Present
+    - Fatigue: Present
+  Vital Signs:
+    - blood pressure: None None
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Sibling (Deceased: No)
+--------------------------------
+**Disease:** homocystinuria
+**Case:** case_1_f1b492f3-7922-4bb9-8975-66292cd5fb61
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: f1b492f3-7922-4bb9-8975-66292cd5fb61
+    Name: Emily Wilson
+    Gender: female
+    Age: 10
+    Birth Date: 2015-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: mild fatigue and occasional muscle pains in her legs
+  Symptoms:
+    - Mild fatigue: Present
+    - Muscle pains in legs: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 80.0 beats per minute
+    - blood pressure: 100.0 mmHg
+    - respiratory rate: 18.0 breaths per minute
+    - weight: 32.0 kilograms
+    - height: 140.0 centimeters
+    - body mass index: None None
+  Laboratory Results:
+    - Hycs-Cys diS SerPl-sCnc:
+      Value: 15.2
+      Unit: micromoles per liter
+    - Complete blood count panel:
+      Not available
+    - Basic metabolic panel:
+      Not available
+  Medications:
+Encounter 2:
+  Date: 2025-08-16
+  Reason: None
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+    - GABA SerPl Ql:
+      Not available
+  Medications:
+
+Family History:
+  - Distant relative (Deceased: No)
+    • Condition: FH: Cardiovascular disease
+--------------------------------
+**Disease:** homocystinuria
+**Case:** case_2_6cc5aa87-3f9a-4234-abb2-973b00a54701
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 6cc5aa87-3f9a-4234-abb2-973b00a54701
+    Name: Ethan Thompson
+    Gender: male
+    Age: 10
+    Birth Date: 2015-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of occasional blurred vision and mild leg pain
+  Symptoms:
+    - Blurred Vision: Present
+    - Leg Pain: Present
+  Vital Signs:
+    - temperature: 37.0 degrees Celsius
+    - pulse: 80.0 beats per minute
+    - blood pressure: 100.0 mmHg
+    - respiratory rate: 18.0 breaths per minute
+    - oxygen saturation: 98.0 %
+    - height: 140.0 cm
+    - weight: 35.0 kg
+    - body mass index: None None
+  Laboratory Results:
+    - Hcys SerPl-mCnc:
+      Value: 15.0
+      Unit: micromoles per liter
+    - Complete blood count panel:
+      Not available
+  Medications:
+Encounter 2:
+  Date: 2025-08-16
+  Reason: concern about occasional clumsiness
+  Symptoms:
+    - Clumsiness: Present
+  Vital Signs:
+  Laboratory Results:
+    - LDL from lipid profile:
+      Not available
+    - Kidney Function Tests:
+      Not available
+  Medications:
+
+Family History:
+  - Sister (Deceased: No)
+--------------------------------
+**Disease:** wilson_disease
+**Case:** case_1_395f7bf1-26e7-47a4-9a45-586e0ef1ddf3
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 395f7bf1-26e7-47a4-9a45-586e0ef1ddf3
+    Name: Sarah Thompson
+    Gender: female
+    Age: 25
+    Birth Date: 2000-07-12
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of mild fatigue and occasional tremors in her hands
+  Symptoms:
+    - Fatigue: Present
+    - Tremors: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 58.0 kilograms
+    - height: 165.0 centimeters
+    - BMI: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - Ceruloplasmin SerPl-mCnc:
+      Value: 0.15
+      Unit: grams per liter
+    - Complete blood count panel:
+      Not available
+    - Basic metabolic panel:
+      Not available
+  Medications:
+Encounter 2:
+  Date: 2025-08-16
+  Reason: routine check-up
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+    - AST Amn-cCnc:
+      Value: 22.0
+      Unit: units per liter
+    - AGXT gene Del+Dup Bld/T MLPA:
+      Value: 18.0
+      Unit: units per liter
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** wilson_disease
+**Case:** case_2_83177ce2-83b7-4393-b618-18c4cff10cdb
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 83177ce2-83b7-4393-b618-18c4cff10cdb
+    Name: Emily Wilson
+    Gender: female
+    Age: 25
+    Birth Date: 2000-07-12
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of fatigue and mild tremors
+  Symptoms:
+    - Fatigue: Present
+    - Tremors: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 55.0 kilograms
+    - height: 165.0 centimeters
+    - BMI: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - Ceruloplasmin SerPl-mCnc:
+      Value: 15.0
+      Unit: mg/dL
+    - Copper 24h Ur-mRate:
+      Value: 50.0
+      Unit: micrograms
+  Medications:
+Encounter 2:
+  Date: 2025-08-16
+  Reason: routine check-up
+  Symptoms:
+    - Fatigue: Present
+  Vital Signs:
+  Laboratory Results:
+    - Complete blood count panel:
+      Not available
+    - Basic metabolic panel:
+      Not available
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** fabry_disease
+**Case:** case_2_e7810f3b-dd54-424b-abcd-b6fcc7eda27b
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: e7810f3b-dd54-424b-abcd-b6fcc7eda27b
+    Name: Sarah Thompson
+    Gender: female
+    Age: 35
+    Birth Date: 1990-07-12
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent episodes of burning pain in her hands and feet
+  Symptoms:
+    - Burning pain in hands and feet: Present
+    - Gastrointestinal upset: Present
+    - Abdominal bloating: Present
+    - Diarrhea: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 62.0 kilograms
+    - height: 165.0 centimeters
+    - BMI: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - PhenX - urinary creatinine assay for kidney function protocol 141601:
+      Value: 0.8
+      Unit: milligrams per deciliter
+    - Urinalysis studies:
+      Not available
+  Medications:
+    - Ibuprofen:
+      Dosage: 400 milligrams as needed
+      Frequency: as needed
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: routine check-up
+  Symptoms:
+  Vital Signs:
+    - blood pressure: None None
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** fabry_disease
+**Case:** case_1_ed37470b-9d55-4994-8da2-cbee8c4fd5e7
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: ed37470b-9d55-4994-8da2-cbee8c4fd5e7
+    Name: Emily Wilson
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent burning pain in hands and feet
+  Symptoms:
+    - Abdominal bloating: Present
+    - Diarrhea: Present
+    - Pain in hands and feet: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: 120.0 millimeters of mercury
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 58.0 kilograms
+    - height: 165.0 centimeters
+    - BMI: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - PhenX - urinary creatinine assay for kidney function protocol 141601:
+      Value: 1.1
+      Unit: milligrams per deciliter
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 11.5
+      Unit: grams per deciliter
+  Medications:
+    - Multivitamin:
+      Dosage: daily
+      Frequency: 1x every 1.0 d
+      Reason: Drugs not taken/completed
+    - Antacid:
+      Dosage: as needed
+      Frequency: as needed
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: None
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 11.5
+      Unit: grams per deciliter
+  Medications:
+
+Family History:
+  - Brother (Deceased: No)
+--------------------------------
+**Disease:** still's_disease
+**Case:** case_1_f99b618d-50a7-46b4-accc-bc15b702c484
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: f99b618d-50a7-46b4-accc-bc15b702c484
+    Name: Emily Wilson
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent fever, general malaise and fatigue
+  Symptoms:
+    - Fever: Present
+    - General Malaise: Present
+    - Fatigue: Present
+    - Joint Pain: Present
+    - Rash: Present
+  Vital Signs:
+    - temperature: 100.2 degrees Fahrenheit
+    - pulse: 92.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 18.0 breaths per minute
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - WBC # Bld:
+      Value: 12000.0
+      Unit: cells per microliter
+    - Erythrocyte Sed Rat Bld:
+      Value: 40.0
+      Unit: mm per hour
+  Medications:
+    - Acetaminophen:
+      Dosage: 650 milligrams every six hours as needed
+      Frequency: 1x every 6.0 h
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: None
+  Reason: viral upper respiratory infection
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+  Medications:
+Encounter 3:
+  Date: None
+  Reason: routine annual examination
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+  Medications:
+Encounter 4:
+  Date: 2025-08-16
+  Reason: fatigue
+  Symptoms:
+    - Fatigue: Present
+  Vital Signs:
+  Laboratory Results:
+    - Complete blood count panel:
+      Not available
+    - Basic metabolic panel:
+      Not available
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+    • Condition: Hypertensive disorder
+--------------------------------
+**Disease:** still's_disease
+**Case:** case_2_d7c39134-44a4-4439-a415-085ebabe5146
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: d7c39134-44a4-4439-a415-085ebabe5146
+    Name: Emily Wilson
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent fever
+  Symptoms:
+    - Fever: Present
+    - Fatigue: Present
+    - Muscle aches: Present
+  Vital Signs:
+    - temperature: 37.8 degrees Celsius
+    - pulse: 92.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 18.0 breaths per minute
+    - weight: 60.0 kilograms
+    - height: 165.0 centimeters
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - Erythrocyte Sed Rat Bld:
+      Value: 25.0
+      Unit: mm/hour
+    - CRP Quint SerPl Qn HS:
+      Value: 10.0
+      Unit: mg/L
+  Medications:
+    - Acetaminophen:
+      Dosage: intermittently for fever management
+      Frequency: as needed
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: None
+  Symptoms:
+  Vital Signs:
+    - temperature: None None
+    - pulse: None None
+    - blood pressure: None None
+    - respiratory rate: None None
+    - weight: None None
+    - height: None None
+    - oxygen saturation: None None
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+    • Condition: Hypertensive disorder
+--------------------------------
+**Disease:** muckle-wells_syndrome
+**Case:** case_2_ec56b498-a186-4930-aca8-634ca7fa1631
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: ec56b498-a186-4930-aca8-634ca7fa1631
+    Name: Emily Wilson
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of recurrent episodes of rash and joint pain
+  Symptoms:
+    - Rash: Present
+    - Joint pain: Present
+  Vital Signs:
+    - temperature: 37.2 degrees Celsius
+    - pulse: 88.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 65.0 kilograms
+    - height: 168.0 centimeters
+    - BMI: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - Erythrocyte Sed Rat Bld:
+      Value: 25.0
+      Unit: mm/hour
+    - CRP Quint SerPl Qn HS:
+      Value: 1.2
+      Unit: mg/dL
+  Medications:
+    - Ibuprofen:
+      Dosage: 400mg every 8 hours as needed
+      Frequency: 3x every 1.0 d
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: similar episodes of rash and joint pain
+  Symptoms:
+    - Rash: Present
+    - Joint pain: Present
+  Vital Signs:
+  Laboratory Results:
+    - WBC # Bld:
+      Value: 12000.0
+      Unit: cells per microliter
+  Medications:
+
+Family History:
+  - Mother (Deceased: No)
+--------------------------------
+**Disease:** muckle-wells_syndrome
+**Case:** case_1_2972d37d-c63d-43d6-bedc-bb73e3102a81
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 2972d37d-c63d-43d6-bedc-bb73e3102a81
+    Name: Sarah Thompson
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: recurring episodes of fever
+  Symptoms:
+    - Fever: Present
+    - Joint pain: Present
+    - Skin rash: Present
+  Vital Signs:
+    - temperature: 38.2 degrees Celsius
+    - pulse: 92.0 beats per minute
+    - blood pressure: 120.0 mmHg
+    - respiratory rate: 18.0 breaths per minute
+    - oxygen saturation: 98.0 %
+    - height: 165.0 cm
+    - weight: 60.0 kg
+    - BMI: None None
+  Laboratory Results:
+    - CRP Quint SerPl Qn HS:
+      Value: 12.0
+      Unit: mg/L
+    - Erythrocyte Sed Rat Bld:
+      Value: 25.0
+      Unit: mm/hour
+    - Complete blood count panel:
+      Not available
+    - Liver function tests:
+      Not available
+  Medications:
+    - Ibuprofen:
+      Dosage: 400 mg three times a day as needed
+      Frequency: 3x every 1.0 d
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: None
+  Reason: similar symptoms but without the fever
+  Symptoms:
+    - Fatigue: Present
+    - Generalized muscle pain: Present
+  Vital Signs:
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Sibling (Deceased: No)
+    • Condition: Spotted fevers
+--------------------------------
+**Disease:** primary_biliary_cholangitis
+**Case:** case_2_c68d941a-b33f-476d-a574-146ac77eeb95
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: c68d941a-b33f-476d-a574-146ac77eeb95
+    Name: Sarah Thompson
+    Gender: female
+    Age: 42
+    Birth Date: 1983-07-05
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of intermittent fatigue and mild itching on her palms and soles
+  Symptoms:
+    - Fatigue: Present
+    - Itching: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 65.0 kilograms
+    - height: 160.0 centimeters
+    - body mass index: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - PhenX - alkaline phosphatase protocol 170101:
+      Value: 140.0
+      Unit: units per liter
+    - GGT Smn-cCnc:
+      Value: 60.0
+      Unit: units per liter
+    - Complete blood count panel:
+      Not available
+    - Electrolytes 24h Ur-Imp:
+      Not available
+    - Liver Transaminases:
+      Not available
+  Medications:
+    - Multivitamin:
+      Dosage: once daily
+      Frequency: 1x every 1.0 d
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: None
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+    - Complete blood count panel:
+      Not available
+    - Basic metabolic panel:
+      Not available
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** primary_biliary_cholangitis
+**Case:** case_1_856c39e2-cead-4cdd-bcec-88a895fd99c1
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 856c39e2-cead-4cdd-bcec-88a895fd99c1
+    Name: Sarah Thompson
+    Gender: female
+    Age: 42
+    Birth Date: 1983-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of intermittent fatigue and mild itching
+  Symptoms:
+    - Fatigue: Present
+    - Itching: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: 120.0 millimeters of mercury
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 65.0 kilograms
+    - height: 160.0 centimeters
+    - body mass index: None None
+  Laboratory Results:
+    - PhenX - alkaline phosphatase protocol 170101:
+      Value: 140.0
+      Unit: units per liter
+    - GGT Smn-cCnc:
+      Value: 55.0
+      Unit: units per liter
+    - Complete blood count panel:
+      Not available
+    - Electrolytes panel:
+      Not available
+    - Liver Function Tests:
+      Not available
+    - AST Amn-cCnc:
+      Not available
+    - AGXT gene Del+Dup Bld/T MLPA:
+      Not available
+  Medications:
+    - Multivitamin:
+      Dosage: daily
+      Frequency: 1x every 1.0 d
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: routine check-up
+  Symptoms:
+    - Fatigue: Present
+  Vital Signs:
+  Laboratory Results:
+    - Liver Function Tests:
+      Not available
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** spigfd
+**Case:** case_2_8871a09e-5469-4eb0-95bb-8db6bd023b25
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 8871a09e-5469-4eb0-95bb-8db6bd023b25
+    Name: Sofia Rodriguez
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-08-16
+  Reason: intermittent abdominal discomfort and bloating
+  Symptoms:
+    - Abdominal Discomfort: Present
+    - Bloating: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: 118.0 millimeters of mercury
+    - respiratory rate: 16.0 breaths per minute
+    - oxygen saturation: 98.0 %
+    - weight: 58.0 kilograms
+    - height: 165.0 centimeters
+    - body mass index: None None
+  Laboratory Results:
+    - WBC # Bld:
+      Value: 7.2
+      Unit: thousand cells per microliter
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 13.1
+      Unit: grams per deciliter
+    - Platelet # PRP Auto:
+      Value: 220.0
+      Unit: thousand cells per microliter
+  Medications:
+Encounter 2:
+  Date: None
+  Reason: None
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Father (Deceased: No)
+--------------------------------
+**Disease:** spigfd
+**Case:** case_1_d4e9e05a-3f39-4c64-9f16-85ec4e3cc168
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: d4e9e05a-3f39-4c64-9f16-85ec4e3cc168
+    Name: Emily Wilson
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of occasional abdominal discomfort and bloating
+  Symptoms:
+    - Abdominal discomfort: Present
+    - Bloating: Present
+    - Loose stools: Present
+  Vital Signs:
+    - temperature: 37.2 degrees Celsius
+    - pulse: 82.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - weight: 58.0 kilograms
+    - height: 165.0 centimeters
+    - body mass index: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - Complete blood count panel:
+      Not available
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 13.5
+      Unit: grams per deciliter
+    - WBC # Bld:
+      Value: 6.2
+      Unit: thousand cells per microliter
+    - Platelet # PRP Auto:
+      Value: 220.0
+      Unit: thousand cells per microliter
+    - Comprehensive metabolic 1998 panel:
+      Not available
+    - PhenX - serum creatinine assay for kidney function protocol 141401:
+      Value: 0.8
+      Unit: milligrams per deciliter
+    - AST/ALT SerPl-cRto:
+      Value: 22.0
+      Unit: units per liter
+  Medications:
+    - Multivitamin:
+      Dosage: once daily
+      Frequency: 1x every 1.0 d
+      Reason: Drugs not taken/completed
+    - Oral contraceptive pill:
+      Dosage: N/A
+      Frequency: as needed
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: routine check-up
+  Symptoms:
+  Vital Signs:
+    - blood pressure: None None
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Brother (Deceased: No)
+    • Condition: Asthma
+--------------------------------
+**Disease:** hemophagocytic_lymphohistiocytosis
+**Case:** case_1_e5142052-7f0a-42f6-b5a4-d9b224b6492f
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: e5142052-7f0a-42f6-b5a4-d9b224b6492f
+    Name: Emily Wilson
+    Gender: female
+    Age: 28
+    Birth Date: 1997-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent fever, fatigue, and general feeling of being unwell
+  Symptoms:
+    - Fever: Present
+    - Fatigue: Present
+    - Night Sweats: Present
+    - Decrease in Appetite: Present
+  Vital Signs:
+    - temperature: 100.2 degrees Fahrenheit
+    - pulse: 96.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 18.0 breaths per minute
+    - weight: 125.0 pounds
+    - height: None None
+    - BMI: None None
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - WBC # Bld:
+      Value: 12000.0
+      Unit: cells per microliter
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 11.5
+      Unit: grams per deciliter
+    - Platelet # PRP Auto:
+      Value: 90000.0
+      Unit: cells per microliter
+    - AST Amn-cCnc:
+      Value: 45.0
+      Unit: units per liter
+    - AGXT gene Del+Dup Bld/T MLPA:
+      Value: 50.0
+      Unit: units per liter
+  Medications:
+    - Acetaminophen:
+      Dosage: 650 milligrams every 4 hours as needed
+      Frequency: 1x every 4.0 (unit N/A)
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-08-16
+  Reason: viral upper respiratory infection
+  Symptoms:
+    - Upper Respiratory Infection: Present
+  Vital Signs:
+  Laboratory Results:
+    - Complete blood count panel:
+      Not available
+    - Liver Function Tests:
+      Not available
+  Medications:
+
+Family History:
+  - Mother (Deceased: No)
+    • Condition: Systemic lupus erythematosus
+--------------------------------
+**Disease:** hemophagocytic_lymphohistiocytosis
+**Case:** case_2_85d82644-5ec7-4131-b823-a9303eec1ad6
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 85d82644-5ec7-4131-b823-a9303eec1ad6
+    Name: Sophia Patel
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent fever and fatigue
+  Symptoms:
+    - Fever: Present
+    - Fatigue: Present
+    - Night Sweats: Present
+    - Loss of Appetite: Present
+    - Headache: Present
+  Vital Signs:
+    - temperature: 38.5 degrees Celsius
+    - pulse: 96.0 beats per minute
+    - blood pressure: 120.0 mmHg
+    - respiratory rate: 18.0 breaths per minute
+    - oxygen saturation: 98.0 %
+    - weight: 55.0 kilograms
+    - height: 160.0 centimeters
+    - BMI: None None
+  Laboratory Results:
+    - AST Amn-cCnc:
+      Value: 45.0
+      Unit: units per liter
+    - AGXT gene Del+Dup Bld/T MLPA:
+      Value: 50.0
+      Unit: units per liter
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 11.2
+      Unit: grams per deciliter
+    - WBC # Bld:
+      Value: 12000.0
+      Unit: cells per microliter
+  Medications:
+Encounter 2:
+  Date: None
+  Reason: routine check-up
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+  Medications:
+
+Family History:
+  - Brother (Deceased: No)
+    • Condition: Viral cardiovascular infection
+--------------------------------
+**Disease:** paroxysmal_nocturnal_hemoglobinuria
+**Case:** case_1_ccbeaa26-2a90-4440-b9da-86f4f3bafdae
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: ccbeaa26-2a90-4440-b9da-86f4f3bafdae
+    Name: Sophia Patel
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: complaints of recurring episodes of dark urine and fatigue
+  Symptoms:
+    - Fatigue: Present
+    - Dark Urine: Present
+  Vital Signs:
+    - temperature: 36.8 degrees Celsius
+    - pulse: 72.0 beats per minute
+    - blood pressure: None None
+    - respiratory rate: 16.0 breaths per minute
+    - oxygen saturation: 98.0 %
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 12.1
+      Unit: g/dL
+    - CHCMr Bld-mCnc:
+      Value: 90.0
+      Unit: fL
+    - Retics #:
+      Value: 2.5
+      Unit: %
+  Medications:
+    - Multivitamin:
+      Dosage: once daily
+      Frequency: 1x every 1.0 d
+      Reason: Drugs not taken/completed
+    - Oral Contraceptive:
+      Dosage: N/A
+      Frequency: as needed
+      Reason: Drugs not taken/completed
+Encounter 2:
+  Date: 2025-07-16
+  Reason: similar symptoms of fatigue and dark urine
+  Symptoms:
+    - Fatigue: Present
+    - Dark Urine: Present
+  Vital Signs:
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 11.8
+      Unit: g/dL
+  Medications:
+
+Family History:
+  - Brother (Deceased: No)
+    • Condition: Hypothyroidism
+--------------------------------
+**Disease:** paroxysmal_nocturnal_hemoglobinuria
+**Case:** case_2_711269c5-d3fb-436f-b5c6-b9245121ba71
+**Summary:**
+
+    Patient Summary
+    ---------------
+    Patient ID: 711269c5-d3fb-436f-b5c6-b9245121ba71
+    Name: Emily Wilson
+    Gender: female
+    Age: 32
+    Birth Date: 1993-01-01
+    Address: None
+    
+    Encounters:
+
+Encounter 1:
+  Date: 2025-10-16
+  Reason: intermittent dark urine
+  Symptoms:
+    - Fatigue: Present
+    - Shortness of breath: Present
+  Vital Signs:
+    - temperature: 98.6 degrees Fahrenheit
+    - pulse: 72.0 beats per minute
+    - blood pressure: 120.0 mmHg
+    - respiratory rate: 16.0 breaths per minute
+    - oxygen saturation: 98.0 %
+    - weight: 130.0 pounds
+    - height: 66.0 inches
+    - BMI: None None
+  Laboratory Results:
+    - PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901:
+      Value: 12.5
+      Unit: grams per deciliter
+    - Hematocrit test status &or results:
+      Value: 37.0
+      Unit: %
+    - Retics #:
+      Value: 2.5
+      Unit: %
+  Medications:
+Encounter 2:
+  Date: 2025-04-16
+  Reason: routine check-up
+  Symptoms:
+  Vital Signs:
+  Laboratory Results:
+    - Complete blood count panel:
+      Not available
+  Medications:
+
+Family History:
+  - Mother (Deceased: No)
+--------------------------------

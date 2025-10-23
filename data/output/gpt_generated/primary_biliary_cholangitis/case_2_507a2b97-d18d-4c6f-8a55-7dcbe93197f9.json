@@ -1,0 +1,552 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:507a2b97-d18d-4c6f-8a55-7dcbe93197f9",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "507a2b97-d18d-4c6f-8a55-7dcbe93197f9",
+        "name": [
+          {
+            "family": "Petrova",
+            "given": [
+              "Marina"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1976-07-04",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e0f4b88-6ce6-426f-9dd0-aec06089dedf",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "1e0f4b88-6ce6-426f-9dd0-aec06089dedf",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Marina Petrova_20251023103718"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9",
+          "display": "Marina Petrova"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "generalized itching and mild right upper quadrant discomfort"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e080155e-6fa8-4e33-ae7b-4af1ad289cad",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e080155e-6fa8-4e33-ae7b-4af1ad289cad",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62898-2",
+              "display": "PhenX - alkaline phosphatase protocol 170101"
+            }
+          ],
+          "text": "Alkaline Phosphatase"
+        },
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+        },
+        "encounter": {
+          "reference": "Encounter/1e0f4b88-6ce6-426f-9dd0-aec06089dedf"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 280.0,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/62898-2/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d2bdd0fe-bbc4-4982-b938-754791eba0a0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d2bdd0fe-bbc4-4982-b938-754791eba0a0",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69478-6",
+              "display": "AGXT gene Del+Dup Bld/T MLPA"
+            }
+          ],
+          "text": "Alanine Aminotransferase"
+        },
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+        },
+        "encounter": {
+          "reference": "Encounter/1e0f4b88-6ce6-426f-9dd0-aec06089dedf"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 52.0,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        },
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/69478-6/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c531aad0-d17d-4d95-bac5-d4cd65d0c9cd",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c531aad0-d17d-4d95-bac5-d4cd65d0c9cd",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34543-9",
+              "display": "Bilirubin direct & total panel"
+            }
+          ],
+          "text": "Total Bilirubin"
+        },
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+        },
+        "encounter": {
+          "reference": "Encounter/1e0f4b88-6ce6-426f-9dd0-aec06089dedf"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 0.8,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/34543-9/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b0548ef5-f6bd-4d1a-86c7-4fa663aff995",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b0548ef5-f6bd-4d1a-86c7-4fa663aff995",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "111378-6",
+              "display": "Mitochondria Ab Msmt Ser"
+            }
+          ],
+          "text": "Antimitochondrial Antibodies"
+        },
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+        },
+        "encounter": {
+          "reference": "Encounter/1e0f4b88-6ce6-426f-9dd0-aec06089dedf"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/111378-6/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:94a46ac3-9b54-40c3-8cdd-ac8bb7a3b14b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "94a46ac3-9b54-40c3-8cdd-ac8bb7a3b14b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "90446007",
+              "display": "Pruritus ani"
+            }
+          ],
+          "text": "Pruritus"
+        },
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+        },
+        "encounter": {
+          "reference": "Encounter/1e0f4b88-6ce6-426f-9dd0-aec06089dedf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/90446007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6b111c69-9990-48b1-8db1-d4823a805a17",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6b111c69-9990-48b1-8db1-d4823a805a17",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "43364001",
+              "display": "Abdominal discomfort"
+            }
+          ],
+          "text": "Abdominal Discomfort"
+        },
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+        },
+        "encounter": {
+          "reference": "Encounter/1e0f4b88-6ce6-426f-9dd0-aec06089dedf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/43364001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4b950652-9b48-4802-8080-161d4c4f4847",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4b950652-9b48-4802-8080-161d4c4f4847",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "18165001",
+              "display": "Jaundice"
+            }
+          ],
+          "text": "Jaundice"
+        },
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+        },
+        "encounter": {
+          "reference": "Encounter/1e0f4b88-6ce6-426f-9dd0-aec06089dedf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/18165001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6693b87f-b66c-4eaf-84eb-4ae5d3ddc1cb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6693b87f-b66c-4eaf-84eb-4ae5d3ddc1cb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39575007",
+              "display": "Urine looks dark"
+            }
+          ],
+          "text": "Dark Urine"
+        },
+        "subject": {
+          "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+        },
+        "encounter": {
+          "reference": "Encounter/1e0f4b88-6ce6-426f-9dd0-aec06089dedf"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/39575007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3373a520-3785-49d7-ba0f-315265e9eb30",
+      "resource": {
+        "resourceType": "List",
+        "id": "3373a520-3785-49d7-ba0f-315265e9eb30",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-2",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "66839005",
+                  "display": "Father"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": []
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/507a2b97-d18d-4c6f-8a55-7dcbe93197f9"
+          }
+        ],
+        "note": [
+          {
+            "text": "Both parents are alive and well."
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-2"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}

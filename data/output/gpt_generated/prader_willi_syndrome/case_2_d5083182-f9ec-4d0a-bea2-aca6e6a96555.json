@@ -1,0 +1,505 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:d5083182-f9ec-4d0a-bea2-aca6e6a96555",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "d5083182-f9ec-4d0a-bea2-aca6e6a96555",
+        "name": [
+          {
+            "family": "Lebedeva",
+            "given": [
+              "Sofia"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2015-07-12",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a79b99a2-e5a5-418c-9bac-ce56d3dcd129",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "a79b99a2-e5a5-418c-9bac-ce56d3dcd129",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Sofia Lebedeva_20251023103650"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555",
+          "display": "Sofia Lebedeva"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "behavioral issues and progressive weight gain"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:225432c6-bb3f-4d08-be87-a335d6e7fbe9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "225432c6-bb3f-4d08-be87-a335d6e7fbe9",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "418667009",
+              "display": "Procedure scheduling issues"
+            }
+          ],
+          "text": "Behavioral issues"
+        },
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555"
+        },
+        "encounter": {
+          "reference": "Encounter/a79b99a2-e5a5-418c-9bac-ce56d3dcd129"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/418667009"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c3f9683c-5af7-425c-bd1e-903b3ba233ee",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c3f9683c-5af7-425c-bd1e-903b3ba233ee",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "816159004",
+              "display": "Weight gain"
+            }
+          ],
+          "text": "Progressive weight gain"
+        },
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555"
+        },
+        "encounter": {
+          "reference": "Encounter/a79b99a2-e5a5-418c-9bac-ce56d3dcd129"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/816159004"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d4b52cf8-f231-4864-b297-b1ef7de5c78b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d4b52cf8-f231-4864-b297-b1ef7de5c78b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "772086000",
+              "display": "Disproportionate short stature"
+            }
+          ],
+          "text": "Short stature"
+        },
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555"
+        },
+        "encounter": {
+          "reference": "Encounter/a79b99a2-e5a5-418c-9bac-ce56d3dcd129"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/772086000"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dd58b773-969c-43ac-b096-7c7b750a0343",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "dd58b773-969c-43ac-b096-7c7b750a0343",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "704200007",
+              "display": "Acquired hypotonia"
+            }
+          ],
+          "text": "Mild hypotonia"
+        },
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555"
+        },
+        "encounter": {
+          "reference": "Encounter/a79b99a2-e5a5-418c-9bac-ce56d3dcd129"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/704200007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f0b3a669-7f7e-443b-a815-5aa95c8b6b5a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f0b3a669-7f7e-443b-a815-5aa95c8b6b5a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "134223000",
+              "display": "Narrow"
+            }
+          ],
+          "text": "Narrow forehead"
+        },
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555"
+        },
+        "encounter": {
+          "reference": "Encounter/a79b99a2-e5a5-418c-9bac-ce56d3dcd129"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/134223000"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4d431e48-fb0c-415c-9baf-af6bb523402e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4d431e48-fb0c-415c-9baf-af6bb523402e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92998-4",
+              "display": "Lower segment"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555"
+        },
+        "encounter": {
+          "reference": "Encounter/a79b99a2-e5a5-418c-9bac-ce56d3dcd129"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 126.0,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ],
+            "text": "Low"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dba08145-f185-4704-ac93-ba96a9805019",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "dba08145-f185-4704-ac93-ba96a9805019",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8337-8",
+              "display": "Bdy weight special circumstances"
+            }
+          ],
+          "text": "weight"
+        },
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555"
+        },
+        "encounter": {
+          "reference": "Encounter/a79b99a2-e5a5-418c-9bac-ce56d3dcd129"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 44.0,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:484d53ac-9f4b-459b-82e1-2d82d221e729",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "484d53ac-9f4b-459b-82e1-2d82d221e729",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "107102-6",
+              "display": "BMI formula"
+            }
+          ],
+          "text": "BMI"
+        },
+        "subject": {
+          "reference": "Patient/d5083182-f9ec-4d0a-bea2-aca6e6a96555"
+        },
+        "encounter": {
+          "reference": "Encounter/a79b99a2-e5a5-418c-9bac-ce56d3dcd129"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 27.7,
+          "unit": "kg/m²",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m²"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

@@ -37,7 +37,7 @@ CASE_GENERATION_PROMPT = """
     
     Each case must include the following sections as natural narrative text (not labeled):
     1. Patient data
-        Include: age, name, (optional: surname, gender, address).
+        Include: age, name (optional: surname, gender, address (country desirable).
         Write naturally: e.g., “A 45-year-old man, Ivan Kozlov, presents with…”
         Ensure demographics are realistic for the typical epidemiology of {disease} (age range, sex distribution, etc.).
         
@@ -73,33 +73,7 @@ CASE_GENERATION_PROMPT = """
     The tone must be neutral, formal, and medically accurate.
     Include quantitative details (e.g., vital signs, lab values) where appropriate to enhance realism.
     Use plain text only (no markdown, no bullet points, no lists).
-    
-    *OUTPUT EXAMPLES*
-    EXAMPLE INPUT → OUTPUT
 
-    Input:
-    {{disease}}: Chronic kidney disease
-    Output:
-    A 49-year-old woman, Natalia Orlova, attends for evaluation of persistent fatigue and swelling around her ankles. 
-    She has a history of long-standing hypertension, treated irregularly. 
-    Blood pressure at presentation is 158/96 mmHg, pulse 78 bpm, and BMI 29.3 kg/m². 
-    Laboratory results show serum creatinine of 1.5 mg/dL (previously 1.2 mg/dL last year) and an estimated GFR of 58 mL/min/1.73 m². 
-    Urinalysis reveals trace proteinuria without hematuria. 
-    Her mother was diagnosed with type 2 diabetes, and her brother has hypertension. 
-    She reports no recent medication changes or infections. 
-    She is not currently taking any prescribed medication.
-    
-    Input:
-    {{disease}}: Chronic kidney disease
-    Output:
-    A 62-year-old man, Dmitry Smirnov, presents with increasing shortness of breath, swelling in both legs, and decreased urine output over the past three weeks. 
-    He has a long-standing history of type 2 diabetes and hypertension. 
-    On arrival, his blood pressure is 176/104 mmHg, pulse 92 bpm, and oxygen saturation 93% on room air. 
-    Physical examination reveals bilateral pitting edema up to the knees and fine crackles at both lung bases. 
-    Laboratory evaluation shows serum creatinine 3.4 mg/dL, BUN 65 mg/dL, potassium 5.7 mmol/L, and eGFR 24 mL/min/1.73 m². 
-    Current medications include lisinopril 20 mg once daily, furosemide 40 mg twice daily, and metformin 500 mg twice daily, though adherence has been inconsistent. 
-    His father died of a myocardial infarction at 68, and his mother had chronic kidney disease requiring dialysis. 
-    He reports worsening fatigue and appetite loss over the past month.
     """
 
 PATIENT_INFO_PROMPT = """

@@ -1,7 +1,7 @@
 from typing import Optional
 import logging
 import boto3
-from src.core import settings
+from src.core.settings import GENERATION_PROMPT_TEMPERATURE, GENERATION_PROMPT_TOP_P, PROMPT_MAX_TOKENS
 from src.utils.prompt import CASE_GENERATION_PROMPT
 
 
@@ -33,7 +33,7 @@ def generate_case(
     response = client.converse(
         modelId=model,
         messages=conversation,
-        inferenceConfig={"maxTokens": settings.PROMPT_MAX_TOKENS, "temperature": settings.PROMPT_TEMPERATURE}
+        inferenceConfig={"maxTokens": PROMPT_MAX_TOKENS, "temperature": GENERATION_PROMPT_TEMPERATURE, "topP": GENERATION_PROMPT_TOP_P}
     )
 
     logger.debug("Received response from model")

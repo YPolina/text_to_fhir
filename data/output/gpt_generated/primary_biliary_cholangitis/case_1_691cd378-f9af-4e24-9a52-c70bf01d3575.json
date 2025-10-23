@@ -1,0 +1,633 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:691cd378-f9af-4e24-9a52-c70bf01d3575",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "691cd378-f9af-4e24-9a52-c70bf01d3575",
+        "name": [
+          {
+            "family": "Morozova",
+            "given": [
+              "Tatiana"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1971-07-04",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:552a2a80-fb09-4fd0-b401-06ffb349e330",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "552a2a80-fb09-4fd0-b401-06ffb349e330",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Tatiana Morozova_20251023103703"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575",
+          "display": "Tatiana Morozova"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "persistent fatigue and pruritus for six months"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7caf5786-23dd-45f4-b3f8-d4f01199c423",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7caf5786-23dd-45f4-b3f8-d4f01199c423",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62898-2",
+              "display": "PhenX - alkaline phosphatase protocol 170101"
+            }
+          ],
+          "text": "Alkaline Phosphatase"
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 320.0,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/62898-2/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3ef3d351-fc5a-4c99-af03-436f74ad834c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3ef3d351-fc5a-4c99-af03-436f74ad834c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "109056-2",
+              "display": "tTG IgG Msmt Ser"
+            }
+          ],
+          "text": "Gamma-Glutamyltransferase"
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 210.0,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/109056-2/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e2430975-d98c-427b-b5ef-762744841315",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e2430975-d98c-427b-b5ef-762744841315",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1917-4",
+              "display": "AST Amn-cCnc"
+            }
+          ],
+          "text": "Aspartate Aminotransferase"
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "valueQuantity": {
+          "value": 48.0,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        },
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/1917-4/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3097ecb1-800c-4319-ab33-b292f053ec29",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3097ecb1-800c-4319-ab33-b292f053ec29",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "78442-1",
+              "display": "Bilirub Indirect Prt-sCnc"
+            }
+          ],
+          "text": "Bilirubin"
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/78442-1/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0cff96c8-36fa-48a4-9adb-f621b00f729a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0cff96c8-36fa-48a4-9adb-f621b00f729a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "Fatigue"
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/84229001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8877c62c-91bb-4088-8e82-eba0d72c76cc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8877c62c-91bb-4088-8e82-eba0d72c76cc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "90446007",
+              "display": "Pruritus ani"
+            }
+          ],
+          "text": "Pruritus"
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/90446007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f22b6c13-5edd-4cb6-884e-d684dd24b02b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f22b6c13-5edd-4cb6-884e-d684dd24b02b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "21522001",
+              "display": "Abdominal pain"
+            }
+          ],
+          "text": "Abdominal pain"
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-16"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/21522001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bafc3714-f484-4da9-95eb-c4a1fa921801",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bafc3714-f484-4da9-95eb-c4a1fa921801",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ],
+          "text": "temperature"
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:41f4ad53-97b8-4dd0-8645-c744e9de8c0f",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "41f4ad53-97b8-4dd0-8645-c744e9de8c0f",
+        "status": "recorded",
+        "medication": {
+          "concept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "373444002",
+                "display": "Atorvastatin"
+              }
+            ],
+            "text": "Atorvastatin"
+          }
+        },
+        "subject": {
+          "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+        },
+        "encounter": {
+          "reference": "Encounter/552a2a80-fb09-4fd0-b401-06ffb349e330"
+        },
+        "effectiveDateTime": "2025-10-16",
+        "informationSource": [
+          {
+            "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "10 mg daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1.0,
+                "periodUnit": "d"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4ebd6adc-d764-4b33-9c71-f795512551c8",
+      "resource": {
+        "resourceType": "List",
+        "id": "4ebd6adc-d764-4b33-9c71-f795512551c8",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-1",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72705000",
+                  "display": "Mother"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "69896004",
+                      "display": "Rheumatoid arthritis"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/691cd378-f9af-4e24-9a52-c70bf01d3575"
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-1"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}

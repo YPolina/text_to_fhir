@@ -1,0 +1,914 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:8871a09e-5469-4eb0-95bb-8db6bd023b25",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "8871a09e-5469-4eb0-95bb-8db6bd023b25",
+        "name": [
+          {
+            "family": "Rodriguez",
+            "given": [
+              "Sofia"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1993-01-01",
+        "address": [
+          {}
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:37df322c-f864-49fd-baf3-7e0eae6f2cef",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "37df322c-f864-49fd-baf3-7e0eae6f2cef",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Sofia Rodriguez_20251023095323"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25",
+          "display": "Sofia Rodriguez"
+        },
+        "reason": [
+          {
+            "value": [
+              {
+                "concept": {
+                  "text": "intermittent abdominal discomfort and bloating"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e0a7fdf7-20fb-43e6-8d13-41e33bd8da92",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e0a7fdf7-20fb-43e6-8d13-41e33bd8da92",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "26464-8",
+              "display": "WBC # Bld"
+            }
+          ],
+          "text": "White Blood Cell Count"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 7.2,
+          "unit": "thousand cells per microliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "thousand cells per microliter"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/26464-8/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:afe40ca1-d9f4-470a-a27b-9f3bce3bb0fb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "afe40ca1-d9f4-470a-a27b-9f3bce3bb0fb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62854-5",
+              "display": "PhenX - glycosylated hemoglobin assay reflecting long-term glucose concentration protocol 140901"
+            }
+          ],
+          "text": "Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 13.1,
+          "unit": "grams per deciliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "grams per deciliter"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/62854-5/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7eab0166-3c2c-41a2-87e4-1c8f69d205b4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7eab0166-3c2c-41a2-87e4-1c8f69d205b4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "74775-8",
+              "display": "Platelet # PRP Auto"
+            }
+          ],
+          "text": "Platelet Count"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 220.0,
+          "unit": "thousand cells per microliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "thousand cells per microliter"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Definition: https://loinc.org/74775-8/"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a344c475-e076-4821-8c74-f611e3cd68bd",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a344c475-e076-4821-8c74-f611e3cd68bd",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "43364001",
+              "display": "Abdominal discomfort"
+            }
+          ],
+          "text": "Abdominal Discomfort"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/43364001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a2662960-e43d-4c4a-bd52-41e2ec8fe1b1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a2662960-e43d-4c4a-bd52-41e2ec8fe1b1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ],
+            "text": "Exam"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "722879009",
+              "display": "Functional bloating"
+            }
+          ],
+          "text": "Bloating"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-16"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Definition: https://snomed.info/id/722879009"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5a33a3f1-32b9-4a67-ac32-91e0cf47b885",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5a33a3f1-32b9-4a67-ac32-91e0cf47b885",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ],
+          "text": "temperature"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 36.8,
+          "unit": "degrees Celsius",
+          "system": "http://unitsofmeasure.org",
+          "code": "degrees Celsius"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:76334eef-a5ab-42ce-93b5-4803667f2b74",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "76334eef-a5ab-42ce-93b5-4803667f2b74",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62733-1",
+              "display": "PhenX - respiratory - pulse oximetry - rest protocol 091101"
+            }
+          ],
+          "text": "pulse"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 72.0,
+          "unit": "beats per minute",
+          "system": "http://unitsofmeasure.org",
+          "code": "beats per minute"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1d6a3602-d251-41d3-8eb1-64c0d33a2529",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1d6a3602-d251-41d3-8eb1-64c0d33a2529",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18684-1",
+              "display": "Blood pressure"
+            }
+          ],
+          "text": "blood pressure"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 118.0,
+          "unit": "millimeters of mercury",
+          "system": "http://unitsofmeasure.org",
+          "code": "millimeters of mercury"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8579fb3a-9935-4412-a7c0-1cb76e3aaa6e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8579fb3a-9935-4412-a7c0-1cb76e3aaa6e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1",
+              "display": "Resp rate"
+            }
+          ],
+          "text": "respiratory rate"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 16.0,
+          "unit": "breaths per minute",
+          "system": "http://unitsofmeasure.org",
+          "code": "breaths per minute"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:11a48d4d-9124-4562-9fcb-94c2b423e393",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "11a48d4d-9124-4562-9fcb-94c2b423e393",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2717-7",
+              "display": "OxyHgb MFr Plas"
+            }
+          ],
+          "text": "oxygen saturation"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 98.0,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:85b8dc9b-e0a0-4282-b336-3f17963554eb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "85b8dc9b-e0a0-4282-b336-3f17963554eb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8337-8",
+              "display": "Bdy weight special circumstances"
+            }
+          ],
+          "text": "weight"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 58.0,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kilograms"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:45b9fb66-6648-41cf-b8d0-e3ecb1caa9d6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "45b9fb66-6648-41cf-b8d0-e3ecb1caa9d6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92998-4",
+              "display": "Lower segment"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "valueQuantity": {
+          "value": 165.0,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "centimeters"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:75bdcd6d-8d6c-4889-a5dd-7309036646fd",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "75bdcd6d-8d6c-4889-a5dd-7309036646fd",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "97057-4",
+              "display": "Body mass index"
+            }
+          ],
+          "text": "body mass index"
+        },
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+        },
+        "encounter": {
+          "reference": "Encounter/37df322c-f864-49fd-baf3-7e0eae6f2cef"
+        },
+        "effectiveDateTime": "2025-08-16",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ],
+            "text": "Normal"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3d5afe79-d3b4-4d1a-a5a5-fed5535d159c",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "3d5afe79-d3b4-4d1a-a5a5-fed5535d159c",
+        "identifier": [
+          {
+            "use": "temp",
+            "value": "Encounter_Sofia Rodriguez_20251023095331"
+          }
+        ],
+        "status": "completed",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25",
+          "display": "Sofia Rodriguez"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ec9946b5-387c-4c19-9cd8-78b8728f599f",
+      "resource": {
+        "resourceType": "List",
+        "id": "ec9946b5-387c-4c19-9cd8-78b8728f599f",
+        "contained": [
+          {
+            "resourceType": "FamilyMemberHistory",
+            "id": "fmh-2",
+            "status": "completed",
+            "patient": {
+              "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "66839005",
+                  "display": "Father"
+                }
+              ]
+            },
+            "deceasedBoolean": false,
+            "condition": []
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8670-2",
+              "display": "History of family member diseases"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/8871a09e-5469-4eb0-95bb-8db6bd023b25"
+          }
+        ],
+        "note": [
+          {
+            "text": "Both parents are alive and healthy, with no known chronic medical conditions."
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "#fmh-2"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      }
+    }
+  ]
+}

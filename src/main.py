@@ -9,10 +9,10 @@ import argparse
 from src.core import settings
 from src.services.generation import generate_case
 from src.services.text_to_json import process_patient_records
-from src.utils.llm_utils import save_generated_case, save_parsed_fhir
+from src.utils.load_save import save_generated_case, save_patient_summary
 from src.services.json_to_fhir import to_fhir_bundle
 from src.services.fhir_to_summary import process_fhir_bundle
-from src.utils.load import load_config
+from src.utils.load_save import load_config
 import logging
 
 logging.basicConfig(
@@ -44,26 +44,26 @@ if __name__ == "__main__":
     mode = config["mode"]
     logger.info(f"Mode: {mode}")
     if mode == 'rag_preparation':
-        fhir_base_dir = Path(config["fhir_directory"])
+        fhir_base_dir = Path(config["output_dir"])
 
         for fhir_file in fhir_base_dir.rglob("*.json"):
-            logger.info(f"Processing FHIR bundle: {fhir_file}")
 
             patient_info = process_fhir_bundle(fhir_file, logger)
-            print('patient object', patient_info)
-
-    elif mode == "generate":
-        for disease_entry in config["diseases"]:
-            disease = disease_entry["name"]
-            num_gen = disease_entry.get("num_generation", 1)
-
-            for i in range(num_gen):
-                logger.info(f"Generating case {i + 1} for {disease}...")
-                case_text = generate_case(disease, client, settings.MODEL_ID, logger)
-                if case_text:
-                    save_generated_case(disease, case_text, config["cases_file"])
+            save_patient_summary(patient_info, fhir_file, fhir_base_dir)
 
     if mode in ["generate", "pre-defined"]:
+
+        if mode == "generate":
+            for disease_entry in config["diseases"]:
+                disease = disease_entry["name"]
+                num_gen = disease_entry.get("num_generation", 1)
+
+                for i in range(num_gen):
+                    logger.info(f"Generating case {i + 1} for {disease}...")
+                    case_text = generate_case(disease, client, settings.MODEL_ID, logger)
+                    if case_text:
+                        save_generated_case(disease, case_text, config["cases_file"])
+
         cases = load_config(Path(config["cases_file"]))
         output_dir = Path(config["output_dir"])
         # Process all diseases and cases
@@ -79,7 +79,6 @@ if __name__ == "__main__":
 
                 # Run your LLM pipeline on the case text
                 llm_output = process_patient_records(case_text, client, settings.MODEL_ID, logger=logger)
-                logger.info(f"Processed fhir bundle {llm_output}")
 
                 filename = to_fhir_bundle(llm_output, case_id, disease_dir)
                 logger.info(f"FHIR bundle saved to {filename}")
